@@ -1,24 +1,20 @@
 package main
 
 import (
-	"flag"
 	"fmt"
+
+	"portfolio/pkg/config"
 )
 
-type config struct{
-	port	int
-	env		string
-}
+const (
+	portNumber = 8080;
+)
 
-type application struct{
-	config config
-}
+var app config.AppConfig
 
 func main(){
-	var cfg config
-	flag.IntVar(&cfg.port, "port", 8080, "Server port to listen on")
-	flag.StringVar(&cfg.env, "env", "development", "Application environment (development|production")
-	flag.Parse()
+	// change this to true when in production
+	app.InProduction = false
 
-	fmt.Println(cfg);
+	fmt.Println(portNumber)
 }
