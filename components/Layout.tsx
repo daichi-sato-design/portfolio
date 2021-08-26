@@ -2,6 +2,7 @@ import { VFC, ReactNode } from 'react'
 import Head from 'next/head'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 interface Props {
   children: ReactNode
@@ -21,7 +22,7 @@ export const Layout: VFC<Props> = ({
       <div id="container" className="body">
         <Header/>
         {children}
-        <footer>Footer</footer>
+        <Footer/>
       </div>
     </div>
   )
