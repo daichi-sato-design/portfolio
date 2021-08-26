@@ -1,9 +1,9 @@
 .footer{
   background: #000;
-  padding: 50px 50px;
+  padding: 50px 40px;
   &__wrap{
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@
         margin-top: 6px;
         font-size: 1.2rem;
         letter-spacing: .06em;
-        color: #fff;
+        color: rgba(#fff, .8);
       }
     }
     .nav{

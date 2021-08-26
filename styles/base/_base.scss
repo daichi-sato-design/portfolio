@@ -4,12 +4,12 @@
 $default-font: 'Noto Sans JP', sans-serif;
 $custom-font-eng01:  'Knewave', cursive;
 
-
 html{
   font-size: 62.5%;
+  font-family: $default-font;
+  background: #000;
+  body{
+    position: relative;
+  }
 }
 
-.body{
-  position: relative;
-  font-family: $default-font;
-}
