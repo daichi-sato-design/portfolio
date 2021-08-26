@@ -9,9 +9,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
   .logo{
     width: 100%;
+    .link{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
   }
   .nav{
     display: flex;
@@ -21,6 +25,7 @@
       &__item{
         font-size: 1.6rem;
         font-weight: 600;
+        color: #fff;
         &:not(:first-child){
           margin-left: 20px;
         }
