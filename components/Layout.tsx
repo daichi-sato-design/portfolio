@@ -22,7 +22,8 @@ export const Layout: VFC<Props> = ({
       <div id="container" className="body">
         <Header/>
         {children}
-        <Footer/>
+        <Footer />
+        <div className="bg"></div>
       </div>
     </div>
   )
