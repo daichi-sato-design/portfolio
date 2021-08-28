@@ -34,4 +34,32 @@
       }
     }
   }
+  .about{
+    &__wrap{
+      max-width: 1200px;
+      padding: 0 50px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__hd{
+      .section-tag{
+        display: flex;
+        align-items: center;
+        &__num{
+          font-family: base.$custom-font-eng01;
+          font-size: 2.6rem;
+          margin-right: 10px;
+        }
+        &__ttl{
+          position: relative;
+          
+          font-size: 1.6rem;
+          font-weight: 600;
+          letter-spacing: .04em;
+        }
+      }
+    }
+    &__body{}
+  }
 }
