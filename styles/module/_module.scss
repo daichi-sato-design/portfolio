@@ -1,0 +1,79 @@
+@use '/styles/base/base';
+
+// 各セクションのタグ
+.section-tag{
+  display: flex;
+  align-items: center;
+  &__num{
+    font-family: base.$custom-font-eng01;
+    font-size: 2.6rem;
+    margin-right: 20px;
+  }
+  &__ttl{
+    position: relative;
+    z-index: 1;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    padding-left: 60px;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background: #fff;
+      width: 40px;
+      height: 1px;
+    }
+  }
+}
+
+// 各セクションの丸ボタン
+.section-btn{
+  width: 100%;
+  .link{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 18px 32px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    .txt{
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      padding-right: 70px;
+      width: 100%;
+      font-size: 1.6rem;
+      letter-spacing: .08em;
+      line-height: 1;
+      white-space: nowrap;
+      &::before{
+        
+      }
+    }
+    .deco{
+      position: relative;
+      z-index: 1;
+      flex-shrink: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      background: #000;
+      &:before{
+        content: "";
+        position: absolute;
+        z-index: 10;
+        top: 4px;
+        left: 4px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #fff;
+      }
+    }
+  }
+}
