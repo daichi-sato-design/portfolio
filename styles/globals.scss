@@ -1,6 +1,9 @@
+// 設定関連
 @use 'base/destyle.scss';
 @use 'base/base';
 
+// ページ関連
 @use 'layout/index';
 
+// モジュール関連
 @use 'module/module';

@@ -50,8 +50,16 @@
       letter-spacing: .08em;
       line-height: 1;
       white-space: nowrap;
-      &::before{
-        
+      &:before{
+        content: "";
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 48px;
+        height: 1px;
+        background: #fff;
       }
     }
     .deco{
