@@ -5,13 +5,13 @@ import Image from 'next/image'
 const Header:VFC = () => {
   return (
     <header className="header">
-      <div className="logo">
+      <h1 className="logo">
         <Link href="/">
           <a className="link">
-            <Image src="/common/h_logo.svg" alt="DaichiSato Portfolio" width={332} height={56} />
+            <Image src="/common/logo.svg" alt="DaichiSato Portfolio" width={350} height={34} />
           </a>
         </Link>
-      </div>
+      </h1>
       <nav className="nav">
         <ul className="nav__pages">
           <li className="nav__pages__item">
@@ -27,6 +27,11 @@ const Header:VFC = () => {
           <li className="nav__pages__item">
             <Link href="/skills">
               <a className="link">Skills</a>
+            </Link>
+          </li>
+          <li className="nav__pages__item">
+            <Link href="/challenge">
+              <a className="link">Challenge</a>
             </Link>
           </li>
           <li className="nav__pages__item">

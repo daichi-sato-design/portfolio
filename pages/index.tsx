@@ -1,5 +1,6 @@
 import { Layout } from '../components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -9,10 +10,9 @@ export default function Home() {
           <div className="mv__wrap">
             <div className="catch">
               <h2 className="catch__ttl">
-                Beyond imagination<br/>
-                with design
+                <Image src="/index/mv_ttl.svg" alt="Github" width={1000} height={128} />
               </h2>
-              <p className="catch__txt">デザインで想像力を超える。</p>
+              <p className="catch__txt">「クリエイター / ユーザー」両方楽しむ。</p>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ const Footer:VFC = () => {
           <div className="logo">
             <Link href="/">
               <a className="link">
-                <Image src="/common/h_logo.svg" alt="DaichiSato Portfolio" width={332} height={56} />
+                <Image src="/common/logo.svg" alt="DaichiSato Portfolio" width={350} height={34} />
               </a>
             </Link>
           </div>
@@ -33,6 +33,11 @@ const Footer:VFC = () => {
                 <a className="link">Skills</a>
               </Link>
             </li>
+            <li className="nav__pages__item">
+            <Link href="/challenge">
+              <a className="link">Challenge</a>
+            </Link>
+          </li>
             <li className="nav__pages__item">
               <Link href="/contact">
                 <a className="link">Contact</a>
