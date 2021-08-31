@@ -1,12 +1,11 @@
-@use '/styles/base/base';
 
 // 各セクションのタグ
 .section-tag{
   display: flex;
   align-items: center;
   &__num{
-    font-family: base.$custom-font-eng01;
     font-size: 2.6rem;
+    font-weight: 900;
     margin-right: 20px;
   }
   &__ttl{
