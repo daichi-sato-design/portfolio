@@ -72,7 +72,13 @@ const Header:VFC = () => {
             </a>
           </li>
         </ul>
-        <div className="nav__toggle"></div>
+        <div className="nav__toggle">
+          <div className="line">
+            <span></span>
+            <span></span>
+          </div>
+          <p className="txt">Menu</p>
+        </div>
       </nav>
     </header>
   )
