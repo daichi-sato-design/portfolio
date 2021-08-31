@@ -11,30 +11,61 @@
     padding: 50px;
     &__wrap{
       display: flex;
-      justify-content: center;
       align-items: center;
       width: 100%;
       max-width: 1080px;
       height: 100%;
       margin: 0 auto;
       .catch{
+        width: 100%;
         &__ttl{
           width: 100%;
+          max-width: 1000px;
+          margin: 0 auto;
+          .img-box{
+            position: relative;
+            padding-top: calc((128 / 1000) * 100%);
+            svg{
+              .a{fill:#fff;}
+            }
+          }
         }
         &__txt{
           text-align: center;
-          margin-top: 30px;
+          margin-top: 40px;
           font-size: 2.4rem;
           font-weight: 600;
           letter-spacing: .05em;
         }
       }
     }
+    &__bg01{
+      position: absolute;
+      z-index: -1;
+      bottom: -15%;
+      left: -320px;
+      width: 50%;
+      max-width: 690px;
+    }
+    &__bg02{
+      position: absolute;
+      z-index: -1;
+      top: 120px;
+      right: 40px;
+    }
+    &__bg03{
+      position: absolute;
+      z-index: -1;
+      bottom: 20px;
+      right: 120px;
+      width: 20%;
+      max-width: 270px;
+    }
   }
   .about{
     &__wrap{
       max-width: 1200px;
-      padding: 50px;
+      padding: 150px 50px;
       margin: 0 auto;
     }
     &__contents{
