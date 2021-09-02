@@ -9,6 +9,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 768px){
+    padding: 20px 30px;
+  }
   .logo{
     width: 100%;
     .link{
@@ -22,6 +25,9 @@
     align-items: center;
     &__pages{
       display: flex;
+      @media screen and (max-width: 1080px){
+        display: none;
+      }
       &__item{
         font-size: 1.6rem;
         font-weight: 600;
@@ -33,6 +39,9 @@
     &__sns{
       display: flex;
       margin-left: 28px;
+      @media screen and (max-width: 1080px){
+        display: none;
+      }
       &__item{
         width: 32px;
         height: 32px;
