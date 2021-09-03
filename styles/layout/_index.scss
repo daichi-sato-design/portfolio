@@ -185,6 +185,27 @@
       }
     }
   }
+  .challenge{
+    &__wrap{
+      max-width: 1200px;
+      padding: 150px 50px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .visual{
+        max-width: 620px;
+        width: 48%;
+      }
+      .section-detail{
+        width: 44.5%;
+        max-width: 490px;
+        .section-btn{
+          margin-top: 50px;
+          max-width: 200px;
+        }
+      }
+    }
+  }
 }
 
 .section-detail{
@@ -192,7 +213,7 @@
     margin-top: 40px;
     font-size: 3.2rem;
     line-height: 1.75;
-    letter-spacing: .06em;
+    letter-spacing: .05em;
     font-weight: 600;
   }
   &__body{
