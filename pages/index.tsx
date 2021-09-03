@@ -142,6 +142,43 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* Challenge */}
+        <section className="challenge">
+          <div className="challenge__wrap">
+            <div className="visual">
+              <div className="visual__item">
+                <Image src="/index/skills_item01.png" alt="Dotted" width={120} height={120} />
+              </div>
+              <div className="visual__item">
+                <Image src="/index/skills_item02.png" alt="Dotted" width={120} height={120} />
+              </div>
+              <div className="visual__item">
+                <Image src="/index/skills_item03.png" alt="Dotted" width={120} height={120} />
+              </div>
+              <div className="visual__item">
+                <Image src="/index/skills_item04.png" alt="Dotted" width={120} height={120} />
+              </div>
+            </div>
+            <div className="detail section-detail">
+              <div className="section-tag">
+                <div className="section-tag__num">４</div>
+                <div className="section-tag__ttl">Challenge</div>
+              </div>
+              <h3 className="section-detail__ttl">「楽しそう」なら挑戦してみる。</h3>
+              <p className="section-detail__body">
+                  日本各地で起こっている、いま面白いコト・モノ・人を独自の切り口で発信する地域コミュニティメディア。地域への「好き」の連鎖が生まれる記事や「好き」が「もっと好き」に深まる記事を通して、人と地域の新たな関係性を生み出しています。
+                </p>
+                <div className="section-btn">
+                  <Link href="/challenge">
+                    <a className="link">
+                      <span className="txt">Challenge</span>
+                      <div className="deco"></div>
+                    </a>
+                  </Link>
+                </div>
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   )
