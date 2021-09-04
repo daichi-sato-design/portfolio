@@ -57,7 +57,7 @@ const Footer:VFC = () => {
             </li>
             <li className="nav__sns__item">
               <a
-                href="https://www.instagram.com/s.dai_1111/"
+                href="https://www.instagram.com/_daichisato"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link"

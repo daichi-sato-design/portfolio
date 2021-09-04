@@ -47,7 +47,7 @@ export default function Home() {
               </div>
               <div className="about__contents__body">
                 <p className="txt">
-                  新しい時代の「経済性」と「社会性」が共存する豊かな循環を生み出す。WHEREのすべての活動は、その地づくりのために存在しています。「LOCAL LETTER」「SHARE by WHERE」「一棟貸し古民家 まつや邸」。人と地域、地域と企業をつなぎながら、共にあるべき未来を思考し、カタチにする。人と経済の持続的な循環を創出する、私たちの主な事業をご紹介します。
+                  小さな目標達成や成功体験ですら、それまでにあった「数回の失敗」も後日談の笑い話に変えてしまう。そんな偉大な「達成」や「成功」の一番の近道は継続であると考え、決めた目標には小さな進捗であってもコツコツと積み重ねていきます。
                 </p>
                 <div className="section-btn">
                   <Link href="/about">
@@ -74,16 +74,16 @@ export default function Home() {
               </div>
               <h3 className="section-detail__ttl">企画から実装まで完結させる。</h3>
               <p className="section-detail__body">
-                  日本各地で起こっている、いま面白いコト・モノ・人を独自の切り口で発信する地域コミュニティメディア。地域への「好き」の連鎖が生まれる記事や「好き」が「もっと好き」に深まる記事を通して、人と地域の新たな関係性を生み出しています。
-                </p>
-                <div className="section-btn">
-                  <Link href="/workd">
-                    <a className="link">
-                      <span className="txt">Works</span>
-                      <div className="deco"></div>
-                    </a>
-                  </Link>
-                </div>
+                サービスのアイデアが浮かんだとき、それを企画に落とし込みデザインから実装までの完結させるようにしています。サービスの開発に100%の完成はないと考え、ユースケースをカバーしている場合には早めにリリースします。
+              </p>
+              <div className="section-btn">
+                <Link href="/workd">
+                  <a className="link">
+                    <span className="txt">Works</span>
+                    <div className="deco"></div>
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -100,44 +100,44 @@ export default function Home() {
                 モダンな技術まで一通り。
               </h3>
               <p className="section-detail__body">
-                  日本各地で起こっている、いま面白いコト・モノ・人を独自の切り口で発信する地域コミュニティメディア。地域への「好き」の連鎖が生まれる記事や「好き」が「もっと好き」に深まる記事を通して、人と地域の新たな関係性を生み出しています。
-                </p>
-                <div className="section-btn">
-                  <Link href="/skills">
-                    <a className="link">
-                      <span className="txt">Skills</span>
-                      <div className="deco"></div>
-                    </a>
-                  </Link>
-                </div>
+                デザイナーとしてUIやUXといったサービスの核心となる体験の設計から。エンジニアとして、フロントエンド・バックエンド・モバイルアプリを開発できる言語を広く学ぶことで、時間を多くかけずにアイデアを形にできるよう取り組んでいます。
+              </p>
+              <div className="section-btn">
+                <Link href="/skills">
+                  <a className="link">
+                    <span className="txt">Skills</span>
+                    <div className="deco"></div>
+                  </a>
+                </Link>
+              </div>
             </div>
             <div className="visual">
               <div className="visual__item">
-                <Image src="/index/skills_item01.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index01.png" alt="Dotted" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/index/skills_item02.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index02.png" alt="Dotted" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/index/skills_item03.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index03.png" alt="Dotted" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/index/skills_item04.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index04.png" alt="Dotted" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/index/skills_item05.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index05.png" alt="Dotted" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/index/skills_item06.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index06.png" alt="Dotted" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/index/skills_item07.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index07.png" alt="Dotted" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/index/skills_item08.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index08.png" alt="Dotted" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/index/skills_item09.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index09.png" alt="Dotted" width={120} height={120} />
               </div>
             </div>
           </div>
@@ -147,16 +147,16 @@ export default function Home() {
           <div className="challenge__wrap">
             <div className="visual">
               <div className="visual__item">
-                <Image src="/index/skills_item01.png" alt="Dotted" width={120} height={120} />
+                <Image src="/challenge/index01.png" alt="Twitch" width={200} height={140} />
               </div>
               <div className="visual__item">
-                <Image src="/index/skills_item02.png" alt="Dotted" width={120} height={120} />
+                <Image src="/challenge/index02.png" alt="Twitter" width={200} height={140} />
               </div>
               <div className="visual__item">
-                <Image src="/index/skills_item03.png" alt="Dotted" width={120} height={120} />
+                <Image src="/challenge/index03.png" alt="Instagram" width={200} height={140} />
               </div>
-              <div className="visual__item">
-                <Image src="/index/skills_item04.png" alt="Dotted" width={120} height={120} />
+              <div className="visual__item none">
+                <Image src="/challenge/index04.png" alt="YouTube" width={200} height={140} />
               </div>
             </div>
             <div className="detail section-detail">
@@ -166,16 +166,16 @@ export default function Home() {
               </div>
               <h3 className="section-detail__ttl">「楽しそう」なら挑戦してみる。</h3>
               <p className="section-detail__body">
-                  日本各地で起こっている、いま面白いコト・モノ・人を独自の切り口で発信する地域コミュニティメディア。地域への「好き」の連鎖が生まれる記事や「好き」が「もっと好き」に深まる記事を通して、人と地域の新たな関係性を生み出しています。
-                </p>
-                <div className="section-btn">
-                  <Link href="/challenge">
-                    <a className="link">
-                      <span className="txt">Challenge</span>
-                      <div className="deco"></div>
-                    </a>
-                  </Link>
-                </div>
+                メディアでの発信・配信などハードルが高いようなことでも、「失敗してもあとで笑い話になる」と考え挑戦していきます。そんな挑戦しているメディアをご紹介します。
+              </p>
+              <div className="section-btn">
+                <Link href="/challenge">
+                  <a className="link">
+                    <span className="txt">Challenge</span>
+                    <div className="deco"></div>
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
