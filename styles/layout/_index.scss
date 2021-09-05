@@ -109,14 +109,8 @@
           font-weight: 600;
         }
       }
-      &__body{
+      .section-detail{
         max-width: 52%;
-        .txt{
-          font-size: 1.5rem;
-          line-height: 2.6;
-          letter-spacing: .08em;
-          font-weight: 600;
-        }
         .section-btn{
           margin-top: 50px;
           max-width: 200px;
@@ -160,7 +154,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         &__item{
-          width: 31%;
+          width: 31.3%;
           background: #fff;
           display: flex;
           justify-content: center;
@@ -198,7 +192,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         &__item{
-          width: 48.4%;
+          width: 48.5%;
           background: #fff;
           display: flex;
           justify-content: center;
@@ -227,6 +221,45 @@
       }
     }
   }
+  .contact{
+    &__wrap{
+      max-width: 1200px;
+      padding: 150px 50px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .visual{
+        max-width: 510px;
+        width: 46%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__item{
+          width: 31%;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          padding: 4%;
+          align-items: center;
+          &:not(:nth-child(3n + 1)){
+            margin-left: 3%;
+          }
+          &:not(:nth-child(-n + 3)){
+            margin-top: 3%;
+          }
+        }
+      }
+      .section-detail{
+        width: 50%;
+        max-width: 490px;
+        .section-btn{
+          margin-top: 50px;
+          max-width: 210px;
+        }
+      }
+    }
+  }
 }
 
 .section-detail{
@@ -242,6 +275,6 @@
     font-size: 1.5rem;
     line-height: 2.6;
     letter-spacing: .08em;
-    font-weight: 600;
+    font-weight: 500;
   }
 }

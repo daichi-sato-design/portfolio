@@ -1,5 +1,7 @@
+@use '/styles/base/base' as base;
+
 .footer{
-  background: #000;
+  background: base.$primary-color;
   padding: 50px 40px;
   &__wrap{
     width: 100%;
