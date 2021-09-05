@@ -89,9 +89,10 @@
     }
   }
   .about{
+    position: relative;
     &__wrap{
       max-width: 1100px;
-      padding: 150px 50px;
+      padding: 150px 50px 180px;
       margin: 0 auto;
       @media screen and (max-width: 768px){
         padding: 40px 30px;
@@ -113,15 +114,39 @@
         max-width: 52%;
         .section-btn{
           margin-top: 50px;
-          max-width: 200px;
         }
       }
     }
+    &__bg01{
+      position: absolute;
+      z-index: -1;
+      top: 40px;
+      right: -20px;
+      width: 176px;
+      height: 106px;
+    }
+    &__bg02{
+      position: absolute;
+      z-index: -1;
+      bottom: 50px;
+      left: -60px;
+      width: 130px;
+      height: 255px;
+    }
+    &__bg03{
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      right: 50px;
+      width: 170px;
+      height: 140px;
+    }
   }
   .works{
+    position: relative;
     &__wrap{
       max-width: 1200px;
-      padding: 150px 50px;
+      padding: 80px 50px 100px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -134,12 +159,28 @@
         max-width: 490px;
         .section-btn{
           margin-top: 50px;
-          max-width: 200px;
         }
       }
     }
+    &__bg01{
+      position: absolute;
+      z-index: -1;
+      bottom: -60px;
+      left: 20px;
+      width: 150px;
+      height: 150px;
+    }
+    &__bg02{
+      position: absolute;
+      z-index: -1;
+      bottom: -100px;
+      right: -60px;
+      width: 320px;
+      height: 320px;
+    }
   }
   .skills{
+    position: relative;
     &__wrap{
       max-width: 1200px;
       padding: 150px 50px;
@@ -173,12 +214,28 @@
         max-width: 490px;
         .section-btn{
           margin-top: 50px;
-          max-width: 200px;
         }
       }
     }
+    &__bg01{
+      position: absolute;
+      z-index: -1;
+      bottom: -120px;
+      left: -20px;
+      width: 106px;
+      height: 172px;
+    }
+    &__bg02{
+      position: absolute;
+      z-index: -1;
+      bottom: 85px;
+      right: -45px;
+      width: 280px;
+      height: 105px;
+    }
   }
   .challenge{
+    position: relative;
     &__wrap{
       max-width: 1200px;
       padding: 150px 50px;
@@ -216,65 +273,45 @@
         max-width: 520px;
         .section-btn{
           margin-top: 50px;
-          max-width: 220px;
         }
       }
+    }
+    &__bg01{
+      position: absolute;
+      z-index: -1;
+      bottom: -100px;
+      left: 0;
+      width: 150px;
+      height: 150px;
+    }
+    &__bg02{
+      position: absolute;
+      z-index: -1;
+      bottom: -50px;
+      right: 30px;
+      width: 180px;
+      height: 160px;
     }
   }
   .contact{
     &__wrap{
       max-width: 1200px;
-      padding: 150px 50px;
+      padding: 150px 50px 100px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       .visual{
-        max-width: 510px;
-        width: 46%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        &__item{
-          width: 31%;
-          background: #fff;
-          display: flex;
-          justify-content: center;
-          padding: 4%;
-          align-items: center;
-          &:not(:nth-child(3n + 1)){
-            margin-left: 3%;
-          }
-          &:not(:nth-child(-n + 3)){
-            margin-top: 3%;
-          }
-        }
+        max-width: 440px;
+        width: 40%;
       }
       .section-detail{
-        width: 50%;
-        max-width: 490px;
+        width: 46.1%;
+        max-width: 510px;
         .section-btn{
           margin-top: 50px;
-          max-width: 210px;
         }
       }
     }
-  }
-}
-
-.section-detail{
-  &__ttl{
-    margin-top: 40px;
-    font-size: 3.2rem;
-    line-height: 1.75;
-    letter-spacing: .05em;
-    font-weight: 600;
-  }
-  &__body{
-    margin-top: 20px;
-    font-size: 1.5rem;
-    line-height: 2.6;
-    letter-spacing: .08em;
-    font-weight: 500;
   }
 }
