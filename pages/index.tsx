@@ -20,13 +20,13 @@ export default function Home() {
             </div>
           </div>
           <div className="mv__bg01">
-            <Image src="/index/mv_planet.png" alt="Planet" width={690} height={690} />
+            <Image src="/common/bg_planet01.png" alt="Planet" width={690} height={690} />
           </div>
           <div className="mv__bg02">
             <Image src="/index/mv_dotted.svg" alt="Dotted" width={130} height={255} />
           </div>
           <div className="mv__bg03">
-            <Image src="/index/mv_lights.png" alt="Lights" width={270} height={185} />
+            <Image src="/common/bg_lights01.png" alt="Lights" width={270} height={185} />
           </div>
         </div>
         {/* ABOUT */}
@@ -45,8 +45,8 @@ export default function Home() {
                   夢へと歩を進める。
                 </h3>
               </div>
-              <div className="about__contents__body">
-                <p className="txt">
+              <div className="section-detail">
+                <p className="section-detail__body">
                   小さな目標達成や成功体験ですら、それまでにあった「数回の失敗」も後日談の笑い話に変えてしまう。そんな偉大な「達成」や「成功」の一番の近道は継続であると考え、決めた目標には小さな進捗であってもコツコツと積み重ねていきます。
                 </p>
                 <div className="section-btn">
@@ -74,7 +74,7 @@ export default function Home() {
               </div>
               <h3 className="section-detail__ttl">企画から実装まで完結させる。</h3>
               <p className="section-detail__body">
-                サービスのアイデアが浮かんだとき、それを企画に落とし込みデザインから実装までの完結させるようにしています。サービスの開発に100%の完成はないと考え、ユースケースをカバーしている場合には早めにリリースします。
+                サービスのアイデアが浮かんだとき、それを企画に落とし込みデザインから実装までの完結させるようにしています。サービスの開発に100%の完成はないと考え、ユースケースをカバーしている場合にはまずリリースすることを心がけています。
               </p>
               <div className="section-btn">
                 <Link href="/workd">
@@ -100,7 +100,7 @@ export default function Home() {
                 モダンな技術まで一通り。
               </h3>
               <p className="section-detail__body">
-                デザイナーとしてUIやUXといったサービスの核心となる体験の設計から。エンジニアとして、フロントエンド・バックエンド・モバイルアプリを開発できる言語を広く学ぶことで、時間を多くかけずにアイデアを形にできるよう取り組んでいます。
+                デザイナーとしてUIやUXといったサービスの核心となる体験の設計から。エンジニアとして、フロントエンド・バックエンド・モバイルアプリを開発できる言語を広く学ぶことで、時間をなるべくかけずにアイデアを形にできるよう取り組んでいます。
               </p>
               <div className="section-btn">
                 <Link href="/skills">
@@ -113,31 +113,31 @@ export default function Home() {
             </div>
             <div className="visual">
               <div className="visual__item">
-                <Image src="/skills/index01.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index01.png" alt="JaveScript" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/skills/index02.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index02.png" alt="TypeScript" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/skills/index03.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index03.png" alt="React" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/skills/index04.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index04.png" alt="Next.js" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/skills/index05.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index05.png" alt="Dart" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/skills/index06.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index06.png" alt="Flutter" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/skills/index07.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index07.png" alt="Golang" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/skills/index08.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index08.png" alt="PostgreSQL" width={120} height={120} />
               </div>
               <div className="visual__item">
-                <Image src="/skills/index09.png" alt="Dotted" width={120} height={120} />
+                <Image src="/skills/index09.png" alt="GraphQL" width={120} height={120} />
               </div>
             </div>
           </div>
@@ -146,15 +146,27 @@ export default function Home() {
         <section className="challenge">
           <div className="challenge__wrap">
             <div className="visual">
-              <div className="visual__item">
+              <a
+                href="https://www.twitch.tv/sarupopo3"
+                target="_blank"
+                className="visual__item"
+              >
                 <Image src="/challenge/index01.png" alt="Twitch" width={200} height={140} />
-              </div>
-              <div className="visual__item">
+              </a>
+              <a
+                href="https://twitter.com/_daichisato"
+                target="_blank"
+                className="visual__item"
+              >
                 <Image src="/challenge/index02.png" alt="Twitter" width={200} height={140} />
-              </div>
-              <div className="visual__item">
+              </a>
+              <a
+                href="https://www.instagram.com/_daichisato"
+                target="_blank"
+                className="visual__item"
+              >
                 <Image src="/challenge/index03.png" alt="Instagram" width={200} height={140} />
-              </div>
+              </a>
               <div className="visual__item none">
                 <Image src="/challenge/index04.png" alt="YouTube" width={200} height={140} />
               </div>
@@ -176,6 +188,34 @@ export default function Home() {
                   </a>
                 </Link>
               </div>
+            </div>
+          </div>
+        </section>
+        {/* CONTACT */}
+        <section className="contact">
+          <div className="contact__wrap">
+            <div className="section-detail">
+              <div className="section-tag">
+                <div className="section-tag__num">5</div>
+                <div className="section-tag__ttl">Contact</div>
+              </div>
+              <h3 className="section-detail__ttl">
+                お問い合わせ
+              </h3>
+              <p className="section-detail__body">
+                本サイト・サービス・メディアなどに関するご意見やお問い合わせなどに対応いたします。お問い合わせに関するレスポンスが遅い場合、Twitterなど他メディアでのDMもご検討ください。お問い合わせに早急に対応できない場合もあります。
+              </p>
+              <div className="section-btn">
+                <Link href="/skills">
+                  <a className="link">
+                    <span className="txt">Contact</span>
+                    <div className="deco"></div>
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <div className="visual">
+              <Image src="/contact/index_img.jpg" alt="Profile" width={440} height={440} />
             </div>
           </div>
         </section>
