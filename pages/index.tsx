@@ -20,13 +20,25 @@ export default function Home() {
             </div>
           </div>
           <div className="mv__bg01">
-            <Image src="/common/bg_planet01.png" alt="Planet" width={690} height={690} />
+            <Image
+              src="/common/bg_planet01.png"
+              alt="Planet"
+              width={690}
+              height={690} />
           </div>
           <div className="mv__bg02">
-            <Image src="/index/mv_dotted.svg" alt="Dotted" width={130} height={255} />
+            <Image
+              src="/common/bg_dotted01.svg"
+              alt="Dotted"
+              width={130}
+              height={255} />
           </div>
           <div className="mv__bg03">
-            <Image src="/common/bg_lights01.png" alt="Lights" width={270} height={185} />
+            <Image
+              src="/common/bg_lights01.png"
+              alt="Lights"
+              width={270}
+              height={185} />
           </div>
         </div>
         {/* ABOUT */}
@@ -60,6 +72,27 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="about__bg01">
+            <Image
+              src="/common/bg_dotted02.svg"
+              alt="Dotted"
+              width={176}
+              height={106} />
+          </div>
+          <div className="about__bg02">
+            <Image
+              src="/common/bg_dotted01.svg"
+              alt="Dotted"
+              width={130}
+              height={255} />
+          </div>
+          <div className="about__bg03">
+            <Image
+              src="/common/bg_lights02.png"
+              alt="Dotted"
+              width={170}
+              height={140} />
+          </div>
         </section>
         {/* WORKS */}
         <section className="works">
@@ -85,6 +118,20 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+          </div>
+          <div className="works__bg01">
+            <Image
+              src="/common/bg_lights03.png"
+              alt="Lights"
+              width={150}
+              height={150} />
+          </div>
+          <div className="works__bg02">
+            <Image
+              src="/common/bg_planet02.png"
+              alt="Planet"
+              width={320}
+              height={320} />
           </div>
         </section>
         {/* SKILLS */}
@@ -141,6 +188,20 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="skills__bg01">
+            <Image
+              src="/common/bg_dotted04.svg"
+              alt="Dotted"
+              width={106}
+              height={172} />
+          </div>
+          <div className="skills__bg02">
+            <Image
+              src="/common/bg_dotted03.svg"
+              alt="Dotted"
+              width={280}
+              height={105} />
+          </div>
         </section>
         {/* Challenge */}
         <section className="challenge">
@@ -176,9 +237,9 @@ export default function Home() {
                 <div className="section-tag__num">４</div>
                 <div className="section-tag__ttl">Challenge</div>
               </div>
-              <h3 className="section-detail__ttl">「楽しそう」なら挑戦してみる。</h3>
+              <h3 className="section-detail__ttl">「楽しそう」ならやってみる。</h3>
               <p className="section-detail__body">
-                メディアでの発信・配信などハードルが高いようなことでも、「失敗してもあとで笑い話になる」と考え挑戦していきます。そんな挑戦しているメディアをご紹介します。
+                各メディアでの発信・配信など「楽しそう」と感じたことには、「とりあえずやってみる」ことを心がけています。それぞれの挑戦しているメディアをご紹介します。
               </p>
               <div className="section-btn">
                 <Link href="/challenge">
@@ -189,6 +250,20 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+          </div>
+          <div className="challenge__bg01">
+            <Image
+              src="/common/bg_lights04.png"
+              alt="Lights"
+              width={150}
+              height={150} />
+          </div>
+          <div className="challenge__bg02">
+            <Image
+              src="/common/bg_lights05.png"
+              alt="Lights"
+              width={180}
+              height={160} />
           </div>
         </section>
         {/* CONTACT */}
