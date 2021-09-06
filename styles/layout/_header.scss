@@ -1,3 +1,5 @@
+@use '/styles/base/mixin' as mixin;
+
 .header{
   position: absolute;
   z-index: 100;
@@ -9,14 +11,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (max-width: 768px){
+  @include mixin.mq-down(tb){
     padding: 20px 30px;
   }
-  @media screen and (max-width: 420px){
+  @include mixin.mq-down(sp){
     padding: 20px;
   }
   .logo{
     width: 100%;
+    @include mixin.mq-down(tb){
+      max-width: 300px;
+    }
+    @include mixin.mq-down(sp){
+      width: 75%;
+    }
     .link{
       display: block;
       width: 100%;

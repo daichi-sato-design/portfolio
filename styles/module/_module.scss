@@ -1,3 +1,4 @@
+@use '/styles/base/mixin' as mixin;
 
 // 各セクションのタグ
 .section-tag{
@@ -7,6 +8,10 @@
     font-size: 2.6rem;
     font-weight: 900;
     margin-right: 20px;
+    @include mixin.mq-down(sp){
+      font-size: 1.6rem;
+      margin-right: 15px;
+    }
   }
   &__ttl{
     position: relative;
@@ -16,6 +21,10 @@
     letter-spacing: .06em;
     padding-left: 60px;
     text-transform: uppercase;
+    @include mixin.mq-down(sp){
+      font-size: 1.3rem;
+      padding-left: 35px;
+    }
     &:before{
       content: "";
       position: absolute;
@@ -25,6 +34,9 @@
       background: #fff;
       width: 40px;
       height: 1px;
+      @include mixin.mq-down(sp){
+        width: 20px;
+      }
     }
   }
 }
@@ -37,6 +49,16 @@
     line-height: 1.75;
     letter-spacing: .05em;
     font-weight: 600;
+    @include mixin.mq-down(lt){
+      font-size: 3vw;
+    }
+    @include mixin.mq-down(tb){
+      font-size: 4.2vw;
+      margin-top: 20px;
+    }
+    @include mixin.mq-down(sp){
+      font-size: 6vw;
+    }
   }
   &__body{
     margin-top: 20px;
@@ -44,6 +66,17 @@
     line-height: 2.6;
     letter-spacing: .08em;
     font-weight: 500;
+    @include mixin.mq-down(lt){
+      line-height: 2;
+    }
+    @include mixin.mq-down(tb){
+      margin-top: 20px;
+      line-height: 2.6;
+    }
+    @include mixin.mq-down(sp){
+      line-height: 2.2;
+      font-size: 1.4rem;
+    }
   }
 }
 

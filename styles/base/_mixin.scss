@@ -1,0 +1,72 @@
+// VARIABLES
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+$default-font: 'Noto Sans JP', sans-serif;
+$primary-color: #614D9D;
+
+
+// MEDIA-QUERY
+$breakpoint-up: (
+  'sp': 'screen and (min-width: 481px)',
+  'tb': 'screen and (min-width: 769px)',
+  'lt': 'screen and (min-width: 1081px)',
+  'dt': 'screen and (min-width: 1201px)',
+) !default;
+$breakpoint-down: (
+  'sp': 'screen and (max-width: 480px)',
+  'tb': 'screen and (max-width: 768px)',
+  'lt': 'screen and (max-width: 1080px)',
+  'dt': 'screen and (max-width: 1200px)',
+) !default;
+@mixin mq-up($breakpoint: tb){
+  @media #{map-get($breakpoint-up, $breakpoint)}{
+    @content
+  }
+};
+@mixin mq-down($breakpoint: tb){
+  @media #{map-get($breakpoint-down, $breakpoint)}{
+    @content
+  }
+};
+
+// KEYFREAMS/ANIMATION
+@mixin keyfreames($animation-name: animation){
+  @-webkit-keyframes #{$animation-name}{
+    @content;
+  }
+  @keyframes #{$animation-name}{
+    @content;
+  }
+}
+@mixin animation($animation-name){
+  -webkit-animation: $animation-name;
+  animation: $animation-name;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+// CUBIC-BEZIER
+$bezier-easeOutSine: qubic-bezier(0.61, 1, 0.88, 1);
+$bezier-easeOutCubic: qubic-bezier(0.33, 1, 0.68, 1);
+$bezier-easeOutQuint: qubic-bezier(0.23, 1, 0.32, 1);
+//BOUND
+$bezier-easeInBack: qubic-bezier(0.36, 0, 0.66, -0.56);
+$bezier-easeOutBack: qubic-bezier(0.34, 1.56, 0.64, 1);
+
+// @include ANIMATION
+@include keyfreames(fadein-r-40){
+  0%{opacity: 0; transform: translate(40px, 0);}
+  100%{opacity: 1; transform: translate(0, 0);}
+}
+@include keyfreames(fadein-b-40){
+  0%{opacity: 0; transform: translateY(0, 40px);}
+  100%{opacity: 1; transform: translate(0, 0);}
+}
+@include keyfreames(fadein-scale){
+  0%{opacity: 0; transform: scale(.2);}
+  100%{opacity: 1; transform: scale(1);}
+}
+@include keyfreames(fadein-b-scale){
+  0%{opacity: 0; transform: translateY(20px, 0) scale(.2);}
+  100%{opacity: 1; transform: translate(0, 0) scale(1);}
+}

@@ -1,4 +1,4 @@
-@use '/styles/base/base' as base;
+@use '/styles/base/mixin' as mixin;
 
 @use '/styles/layout/header';
 @use '/styles/layout/footer';
@@ -9,9 +9,12 @@
     width: 100%;
     height: 760px;
     padding: 50px;
-    @media screen and (max-width: 768px){
+    @include mixin.mq-down(tb){
       height: 520px;
-      padding: 30px;
+      padding: 100px 80px;
+    }
+    @include mixin.mq-down(sp){
+      padding: 50px 20px;
     }
     &__wrap{
       display: flex;
@@ -42,9 +45,12 @@
           font-size: 2.1rem;
           font-weight: 600;
           letter-spacing: .05em;
-          @media screen and (max-width: 768px){
-            font-size: 3.8vw;
+          @include mixin.mq-down(tb){
+            font-size: 2.6vw;
             margin-top: 20px;
+          }
+          @include mixin.mq-down(sp){
+            font-size: 3.4vw;
           }
         }
       }
@@ -54,13 +60,15 @@
       z-index: -1;
       bottom: -15%;
       left: -320px;
-      width: 50%;
-      max-width: 690px;
-      @media screen and (max-width: 768px){
+      width: 690px;
+      @include mixin.mq-down(tb){
         bottom: 0;
         left: -40%;
         width: 80%;
         max-width: inherit;
+      }
+      @include mixin.mq-down(sp){
+        bottom: 40px;
       }
     }
     &__bg02{
@@ -68,9 +76,9 @@
       z-index: -1;
       top: 120px;
       right: 40px;
-      @media screen and (max-width: 768px){
+      @include mixin.mq-down(tb){
+        width: 20%;
         top: 80px;
-        width: 80px;
         right: 20px;
       }
     }
@@ -79,12 +87,16 @@
       z-index: -1;
       bottom: 20px;
       right: 120px;
-      width: 20%;
-      max-width: 270px;
-      @media screen and (max-width: 768px){
-        width: 40%;
-        bottom: 20px;
+      width: 270px;
+      @include mixin.mq-down(tb){
+        width: 30%;
+        bottom: 0px;
         right: 40px;
+      }
+      @include mixin.mq-down(sp){
+        width: 35%;
+        right: 20px;
+        bottom: 40px;
       }
     }
   }
@@ -94,24 +106,46 @@
       max-width: 1100px;
       padding: 150px 50px 180px;
       margin: 0 auto;
-      @media screen and (max-width: 768px){
-        padding: 40px 30px;
+      @include mixin.mq-down(lt){
+        padding: 75px 50px;
+      }
+      @include mixin.mq-down(tb){
+        padding: 40px 80px;
+      }
+      @include mixin.mq-down(sp){
+        padding: 20px;
       }
     }
     &__contents{
       display: flex;
       justify-content: space-between;
       margin-top: 40px;
+      @include mixin.mq-down(tb){
+        flex-direction: column;
+        margin-top: 20px;
+      }
       &__hd{
         .ttl{
           font-size: 4.2rem;
           line-height: 1.75;
           letter-spacing: .06em;
           font-weight: 600;
+          @include mixin.mq-down(lt){
+            font-size: 4vw;
+          }
+          @include mixin.mq-down(tb){
+            font-size: 5.2vw;
+          }
+          @include mixin.mq-down(sp){
+            font-size: 7.5vw;
+          }
         }
       }
       .section-detail{
-        max-width: 52%;
+        width: 52%;
+        @include mixin.mq-down(tb){
+          width: 100%;
+        }
         .section-btn{
           margin-top: 50px;
         }
@@ -123,7 +157,13 @@
       top: 40px;
       right: -20px;
       width: 176px;
-      height: 106px;
+      @include mixin.mq-down(tb){
+        width: 30%;
+        top: 80px;
+      }
+      @include mixin.mq-down(sp){
+        top: 20px;
+      }
     }
     &__bg02{
       position: absolute;
@@ -131,7 +171,13 @@
       bottom: 50px;
       left: -60px;
       width: 130px;
-      height: 255px;
+      @include mixin.mq-down(tb){
+        width: 20%;
+        left: -80px;
+      }
+      @include mixin.mq-down(sp){
+        left: -40px;
+      }
     }
     &__bg03{
       position: absolute;
@@ -139,7 +185,13 @@
       bottom: 0;
       right: 50px;
       width: 170px;
-      height: 140px;
+      @include mixin.mq-down(tb){
+        width: 25%;
+        right: 20px;
+      }
+      @include mixin.mq-down(sp){
+        bottom: -50px;
+      }
     }
   }
   .works{
@@ -150,13 +202,37 @@
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      @include mixin.mq-down(tb){
+        flex-direction: column;
+      }
+      @include mixin.mq-down(lt){
+        padding: 75px 50px;
+      }
+      @include mixin.mq-down(tb){
+        padding: 40px 80px;
+      }
+      @include mixin.mq-down(sp){
+        padding: 50px 20px;
+      }
       .visual{
-        max-width: 620px;
-        width: 48%;
+        max-width: 458px;
+        width: 41.6%;
+        @include mixin.mq-down(tb){
+          max-width: inherit;
+          width: 100%;
+        }
       }
       .section-detail{
         width: 50%;
         max-width: 490px;
+        @include mixin.mq-down(tb){
+          max-width: inherit;
+          width: 100%;
+        }
+        @include mixin.mq-down(tb){
+          margin-top: 40px;
+        }
         .section-btn{
           margin-top: 50px;
         }
@@ -168,7 +244,15 @@
       bottom: -60px;
       left: 20px;
       width: 150px;
-      height: 150px;
+      @include mixin.mq-down(tb){
+        width: 20%;
+        bottom: -100px;
+        left: 0;
+      }
+      @include mixin.mq-down(sp){
+        width: 15%;
+        bottom: -30px;
+      }
     }
     &__bg02{
       position: absolute;
@@ -176,7 +260,14 @@
       bottom: -100px;
       right: -60px;
       width: 320px;
-      height: 320px;
+      @include mixin.mq-down(tb){
+        width: 100%;
+        right: -60%;
+      }
+      @include mixin.mq-down(sp){
+        width: 80%;
+        right: -30%;
+      }
     }
   }
   .skills{
@@ -187,13 +278,27 @@
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
+      @include mixin.mq-down(lt){
+        padding: 75px 50px;
+      }
+      @include mixin.mq-down(tb){
+        flex-direction: column-reverse;
+        padding: 40px 80px;
+      }
+      @include mixin.mq-down(sp){
+        padding: 50px 20px;
+      }
       .visual{
         max-width: 510px;
         width: 46%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @include mixin.mq-down(tb){
+          max-width: inherit;
+          width: 100%;
+        }
         &__item{
           width: 31.3%;
           background: #fff;
@@ -210,8 +315,13 @@
         }
       }
       .section-detail{
-        width: 50%;
+        width: 48%;
         max-width: 490px;
+        @include mixin.mq-down(tb){
+          max-width: inherit;
+          width: 100%;
+          margin-top: 40px;
+        }
         .section-btn{
           margin-top: 50px;
         }
@@ -223,7 +333,15 @@
       bottom: -120px;
       left: -20px;
       width: 106px;
-      height: 172px;
+      @include mixin.mq-down(tb){
+        width: 15%;
+        left: -40px;
+      }
+      @include mixin.mq-down(sp){
+        width: 18%;
+        left: -25px;
+        bottom: -130px;
+      }
     }
     &__bg02{
       position: absolute;
@@ -231,7 +349,14 @@
       bottom: 85px;
       right: -45px;
       width: 280px;
-      height: 105px;
+      @include mixin.mq-down(tb){
+        width: 35%;
+        bottom: 0;
+      }
+      @include mixin.mq-down(sp){
+        width: 45%;
+      }
+
     }
   }
   .challenge{
@@ -242,12 +367,26 @@
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
+      @include mixin.mq-down(lt){
+        padding: 75px 50px;
+      }
+      @include mixin.mq-down(tb){
+        flex-direction: column;
+        padding: 40px 80px;
+      }
+      @include mixin.mq-down(sp){
+        padding: 50px 20px;
+      }
       .visual{
         max-width: 495px;
         width: 45%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @include mixin.mq-down(tb){
+          max-width: inherit;
+          width: 100%;
+        }
         &__item{
           width: 48.5%;
           background: #fff;
@@ -269,8 +408,13 @@
         }
       }
       .section-detail{
-        width: 46%;
-        max-width: 520px;
+        width: 50%;
+        max-width: 500px;
+        @include mixin.mq-down(tb){
+          max-width: inherit;
+          width: 100%;
+          margin-top: 40px;
+        }
         .section-btn{
           margin-top: 50px;
         }
@@ -282,7 +426,10 @@
       bottom: -100px;
       left: 0;
       width: 150px;
-      height: 150px;
+      @include mixin.mq-down(lt){
+        width: 15%;
+        bottom: -30px;
+      }
     }
     &__bg02{
       position: absolute;
@@ -290,7 +437,14 @@
       bottom: -50px;
       right: 30px;
       width: 180px;
-      height: 160px;
+      @include mixin.mq-down(lt){
+        width: 22%;
+        bottom: 0;
+      }
+      @include mixin.mq-down(sp){
+        width: 25%;
+      }
+
     }
   }
   .contact{
@@ -301,13 +455,32 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      @include mixin.mq-down(lt){
+        padding: 75px 50px;
+      }
+      @include mixin.mq-down(tb){
+        flex-direction: column-reverse;
+        padding: 40px 80px;
+      }
+      @include mixin.mq-down(sp){
+        padding: 50px 20px;
+      }
       .visual{
         max-width: 440px;
-        width: 40%;
+        width: 48%;
+        @include mixin.mq-down(tb){
+          max-width: inherit;
+          width: 100%;
+        }
       }
       .section-detail{
         width: 46.1%;
         max-width: 510px;
+        @include mixin.mq-down(tb){
+          max-width: inherit;
+          width: 100%;
+          margin-top: 40px;
+        }
         .section-btn{
           margin-top: 50px;
         }

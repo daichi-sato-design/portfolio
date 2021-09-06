@@ -1,14 +1,20 @@
-@use '/styles/base/base' as base;
+@use '/styles/base/mixin' as mixin;
 
 .footer{
   padding: 160px 40px 50px;
   background: linear-gradient(
     to bottom,
-    rgba(base.$primary-color, 0) 0%,
-    rgba(base.$primary-color, .8) 25%,
-    rgba(base.$primary-color, 1) 40%,
-    rgba(base.$primary-color, 1) 100%,
+    rgba(mixin.$primary-color, 0) 0%,
+    rgba(mixin.$primary-color, .8) 25%,
+    rgba(mixin.$primary-color, 1) 40%,
+    rgba(mixin.$primary-color, 1) 100%,
   );
+  @include mixin.mq-down(tb){
+    padding: 120px 30px 50px;
+  }
+  @include mixin.mq-down(sp){
+    padding: 80px 20px 30px;
+  }
   &__wrap{
     width: 100%;
     max-width: 1200px;
@@ -16,9 +22,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include mixin.mq-down(tb){
+      flex-direction: column-reverse;
+    }
     .info{
       display: flex;
       flex-direction: column;
+      @include mixin.mq-down(tb){
+        margin-top: 30px;
+      }
       .logo{
         width: 100%;
       }
@@ -27,24 +39,71 @@
         font-size: 1.2rem;
         letter-spacing: .06em;
         color: rgba(#fff, .8);
+        @include mixin.mq-down(tb){
+          text-align: center;
+        }
+        @include mixin.mq-down(sp){
+          font-size: 1rem;
+        }
       }
     }
     .nav{
       display: flex;
       align-items: center;
+      @include mixin.mq-down(lt){
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      @include mixin.mq-down(tb){
+        width: 100%;
+        align-items: center;
+      }
       &__pages{
         display: flex;
+        @include mixin.mq-down(sp){
+          flex-wrap: wrap;
+          width: 100%;
+        }
         &__item{
           font-size: 1.6rem;
           font-weight: 500;
           &:not(:first-child){
             margin-left: 20px;
+            @include mixin.mq-down(sp){
+              margin-left: 0;
+            }
+          }
+          @include mixin.mq-down(sp){
+            width: 50%;
+            padding: 8px 0;
+            text-align: center;
+            font-size: 1.4rem;
+            &:nth-child(odd){
+              border-right: 1px solid #fff;
+              padding-right: 20px;
+            }
+            &:nth-child(even){
+              padding-left: 20px;
+            }
+            &:not(:nth-child(-2n + 2)){
+              margin-top: 5px;
+            }
           }
         }
       }
       &__sns{
         display: flex;
         margin-left: 28px;
+        @include mixin.mq-down(lt){
+          margin-top: 20px;
+          margin-left: 0;
+        }
+        @include mixin.mq-down(tb){
+          margin-top: 30px;
+        }
+        @include mixin.mq-down(sp){
+          margin-top: 40px;
+        }
         &__item{
           width: 32px;
           height: 32px;
@@ -61,6 +120,30 @@
             align-items: center;
           }
         }
+      }
+    }
+  }
+  &__btn{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__wrap{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      @include mixin.mq-down(sp){
+        width: 50px;
+        height: 50px;
+      }
+      svg{
+        width: 20px;
+        color: #fff;
       }
     }
   }
