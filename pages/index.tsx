@@ -98,9 +98,9 @@ export default function Home() {
         <section className="works">
           <div className="works__wrap">
             <div className="visual">
-              <Image src="/index/works_slide01.jpg" alt="Slider01" width={620} height={400} />
+              <Image src="/works/index_img.svg" alt="Web design" width={458} height={500} />
             </div>
-            <div className="detail section-detail">
+            <div className="section-detail">
               <div className="section-tag">
                 <div className="section-tag__num">2</div>
                 <div className="section-tag__ttl">Works</div>
