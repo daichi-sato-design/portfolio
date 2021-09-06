@@ -287,6 +287,7 @@ export default function Home() {
               <a
                 href="https://www.twitch.tv/sarupopo3"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="visual__item"
               >
                 <Image
@@ -299,6 +300,7 @@ export default function Home() {
               <a
                 href="https://twitter.com/_daichisato"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="visual__item"
               >
                 <Image
@@ -311,6 +313,7 @@ export default function Home() {
               <a
                 href="https://www.instagram.com/_daichisato"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="visual__item"
               >
                 <Image
