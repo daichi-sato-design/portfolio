@@ -1,18 +1,17 @@
 @use '/styles/base/mixin' as mixin;
 
-html{
+html {
   font-size: 62.5%;
   font-family: mixin.$default-font;
   font-weight: 400;
   background: mixin.$primary-color;
   scroll-behavior: smooth;
   color: #fff;
-  body{
+  body {
     position: relative;
     width: 100vw;
-    overflow-x: hidden;
-    &:before{
-      content: "";
+    &:before {
+      content: '';
       position: fixed;
       z-index: -100;
       top: 0;
@@ -21,31 +20,55 @@ html{
       bottom: 0;
       width: 100vw;
       height: 100vh;
-      background-image: 
-        linear-gradient(0deg, transparent calc((100vh / 3) - 1px), rgba(#fff, .3) calc(100vh / 3)),
-        linear-gradient(90deg,  transparent calc((100vw / 5) - 1px), rgba(#fff, .3) calc(100vw / 5));
+      background-image: linear-gradient(
+          0deg,
+          transparent calc((100vh / 3) - 1px),
+          rgba(#fff, 0.3) calc(100vh / 3)
+        ),
+        linear-gradient(
+          90deg,
+          transparent calc((100vw / 5) - 1px),
+          rgba(#fff, 0.3) calc(100vw / 5)
+        );
       background-size: calc(100vw / 5) calc(100vh / 3);
-      @media screen and (max-width: 1080px){
-        background-image: 
-          linear-gradient(0deg, transparent calc((100vh / 3) - 1px), rgba(#fff, .3) calc(100vh / 3)),
-          linear-gradient(90deg,  transparent calc((100vw / 3) - 1px), rgba(#fff, .3) calc(100vw / 3));
+      @media screen and (max-width: 1080px) {
+        background-image: linear-gradient(
+            0deg,
+            transparent calc((100vh / 3) - 1px),
+            rgba(#fff, 0.3) calc(100vh / 3)
+          ),
+          linear-gradient(
+            90deg,
+            transparent calc((100vw / 3) - 1px),
+            rgba(#fff, 0.3) calc(100vw / 3)
+          );
         background-size: calc(100vw / 3) calc(100vh / 3);
       }
-      @media screen and (max-width: 768px){
-        background-image: 
-          linear-gradient(0deg, transparent calc((100vh / 5) - 1px), rgba(#fff, .3) calc(100vh / 5)),
-          linear-gradient(90deg,  transparent calc((100vw / 3) - 1px), rgba(#fff, .3) calc(100vw / 3));
+      @media screen and (max-width: 768px) {
+        background-image: linear-gradient(
+            0deg,
+            transparent calc((100vh / 5) - 1px),
+            rgba(#fff, 0.3) calc(100vh / 5)
+          ),
+          linear-gradient(
+            90deg,
+            transparent calc((100vw / 3) - 1px),
+            rgba(#fff, 0.3) calc(100vw / 3)
+          );
         background-size: calc(100vw / 3) calc(100vh / 5);
       }
     }
   }
+  main {
+    overflow-x: hidden;
+  }
 }
 
 // SET CSS Style
-.img-box{
+.img-box {
   position: relative;
   img,
-  svg{
+  svg {
     position: absolute;
     top: 0;
     right: 0;

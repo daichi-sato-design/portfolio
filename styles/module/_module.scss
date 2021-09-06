@@ -1,32 +1,32 @@
 @use '/styles/base/mixin' as mixin;
 
 // 各セクションのタグ
-.section-tag{
+.section-tag {
   display: flex;
   align-items: center;
-  &__num{
+  &__num {
     font-size: 2.6rem;
     font-weight: 900;
     margin-right: 20px;
-    @include mixin.mq-down(sp){
+    @include mixin.mq-down(sp) {
       font-size: 1.6rem;
       margin-right: 15px;
     }
   }
-  &__ttl{
+  &__ttl {
     position: relative;
     z-index: 1;
     font-size: 1.6rem;
     font-weight: 600;
-    letter-spacing: .06em;
+    letter-spacing: 0.06em;
     padding-left: 60px;
     text-transform: uppercase;
-    @include mixin.mq-down(sp){
+    @include mixin.mq-down(sp) {
       font-size: 1.3rem;
       padding-left: 35px;
     }
-    &:before{
-      content: "";
+    &:before {
+      content: '';
       position: absolute;
       top: 50%;
       left: 0;
@@ -34,7 +34,7 @@
       background: #fff;
       width: 40px;
       height: 1px;
-      @include mixin.mq-down(sp){
+      @include mixin.mq-down(sp) {
         width: 20px;
       }
     }
@@ -42,38 +42,38 @@
 }
 
 // 各セクションのコンテンツ
-.section-detail{
-  &__ttl{
+.section-detail {
+  &__ttl {
     margin-top: 40px;
     font-size: 3.2rem;
     line-height: 1.75;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
     font-weight: 600;
-    @include mixin.mq-down(lt){
+    @include mixin.mq-down(lt) {
       font-size: 3vw;
     }
-    @include mixin.mq-down(tb){
+    @include mixin.mq-down(tb) {
       font-size: 4.2vw;
       margin-top: 20px;
     }
-    @include mixin.mq-down(sp){
+    @include mixin.mq-down(sp) {
       font-size: 6vw;
     }
   }
-  &__body{
+  &__body {
     margin-top: 20px;
     font-size: 1.5rem;
     line-height: 2.6;
-    letter-spacing: .08em;
+    letter-spacing: 0.08em;
     font-weight: 500;
-    @include mixin.mq-down(lt){
+    @include mixin.mq-down(lt) {
       line-height: 2;
     }
-    @include mixin.mq-down(tb){
+    @include mixin.mq-down(tb) {
       margin-top: 20px;
       line-height: 2.6;
     }
-    @include mixin.mq-down(sp){
+    @include mixin.mq-down(sp) {
       line-height: 2.2;
       font-size: 1.4rem;
     }
@@ -81,16 +81,16 @@
 }
 
 // 各セクションの丸ボタン
-.section-btn{
+.section-btn {
   display: inline-block;
-  .link{
+  .link {
     display: flex;
     align-items: center;
     height: 100%;
     padding: 18px 24px 18px 30px;
     border: 1px solid #fff;
     border-radius: 50px;
-    .txt{
+    .txt {
       position: relative;
       z-index: 1;
       display: inline-block;
@@ -98,12 +98,12 @@
       width: 100%;
       font-size: 1.4rem;
       font-weight: 600;
-      letter-spacing: .08em;
+      letter-spacing: 0.08em;
       line-height: 1;
       white-space: nowrap;
       text-transform: uppercase;
-      &:before{
-        content: "";
+      &:before {
+        content: '';
         position: absolute;
         z-index: 10;
         top: 50%;
@@ -114,7 +114,7 @@
         background: #fff;
       }
     }
-    .deco{
+    .deco {
       position: relative;
       z-index: 1;
       flex-shrink: 0;
@@ -122,8 +122,8 @@
       height: 15px;
       border-radius: 50%;
       border: 1px solid #fff;
-      &:before{
-        content: "";
+      &:before {
+        content: '';
         position: absolute;
         z-index: 10;
         top: 4px;
@@ -138,9 +138,9 @@
 }
 
 // Under construction
-.uc{
+.uc {
   width: 100%;
-  &__wrap{
+  &__wrap {
     width: 100%;
     max-width: 1200px;
     height: 100vh;
@@ -150,56 +150,54 @@
     justify-content: center;
     align-items: center;
     padding: 100px 80px;
-    @include mixin.mq-down(tb){
-      padding:  100px 40px;
+    @include mixin.mq-down(tb) {
+      padding: 100px 40px;
       height: auto;
     }
-    @include mixin.mq-down(sp){
-      padding:  100px 20px 50px;
+    @include mixin.mq-down(sp) {
+      padding: 100px 20px 50px;
     }
   }
-  &__img{
-    @include mixin.mq-down(tb){
+  &__img {
+    @include mixin.mq-down(tb) {
       width: 60%;
       margin: 0 auto;
     }
   }
-  &__detail{
+  &__detail {
     text-align: center;
     margin-top: 40px;
-    &__ttl{
+    &__ttl {
       text-transform: uppercase;
       font-size: 5.6rem;
       font-weight: 700;
-      letter-spacing: .04em;
-      @include mixin.mq-down(lt){
+      letter-spacing: 0.04em;
+      @include mixin.mq-down(lt) {
         font-size: 5.4vw;
       }
-      @include mixin.mq-down(tb){
+      @include mixin.mq-down(tb) {
         font-size: 6.4vw;
       }
-      @include mixin.mq-down(sp){
+      @include mixin.mq-down(sp) {
         font-size: 7.2vw;
       }
     }
-    &__txt{
+    &__txt {
       margin-top: 10px;
       font-size: 1.8rem;
       font-weight: 600;
-      letter-spacing: .05em;
-      @include mixin.mq-down(lt){
+      letter-spacing: 0.05em;
+      @include mixin.mq-down(lt) {
         font-size: 1.8vw;
       }
-      @include mixin.mq-down(tb){
+      @include mixin.mq-down(tb) {
         font-size: 2.4vw;
       }
-      @include mixin.mq-down(sp){
+      @include mixin.mq-down(sp) {
         font-size: 3.5vw;
       }
     }
   }
-
 }
 
 // l-page
-.l-page{}
