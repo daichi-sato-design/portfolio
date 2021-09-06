@@ -9,8 +9,6 @@ html {
   color: #fff;
   body {
     position: relative;
-    width: 100%;
-    overflow-x: hidden;
     &:before {
       content: '';
       position: fixed;
@@ -58,6 +56,10 @@ html {
           );
         background-size: calc(100vw / 3) calc(100vh / 5);
       }
+    }
+    #container {
+      width: 100vw;
+      overflow-x: hidden;
     }
   }
 }

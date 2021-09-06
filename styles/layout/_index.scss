@@ -11,7 +11,8 @@
     min-height: 760px;
     padding: 50px;
     @include mixin.mq-down(tb) {
-      height: 520px;
+      height: 600px;
+      min-height: inherit;
       padding: 100px 80px;
     }
     @include mixin.mq-down(sp) {
