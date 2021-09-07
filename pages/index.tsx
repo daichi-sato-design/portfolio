@@ -1,8 +1,14 @@
+import { VFC, useEffect } from 'react'
+import Rellax from 'rellax'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Layout } from '../components/Layout'
 
-export default function Home() {
+const Home: VFC = () => {
+  useEffect(() => {
+    //default JS Setting
+    var rellax = new Rellax('.rellax')
+  }, [])
   return (
     <Layout title="DaichiSato Portfolio | Home">
       <main className="top-page">
@@ -22,7 +28,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="mv__bg01 rellax" data-rellax-speed="3.5">
+          <div className="mv__bg01 rellax" data-rellax-speed="1.75">
             <Image
               src="/common/bg_planet01.png"
               alt="Planet"
@@ -30,7 +36,7 @@ export default function Home() {
               height={690}
             />
           </div>
-          <div className="mv__bg02 rellax" data-rellax-speed="1">
+          <div className="mv__bg02 rellax" data-rellax-speed=".5">
             <Image
               src="/common/bg_dotted01.svg"
               alt="Dotted"
@@ -38,7 +44,7 @@ export default function Home() {
               height={255}
             />
           </div>
-          <div className="mv__bg03 rellax" data-rellax-speed=".5">
+          <div className="mv__bg03 rellax" data-rellax-speed=".75">
             <Image
               src="/common/bg_lights01.png"
               alt="Lights"
@@ -81,7 +87,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="about__bg01 rellax" data-rellax-speed="1">
+          <div className="about__bg01 rellax" data-rellax-speed=".25">
             <Image
               src="/common/bg_dotted02.svg"
               alt="Dotted"
@@ -89,7 +95,7 @@ export default function Home() {
               height={106}
             />
           </div>
-          <div className="about__bg02 rellax" data-rellax-speed="1.5">
+          <div className="about__bg02 rellax" data-rellax-speed="1.25">
             <Image
               src="/common/bg_dotted01.svg"
               alt="Dotted"
@@ -146,7 +152,7 @@ export default function Home() {
               height={150}
             />
           </div>
-          <div className="works__bg02 rellax" data-rellax-speed="1.5">
+          <div className="works__bg02 rellax" data-rellax-speed=".75">
             <Image
               src="/common/bg_planet02.png"
               alt="Planet"
@@ -345,7 +351,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="challenge__bg01 rellax" data-rellax-speed="1">
+          <div className="challenge__bg01 rellax" data-rellax-speed=".5">
             <Image
               src="/common/bg_lights04.png"
               alt="Lights"
@@ -353,7 +359,7 @@ export default function Home() {
               height={150}
             />
           </div>
-          <div className="challenge__bg02 rellax" data-rellax-speed=".5">
+          <div className="challenge__bg02 rellax" data-rellax-speed=".75">
             <Image
               src="/common/bg_lights05.png"
               alt="Lights"
@@ -397,3 +403,5 @@ export default function Home() {
     </Layout>
   )
 }
+
+export default Home
