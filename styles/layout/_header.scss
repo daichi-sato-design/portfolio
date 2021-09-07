@@ -109,7 +109,7 @@
   height: 100vh;
   min-height: 600px;
   background: mixin.$primary-color;
-  overflow-y: scroll;
+  overflow-y: auto;
   transition: opacity 400ms mixin.$bezier-easeOutSine,
     visibility 400ms mixin.$bezier-easeOutSine;
   @include mixin.mq-down(sp) {
