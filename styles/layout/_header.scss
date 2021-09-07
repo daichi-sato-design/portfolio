@@ -1,6 +1,6 @@
 @use '/styles/base/mixin' as mixin;
 
-.header{
+.header {
   position: absolute;
   z-index: 100;
   top: 0;
@@ -11,57 +11,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include mixin.mq-down(tb){
+  @include mixin.mq-down(tb) {
     padding: 20px 30px;
   }
-  @include mixin.mq-down(sp){
+  @include mixin.mq-down(sp) {
     padding: 20px;
   }
-  .logo{
-    width: 100%;
-    @include mixin.mq-down(tb){
-      max-width: 300px;
-    }
-    @include mixin.mq-down(sp){
-      width: 75%;
-    }
-    .link{
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .nav{
+  .nav {
     display: flex;
     align-items: center;
-    &__pages{
+    &__pages {
       display: flex;
-      @media screen and (max-width: 1080px){
+      @media screen and (max-width: 1080px) {
         display: none;
       }
-      &__item{
+      &__item {
         font-size: 1.6rem;
         font-weight: 500;
-        &:not(:first-child){
+        &:not(:first-child) {
           margin-left: 20px;
         }
       }
     }
-    &__sns{
+    &__sns {
       display: flex;
       margin-left: 28px;
-      @media screen and (max-width: 1080px){
+      @media screen and (max-width: 1080px) {
         display: none;
       }
-      &__item{
+      &__item {
         width: 32px;
         height: 32px;
         border-radius: 50%;
         background: #fff;
-        &:not(:first-child){
+        &:not(:first-child) {
           margin-left: 14px;
         }
-        .link{
+        .link {
           width: 100%;
           height: 100%;
           display: flex;
@@ -70,7 +56,7 @@
         }
       }
     }
-    &__toggle{
+    &__toggle {
       width: 36px;
       height: 36px;
       margin-left: 30px;
@@ -79,11 +65,11 @@
       flex-direction: column;
       justify-content: space-between;
       cursor: pointer;
-      .line{
+      .line {
         position: relative;
         width: 100%;
         height: 10px;
-        span:first-child{
+        span:first-child {
           position: absolute;
           top: 0;
           right: 0;
@@ -91,7 +77,7 @@
           height: 1px;
           background: #fff;
         }
-        span:last-child{
+        span:last-child {
           position: absolute;
           bottom: 0;
           right: 0;
@@ -100,12 +86,136 @@
           background: #fff;
         }
       }
-      .txt{
+      .txt {
         font-size: 1.2rem;
         font-weight: 600;
         text-transform: uppercase;
         white-space: nowrap;
       }
     }
+  }
+}
+
+.d-nav {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background: mixin.$primary-color;
+  overflow-y: scroll;
+  transition: opacity 400ms mixin.$bezier-easeOutSine,
+    visibility 400ms mixin.$bezier-easeOutSine;
+  @include mixin.mq-down(sp) {
+    display: block;
+  }
+  &.-open {
+    visibility: visible;
+    opacity: 1;
+  }
+  .hd {
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mixin.mq-down(tb) {
+      padding: 20px 30px;
+    }
+    @include mixin.mq-down(sp) {
+      padding: 20px;
+    }
+    .toggle-btn {
+      width: 36px;
+      height: 36px;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
+      @include mixin.mq-down(sp) {
+        margin-left: 30px;
+      }
+      svg {
+        color: mixin.$primary-color;
+        width: 20px;
+      }
+    }
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px;
+    @include mixin.mq-down(tb) {
+      padding: 50px 80px;
+    }
+    @include mixin.mq-down(sp) {
+      padding: 50px 20px;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .visual {
+      max-width: 384px;
+      width: 38.4%;
+      @include mixin.mq-down(sp) {
+        max-width: inherit;
+        width: 70%;
+        margin-top: 30px;
+        margin-left: auto;
+      }
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      @include mixin.mq-down(sp) {
+        width: 100%;
+      }
+      &__pages {
+        &__item {
+          &:not(:first-child) {
+            margin-top: 20px;
+          }
+          .link {
+            text-transform: uppercase;
+            font-size: 7rem;
+            font-weight: 900;
+            letter-spacing: 0.04em;
+            @include mixin.mq-down(lt) {
+              font-size: 7vw;
+            }
+            @include mixin.mq-down(sp) {
+              font-size: 8vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.header-logo {
+  @include mixin.mq-down(tb) {
+    max-width: 300px;
+  }
+  @include mixin.mq-down(sp) {
+    width: 75%;
+  }
+  .link {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }

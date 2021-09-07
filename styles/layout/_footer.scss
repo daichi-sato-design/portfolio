@@ -1,118 +1,124 @@
 @use '/styles/base/mixin' as mixin;
 
-.footer{
+.footer {
   padding: 160px 40px 50px;
   background: linear-gradient(
     to bottom,
     rgba(mixin.$primary-color, 0) 0%,
-    rgba(mixin.$primary-color, .8) 25%,
+    rgba(mixin.$primary-color, 0.8) 25%,
     rgba(mixin.$primary-color, 1) 40%,
-    rgba(mixin.$primary-color, 1) 100%,
+    rgba(mixin.$primary-color, 1) 100%
   );
-  @include mixin.mq-down(tb){
+  @include mixin.mq-down(tb) {
     padding: 120px 30px 50px;
   }
-  @include mixin.mq-down(sp){
+  @include mixin.mq-down(sp) {
     padding: 80px 20px 30px;
   }
-  &__wrap{
+  &__wrap {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include mixin.mq-down(tb){
+    @include mixin.mq-down(tb) {
       flex-direction: column-reverse;
     }
-    .info{
+    .info {
       display: flex;
       flex-direction: column;
-      @include mixin.mq-down(tb){
+      @include mixin.mq-down(tb) {
         margin-top: 30px;
       }
-      .logo{
+      @include mixin.mq-down(sp) {
+        padding: 0 20px;
+      }
+      .logo {
         width: 100%;
       }
-      .copy{
+      .copy {
         margin-top: 10px;
         font-size: 1.2rem;
-        letter-spacing: .06em;
-        color: rgba(#fff, .8);
-        @include mixin.mq-down(tb){
+        letter-spacing: 0.06em;
+        color: rgba(#fff, 0.8);
+        @include mixin.mq-down(tb) {
           text-align: center;
         }
-        @include mixin.mq-down(sp){
+        @include mixin.mq-down(sp) {
           font-size: 1rem;
         }
       }
     }
-    .nav{
+    .nav {
       display: flex;
       align-items: center;
-      @include mixin.mq-down(lt){
+      @include mixin.mq-down(lt) {
         flex-direction: column;
         align-items: flex-end;
       }
-      @include mixin.mq-down(tb){
+      @include mixin.mq-down(tb) {
         width: 100%;
         align-items: center;
       }
-      &__pages{
+      &__pages {
         display: flex;
-        @include mixin.mq-down(sp){
+        @include mixin.mq-down(sp) {
           flex-wrap: wrap;
           width: 100%;
         }
-        &__item{
+        &__item {
           font-size: 1.6rem;
           font-weight: 500;
-          &:not(:first-child){
+          &:not(:first-child) {
             margin-left: 20px;
-            @include mixin.mq-down(sp){
+            @include mixin.mq-down(sp) {
               margin-left: 0;
             }
           }
-          @include mixin.mq-down(sp){
+          @include mixin.mq-down(sp) {
             width: 50%;
             padding: 8px 0;
             text-align: center;
             font-size: 1.4rem;
-            &:nth-child(odd){
-              border-right: 1px solid #fff;
+            &:nth-child(odd) {
               padding-right: 20px;
             }
-            &:nth-child(even){
+            &:nth-child(even) {
               padding-left: 20px;
             }
-            &:not(:nth-child(-2n + 2)){
+            &:not(:nth-child(-n + 2)) {
               margin-top: 5px;
             }
           }
         }
       }
-      &__sns{
+      &__sns {
         display: flex;
         margin-left: 28px;
-        @include mixin.mq-down(lt){
+        @include mixin.mq-down(lt) {
           margin-top: 20px;
           margin-left: 0;
         }
-        @include mixin.mq-down(tb){
+        @include mixin.mq-down(tb) {
           margin-top: 30px;
         }
-        @include mixin.mq-down(sp){
+        @include mixin.mq-down(sp) {
           margin-top: 40px;
         }
-        &__item{
+        &__item {
           width: 32px;
           height: 32px;
           border-radius: 50%;
           background: #fff;
-          &:not(:first-child){
+          &:not(:first-child) {
             margin-left: 14px;
           }
-          .link{
+          @include mixin.mq-down(tb) {
+            width: 40px;
+            height: 40px;
+          }
+          .link {
             width: 100%;
             height: 100%;
             display: flex;
@@ -123,12 +129,12 @@
       }
     }
   }
-  &__btn{
+  &__btn {
     margin-top: 40px;
     width: 100%;
     display: flex;
     justify-content: center;
-    &__wrap{
+    &__wrap {
       width: 60px;
       height: 60px;
       border-radius: 50%;
@@ -137,11 +143,11 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      @include mixin.mq-down(sp){
+      @include mixin.mq-down(sp) {
         width: 50px;
         height: 50px;
       }
-      svg{
+      svg {
         width: 20px;
         color: #fff;
       }

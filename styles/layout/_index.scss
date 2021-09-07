@@ -64,12 +64,13 @@
       left: -320px;
       width: 690px;
       @include mixin.mq-down(tb) {
-        bottom: 0;
+        bottom: -40px;
         left: -40%;
         width: 80%;
         max-width: inherit;
       }
       @include mixin.mq-down(sp) {
+        width: 100%;
         bottom: 40px;
       }
     }
@@ -176,9 +177,11 @@
       @include mixin.mq-down(tb) {
         width: 20%;
         left: -80px;
+        bottom: -120px;
       }
       @include mixin.mq-down(sp) {
-        left: -40px;
+        left: -20px;
+        bottom: -180px;
       }
     }
     &__bg03 {
@@ -222,7 +225,11 @@
         width: 41.6%;
         @include mixin.mq-down(tb) {
           max-width: inherit;
-          width: 100%;
+          margin-left: auto;
+          width: 70%;
+        }
+        @include mixin.mq-down(sp) {
+          width: 75%;
         }
       }
       .section-detail {
@@ -265,10 +272,12 @@
       @include mixin.mq-down(tb) {
         width: 100%;
         right: -60%;
+        bottom: -200px;
       }
       @include mixin.mq-down(sp) {
         width: 80%;
         right: -30%;
+        bottom: -160px;
       }
     }
   }
@@ -341,8 +350,8 @@
       }
       @include mixin.mq-down(sp) {
         width: 18%;
-        left: -25px;
-        bottom: -130px;
+        left: -15px;
+        bottom: -120px;
       }
     }
     &__bg02 {
@@ -356,7 +365,7 @@
         bottom: 0;
       }
       @include mixin.mq-down(sp) {
-        width: 45%;
+        width: 50%;
       }
     }
   }
