@@ -1,14 +1,9 @@
 import { VFC } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Link as Scroll } from 'react-scroll'
 
 const Footer: VFC = () => {
-  const returnTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-  }
   return (
     <footer className="footer">
       <div className="footer__wrap">
@@ -107,7 +102,7 @@ const Footer: VFC = () => {
         </nav>
       </div>
       <div className="footer__btn">
-        <div className="footer__btn__wrap" onClick={returnTop}>
+        <Scroll className="footer__btn__wrap" to="container" smooth={true}>
           <svg
             className="w-6 h-6"
             fill="currentColor"
@@ -120,7 +115,7 @@ const Footer: VFC = () => {
               clipRule="evenodd"
             />
           </svg>
-        </div>
+        </Scroll>
       </div>
     </footer>
   )
