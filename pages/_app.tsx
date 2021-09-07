@@ -1,9 +1,16 @@
 import '../styles/globals.scss'
 
+import { VFC, useEffect } from 'react'
+import Rellax from 'rellax'
 import { AppProps } from 'next/app'
-import { VFC } from 'react'
 
 const MyApp: VFC = ({ Component, pageProps }: AppProps) => {
+  useEffect(() => {
+    //default JS Setting
+    var rellax = new Rellax('.rellax', {
+      breakpoints: [480, 768, 1080],
+    })
+  }, [])
   return <Component {...pageProps} />
 }
 
