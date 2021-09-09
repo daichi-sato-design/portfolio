@@ -28,7 +28,7 @@ const Home: VFC = () => {
               </p>
             </div>
           </div>
-          <div className="mv__bg01 rellax" data-rellax-speed="1.75">
+          <div className="mv__bg01 rellax" data-rellax-speed="-2.75">
             <Image
               src="/common/bg_planet01.png"
               alt="Planet"
@@ -36,7 +36,7 @@ const Home: VFC = () => {
               height={690}
             />
           </div>
-          <div className="mv__bg02 rellax" data-rellax-speed=".5">
+          <div className="mv__bg02 rellax" data-rellax-speed="-3.6">
             <Image
               src="/common/bg_dotted01.svg"
               alt="Dotted"
@@ -44,7 +44,7 @@ const Home: VFC = () => {
               height={255}
             />
           </div>
-          <div className="mv__bg03 rellax" data-rellax-speed=".75">
+          <div className="mv__bg03 rellax" data-rellax-speed="-1.25">
             <Image
               src="/common/bg_lights01.png"
               alt="Lights"
@@ -87,7 +87,7 @@ const Home: VFC = () => {
               </div>
             </div>
           </div>
-          <div className="about__bg01 rellax" data-rellax-speed=".25">
+          <div className="about__bg01 rellax" data-rellax-speed="1.25">
             <Image
               src="/common/bg_dotted02.svg"
               alt="Dotted"
@@ -95,7 +95,7 @@ const Home: VFC = () => {
               height={106}
             />
           </div>
-          <div className="about__bg02 rellax" data-rellax-speed="1.25">
+          <div className="about__bg02 rellax" data-rellax-speed="1.6">
             <Image
               src="/common/bg_dotted01.svg"
               alt="Dotted"
@@ -103,7 +103,7 @@ const Home: VFC = () => {
               height={255}
             />
           </div>
-          <div className="about__bg03 rellax" data-rellax-speed="1">
+          <div className="about__bg03 rellax" data-rellax-speed="-2.25">
             <Image
               src="/common/bg_lights02.png"
               alt="Lights"
@@ -144,7 +144,7 @@ const Home: VFC = () => {
               </div>
             </div>
           </div>
-          <div className="works__bg01 rellax" data-rellax-speed=".5">
+          <div className="works__bg01 rellax" data-rellax-speed="-1.75">
             <Image
               src="/common/bg_lights03.png"
               alt="Lights"
@@ -152,7 +152,7 @@ const Home: VFC = () => {
               height={150}
             />
           </div>
-          <div className="works__bg02 rellax" data-rellax-speed=".75">
+          <div className="works__bg02 rellax" data-rellax-speed="-2.5">
             <Image
               src="/common/bg_planet02.png"
               alt="Planet"
@@ -261,7 +261,7 @@ const Home: VFC = () => {
               </div>
             </div>
           </div>
-          <div className="skills__bg01 rellax" data-rellax-speed="1">
+          <div className="skills__bg01 rellax" data-rellax-speed="2.5">
             <Image
               src="/common/bg_dotted04.svg"
               alt="Dotted"
@@ -269,7 +269,7 @@ const Home: VFC = () => {
               height={172}
             />
           </div>
-          <div className="skills__bg02 rellax" data-rellax-speed=".5">
+          <div className="skills__bg02 rellax" data-rellax-speed="-0.5">
             <Image
               src="/common/bg_dotted03.svg"
               alt="Dotted"
@@ -351,7 +351,7 @@ const Home: VFC = () => {
               </div>
             </div>
           </div>
-          <div className="challenge__bg01 rellax" data-rellax-speed=".5">
+          <div className="challenge__bg01 rellax" data-rellax-speed="-1">
             <Image
               src="/common/bg_lights04.png"
               alt="Lights"
@@ -359,7 +359,7 @@ const Home: VFC = () => {
               height={150}
             />
           </div>
-          <div className="challenge__bg02 rellax" data-rellax-speed=".75">
+          <div className="challenge__bg02 rellax" data-rellax-speed="-1.5">
             <Image
               src="/common/bg_lights05.png"
               alt="Lights"
