@@ -87,7 +87,7 @@ const Home: VFC = () => {
               </div>
             </div>
           </div>
-          <div className="about__bg01 rellax" data-rellax-speed="1.25">
+          <div className="about__bg01 rellax" data-rellax-speed="-1.25">
             <Image
               src="/common/bg_dotted02.svg"
               alt="Dotted"
@@ -95,7 +95,7 @@ const Home: VFC = () => {
               height={106}
             />
           </div>
-          <div className="about__bg02 rellax" data-rellax-speed="1.6">
+          <div className="about__bg02 rellax" data-rellax-speed="-1.6">
             <Image
               src="/common/bg_dotted01.svg"
               alt="Dotted"
@@ -261,7 +261,7 @@ const Home: VFC = () => {
               </div>
             </div>
           </div>
-          <div className="skills__bg01 rellax" data-rellax-speed="2.5">
+          <div className="skills__bg01 rellax" data-rellax-speed="-2">
             <Image
               src="/common/bg_dotted04.svg"
               alt="Dotted"
@@ -269,7 +269,7 @@ const Home: VFC = () => {
               height={172}
             />
           </div>
-          <div className="skills__bg02 rellax" data-rellax-speed="-0.5">
+          <div className="skills__bg02 rellax" data-rellax-speed="-1.5">
             <Image
               src="/common/bg_dotted03.svg"
               alt="Dotted"
