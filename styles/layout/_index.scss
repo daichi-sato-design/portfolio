@@ -80,8 +80,9 @@
         max-width: inherit;
       }
       @include mixin.mq-down(sp) {
-        width: 100%;
-        bottom: 40px;
+        width: 120%;
+        bottom: 10%;
+        left: -70%;
       }
     }
     &__bg02 {
@@ -94,6 +95,9 @@
         width: 18%;
         top: 80px;
         right: 20px;
+      }
+      @include mixin.mq-down(sp) {
+        width: 20%;
       }
     }
     &__bg03 {
@@ -113,7 +117,7 @@
       @include mixin.mq-down(sp) {
         width: 35%;
         right: 20px;
-        bottom: 40px;
+        bottom: 15%;
       }
     }
   }
@@ -178,6 +182,7 @@
         top: 80px;
       }
       @include mixin.mq-down(sp) {
+        width: 30%;
         top: 20px;
       }
     }
@@ -196,8 +201,9 @@
         bottom: -120px;
       }
       @include mixin.mq-down(sp) {
-        left: -20px;
-        bottom: -320px;
+        width: 22.5%;
+        left: -25px;
+        bottom: -5%;
       }
     }
     &__bg03 {
@@ -214,7 +220,7 @@
         right: 20px;
       }
       @include mixin.mq-down(sp) {
-        bottom: -120px;
+        bottom: 40%;
       }
     }
   }
@@ -282,7 +288,8 @@
       }
       @include mixin.mq-down(sp) {
         width: 15%;
-        bottom: -150px;
+        bottom: inherit;
+        top: 50%;
       }
     }
     &__bg02 {
@@ -298,7 +305,7 @@
       @include mixin.mq-down(sp) {
         width: 80%;
         right: -30%;
-        bottom: -260px;
+        bottom: 30%;
       }
     }
   }
@@ -376,7 +383,7 @@
       @include mixin.mq-down(sp) {
         width: 18%;
         left: -15px;
-        bottom: -400px;
+        bottom: 70%;
       }
     }
     &__bg02 {
@@ -390,7 +397,8 @@
       }
       @include mixin.mq-down(sp) {
         width: 50%;
-        bottom: -120px;
+        bottom: inherit;
+        top: 20%;
       }
     }
   }
@@ -423,6 +431,7 @@
           width: 100%;
         }
         &__item {
+          position: relative;
           width: 48.5%;
           background: #fff;
           display: flex;
@@ -435,10 +444,32 @@
           &:not(:nth-child(-n + 2)) {
             margin-top: 3%;
           }
+          &:not(.none) {
+            @include mixin.mq-up(tb) {
+              &:hover {
+                img {
+                  transform: scale(1.115);
+                }
+              }
+            }
+            &:before {
+              content: '';
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              width: 14px;
+              height: 14px;
+              background: url('../../public/common/i_extarnal-link.svg')
+                no-repeat center / cover;
+            }
+          }
           &.none {
             img {
               opacity: 0.15;
             }
+          }
+          img {
+            transition: transform 200ms mixin.$bezier-easeOutSine;
           }
         }
       }
@@ -469,7 +500,8 @@
         left: 10px;
       }
       @include mixin.mq-down(sp) {
-        bottom: -220px;
+        bottom: inherit;
+        top: 40%;
       }
     }
     &__bg02 {
@@ -485,7 +517,7 @@
       }
       @include mixin.mq-down(sp) {
         width: 25%;
-        bottom: -230px;
+        bottom: -100px;
       }
     }
   }
