@@ -156,8 +156,8 @@ const Home: VFC = () => {
             <Image
               src="/common/bg_planet02.png"
               alt="Planet"
-              width={320}
-              height={320}
+              width={420}
+              height={420}
             />
           </div>
         </section>
