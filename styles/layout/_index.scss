@@ -92,7 +92,7 @@
       right: 40px;
       width: 120px;
       @include mixin.mq-down(tb) {
-        width: 18%;
+        width: 15%;
         top: 80px;
         right: 20px;
       }
@@ -196,8 +196,8 @@
         bottom: -180px;
       }
       @include mixin.mq-down(tb) {
-        width: 20%;
-        left: -70px;
+        width: 18%;
+        left: -55px;
         bottom: -120px;
       }
       @include mixin.mq-down(sp) {
@@ -283,24 +283,24 @@
       }
       @include mixin.mq-down(tb) {
         width: 14%;
-        bottom: -150px;
         left: 0;
+        // bottom: -150px;
       }
       @include mixin.mq-down(sp) {
         width: 15%;
-        bottom: inherit;
         top: 50%;
+        bottom: inherit;
       }
     }
     &__bg02 {
       position: absolute;
       z-index: -1;
-      bottom: 60px;
       right: -60px;
+      bottom: 60px;
       @include mixin.mq-down(tb) {
         width: 100%;
         right: -65%;
-        bottom: -200px;
+        bottom: 20%;
       }
       @include mixin.mq-down(sp) {
         width: 80%;
@@ -374,15 +374,17 @@
       @include mixin.mq-down(lt) {
         width: 12%;
         left: -60px;
-        bottom: -360px;
       }
       @include mixin.mq-down(tb) {
-        left: -10px;
+        width: 15%;
+        left: -45px;
+        top: -50%;
       }
       @include mixin.mq-down(sp) {
         width: 18%;
         left: -15px;
-        bottom: 70%;
+        top: inherit;
+        bottom: 50%;
       }
     }
     &__bg02 {
@@ -392,12 +394,12 @@
       top: 25%;
       @include mixin.mq-down(tb) {
         width: 35%;
-        bottom: -100px;
+        top: 5%;
       }
       @include mixin.mq-down(sp) {
         width: 50%;
         bottom: inherit;
-        top: 20%;
+        top: 0;
       }
     }
   }
@@ -506,9 +508,9 @@
     &__bg02 {
       position: absolute;
       z-index: -1;
-      bottom: 480px;
       right: 30px;
       width: 180px;
+      bottom: 480px;
       @include mixin.mq-down(lt) {
         width: 16%;
         right: 10px;
