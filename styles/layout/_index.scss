@@ -369,9 +369,8 @@
     &__bg01 {
       position: absolute;
       z-index: -1;
-      bottom: -480px;
       left: -20px;
-      width: 106px;
+      top: 25%;
       @include mixin.mq-down(lt) {
         width: 12%;
         left: -60px;
@@ -389,8 +388,8 @@
     &__bg02 {
       position: absolute;
       z-index: -1;
-      bottom: 220px;
       right: -45px;
+      top: 25%;
       @include mixin.mq-down(tb) {
         width: 35%;
         bottom: -100px;
