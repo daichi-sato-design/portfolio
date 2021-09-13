@@ -156,10 +156,12 @@
     align-items: center;
     width: 100%;
     max-width: 1100px;
+    min-height: calc(100vh - 96px);
     margin: 0 auto;
     padding: 50px;
     @include mixin.mq-down(tb) {
       padding: 50px 80px;
+      min-height: calc(100vh - 76px);
     }
     @include mixin.mq-down(sp) {
       padding: 50px 20px;
