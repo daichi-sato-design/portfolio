@@ -112,7 +112,9 @@
   overflow-y: auto;
   transition: opacity 400ms mixin.$bezier-easeOutSine,
     visibility 400ms mixin.$bezier-easeOutSine;
-  @include mixin.mq-down(sp) {
+  @include mixin.mq-down(tb) {
+    height: auto;
+    min-height: inherit;
     display: block;
   }
   &.-open {
@@ -160,23 +162,26 @@
     margin: 0 auto;
     padding: 50px;
     @include mixin.mq-down(tb) {
-      padding: 50px 80px;
-      min-height: calc(100vh - 76px);
-    }
-    @include mixin.mq-down(sp) {
-      padding: 50px 20px;
       flex-direction: column-reverse;
       align-items: flex-start;
       justify-content: flex-start;
+      padding: 50px 80px;
+      min-height: inherit;
+    }
+    @include mixin.mq-down(sp) {
+      padding: 50px 20px;
     }
     .visual {
       max-width: 384px;
       width: 38.4%;
-      @include mixin.mq-down(sp) {
+      @include mixin.mq-down(tb) {
         max-width: inherit;
-        width: 70%;
+        width: 50%;
         margin-top: 30px;
         margin-left: auto;
+      }
+      @include mixin.mq-down(sp) {
+        width: 60%;
       }
     }
     .nav {

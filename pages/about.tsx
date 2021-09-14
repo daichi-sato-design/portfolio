@@ -1,12 +1,12 @@
 import { VFC, useEffect } from 'react'
-import { Layout } from '../components/Layout'
 import Rellax from 'rellax'
-import { UcMemo } from '../components/Uc'
 import Image from 'next/image'
+import { Layout } from '../components/Layout'
+import { UcMemo } from '../components/Uc'
 
-const about: VFC = () => {
+const About: VFC = () => {
   useEffect(() => {
-    //default JS Setting
+    // Rellax JS Setting
     var rellax = new Rellax('.rellax')
   }, [])
   return (
@@ -15,7 +15,7 @@ const about: VFC = () => {
         <div className="mv">
           <div className="mv__wrap">
             <h2 className="mv__ttl">About</h2>
-            <p className="mv__txt">自己紹介</p>
+            <p className="mv__txt">私について</p>
           </div>
           <div className="mv__bg01 rellax" data-rellax-speed="-2.75">
             <Image
@@ -40,4 +40,4 @@ const about: VFC = () => {
   )
 }
 
-export default about
+export default About
