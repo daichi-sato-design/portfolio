@@ -15,7 +15,7 @@ const Challenge: VFC = () => {
         <div className="mv">
           <div className="mv__wrap">
             <h2 className="mv__ttl">Challenge</h2>
-            <p className="mv__txt">いくつかの挑戦</p>
+            <p className="mv__txt">挑戦について</p>
           </div>
           <div className="mv__bg01 rellax" data-rellax-speed="-2.75">
             <Image

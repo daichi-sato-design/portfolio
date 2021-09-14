@@ -224,7 +224,7 @@
         padding: 170px 80px 0;
       }
       @include mixin.mq-down(sp) {
-        padding: 150px 80px 0;
+        padding: 150px 20px 0;
       }
     }
     &__ttl {
