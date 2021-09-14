@@ -6,7 +6,7 @@ import { Layout } from '../components/Layout'
 
 const Home: VFC = () => {
   useEffect(() => {
-    //default JS Setting
+    // Rellax JS Setting
     var rellax = new Rellax('.rellax')
   }, [])
   return (
