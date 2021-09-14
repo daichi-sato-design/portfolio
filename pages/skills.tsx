@@ -15,7 +15,7 @@ const Skills: VFC = () => {
         <div className="mv">
           <div className="mv__wrap">
             <h2 className="mv__ttl">Skills</h2>
-            <p className="mv__txt">学習した技術</p>
+            <p className="mv__txt">技術について</p>
           </div>
           <div className="mv__bg01 rellax" data-rellax-speed="-2.75">
             <Image
