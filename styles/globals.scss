@@ -2,8 +2,13 @@
 @use 'base/destyle.scss';
 @use 'base/base';
 
+// モジュール関連
+@use 'layout/header';
+@use 'layout/footer';
+
 // ページ関連
 @use 'layout/index';
+@use 'layout/about';
 
 // モジュール関連
 @use 'module/module';
