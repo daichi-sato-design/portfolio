@@ -19,7 +19,7 @@
       padding: 100px 80px;
     }
     @include mixin.mq-down(sp) {
-      height: 100vh;
+      height: 720px;
       min-height: 600px;
       padding: 50px 20px;
     }
