@@ -381,7 +381,7 @@ const Home: VFC = () => {
                 本サイト・サービス・メディアなどに関するご意見やお問い合わせなどに対応いたします。お問い合わせに関するレスポンスが遅い場合、Twitterなど他メディアでのDMもご検討ください。お問い合わせに早急に対応できない場合もあります。
               </p>
               <div className="section-btn">
-                <Link href="/skills">
+                <Link href="/contact">
                   <a className="link">
                     <span className="txt">Contact</span>
                     <div className="deco"></div>
