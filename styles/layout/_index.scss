@@ -65,20 +65,20 @@
     &__bg01 {
       position: absolute;
       z-index: -1;
-      bottom: -10%;
       left: -320px;
+      top: 20%;
       @include mixin.mq-down(lt) {
         width: 100%;
       }
       @include mixin.mq-down(tb) {
-        bottom: -40px;
-        left: -40%;
-        width: 80%;
         max-width: inherit;
+        width: 80%;
+        left: -40%;
+        top: 25%;
       }
       @include mixin.mq-down(sp) {
         width: 120%;
-        bottom: 10%;
+        top: 32%;
         left: -70%;
       }
     }
@@ -100,21 +100,21 @@
     &__bg03 {
       position: absolute;
       z-index: -1;
-      bottom: 20px;
-      right: 120px;
       width: 270px;
+      top: 72%;
+      right: 120px;
       @include mixin.mq-down(lt) {
         width: 240px;
         right: 40px;
       }
       @include mixin.mq-down(tb) {
         width: 30%;
-        bottom: 0px;
+        top: 75%;
       }
       @include mixin.mq-down(sp) {
         width: 35%;
         right: 20px;
-        bottom: 15%;
+        top: 72%;
       }
     }
   }
