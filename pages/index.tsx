@@ -321,14 +321,19 @@ const Home: VFC = () => {
                   height={140}
                 />
               </a>
-              <div className="visual__item none">
+              <a
+                href="https://www.facebook.com/people/%E4%BD%90%E8%97%A4%E5%A4%A7%E5%9C%B0/100016189206932/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="visual__item"
+              >
                 <Image
                   src="/media/index04.png"
-                  alt="YouTube"
+                  alt="Facebook"
                   width={200}
                   height={140}
                 />
-              </div>
+              </a>
             </div>
             <div className="detail section-detail">
               <div className="section-tag">
