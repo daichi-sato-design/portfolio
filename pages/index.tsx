@@ -283,7 +283,7 @@ const Home: VFC = () => {
           <div className="media__wrap">
             <div className="visual">
               <a
-                href="https://www.twitch.tv/sarupopo3"
+                href="https://www.twitch.tv/parme1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="visual__item"

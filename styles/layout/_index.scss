@@ -436,35 +436,28 @@
           justify-content: center;
           padding: 3%;
           align-items: center;
+          @include mixin.mq-up(tb) {
+            &:hover {
+              img {
+                transform: scale(1.115);
+              }
+            }
+          }
           &:not(:nth-child(2n + 1)) {
             margin-left: 3%;
           }
           &:not(:nth-child(-n + 2)) {
             margin-top: 3%;
           }
-          &:not(.none) {
-            @include mixin.mq-up(tb) {
-              &:hover {
-                img {
-                  transform: scale(1.115);
-                }
-              }
-            }
-            &:before {
-              content: '';
-              position: absolute;
-              top: 10px;
-              right: 10px;
-              width: 14px;
-              height: 14px;
-              background: url('../../public/common/i_extarnal-link.svg')
-                no-repeat center / cover;
-            }
-          }
-          &.none {
-            img {
-              opacity: 0.15;
-            }
+          &:before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 14px;
+            height: 14px;
+            background: url('../../public/common/i_extarnal-link.svg') no-repeat
+              center / cover;
           }
           img {
             transition: transform 200ms mixin.$bezier-easeOutSine;
