@@ -4,18 +4,18 @@ import Image from 'next/image'
 import { Layout } from '../components/Layout'
 import { UcMemo } from '../components/Uc'
 
-const Challenge: VFC = () => {
+const Media: VFC = () => {
   useEffect(() => {
     // Rellax JS Setting
     var rellax = new Rellax('.rellax')
   }, [])
   return (
-    <Layout title="DaichiSato Portfolio | Challenge">
-      <main className="l-page challenge">
+    <Layout title="DaichiSato Portfolio | Media">
+      <main className="l-page Media">
         <div className="mv">
           <div className="mv__wrap">
-            <h2 className="mv__ttl">Challenge</h2>
-            <p className="mv__txt">挑戦について</p>
+            <h2 className="mv__ttl">Media</h2>
+            <p className="mv__txt">メディアについて</p>
           </div>
           <div className="mv__bg01 rellax" data-rellax-speed="-2.75">
             <Image
@@ -40,4 +40,4 @@ const Challenge: VFC = () => {
   )
 }
 
-export default Challenge
+export default Media

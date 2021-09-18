@@ -42,8 +42,8 @@ const Footer: VFC = () => {
               </Link>
             </li>
             <li className="nav__pages__item">
-              <Link href="/challenge">
-                <a className="link">Challenge</a>
+              <Link href="/media">
+                <a className="link">Media</a>
               </Link>
             </li>
             <li className="nav__pages__item">

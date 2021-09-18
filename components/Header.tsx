@@ -37,8 +37,8 @@ const Header: VFC = () => {
               </Link>
             </li>
             <li className="nav__pages__item">
-              <Link href="/challenge">
-                <a className="link">Challenge</a>
+              <Link href="/media">
+                <a className="link">Media</a>
               </Link>
             </li>
             <li className="nav__pages__item">
@@ -140,27 +140,37 @@ const Header: VFC = () => {
             <ul className="nav__pages">
               <li className="nav__pages__item">
                 <Link href="/about">
-                  <a className="link">About</a>
+                  <a className="link" onClick={() => setToggle(!toggle)}>
+                    About
+                  </a>
                 </Link>
               </li>
               <li className="nav__pages__item">
                 <Link href="/works">
-                  <a className="link">Works</a>
+                  <a className="link" onClick={() => setToggle(!toggle)}>
+                    Works
+                  </a>
                 </Link>
               </li>
               <li className="nav__pages__item">
                 <Link href="/skills">
-                  <a className="link">Skills</a>
+                  <a className="link" onClick={() => setToggle(!toggle)}>
+                    Skills
+                  </a>
                 </Link>
               </li>
               <li className="nav__pages__item">
-                <Link href="/challenge">
-                  <a className="link">Challenge</a>
+                <Link href="/media">
+                  <a className="link" onClick={() => setToggle(!toggle)}>
+                    Media
+                  </a>
                 </Link>
               </li>
               <li className="nav__pages__item">
                 <Link href="/contact">
-                  <a className="link">Contact</a>
+                  <a className="link" onClick={() => setToggle(!toggle)}>
+                    Contact
+                  </a>
                 </Link>
               </li>
             </ul>
