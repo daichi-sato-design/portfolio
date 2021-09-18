@@ -278,9 +278,9 @@ const Home: VFC = () => {
             />
           </div>
         </section>
-        {/* Challenge */}
-        <section className="challenge">
-          <div className="challenge__wrap">
+        {/* Media */}
+        <section className="media">
+          <div className="media__wrap">
             <div className="visual">
               <a
                 href="https://www.twitch.tv/sarupopo3"
@@ -289,7 +289,7 @@ const Home: VFC = () => {
                 className="visual__item"
               >
                 <Image
-                  src="/challenge/index01.png"
+                  src="/media/index01.png"
                   alt="Twitch"
                   width={200}
                   height={140}
@@ -302,7 +302,7 @@ const Home: VFC = () => {
                 className="visual__item"
               >
                 <Image
-                  src="/challenge/index02.png"
+                  src="/media/index02.png"
                   alt="Twitter"
                   width={200}
                   height={140}
@@ -315,7 +315,7 @@ const Home: VFC = () => {
                 className="visual__item"
               >
                 <Image
-                  src="/challenge/index03.png"
+                  src="/media/index03.png"
                   alt="Instagram"
                   width={200}
                   height={140}
@@ -323,7 +323,7 @@ const Home: VFC = () => {
               </a>
               <div className="visual__item none">
                 <Image
-                  src="/challenge/index04.png"
+                  src="/media/index04.png"
                   alt="YouTube"
                   width={200}
                   height={140}
@@ -333,7 +333,7 @@ const Home: VFC = () => {
             <div className="detail section-detail">
               <div className="section-tag">
                 <div className="section-tag__num">４</div>
-                <div className="section-tag__ttl">Challenge</div>
+                <div className="section-tag__ttl">Media</div>
               </div>
               <h3 className="section-detail__ttl">
                 「楽しそう」ならやってみる。
@@ -342,16 +342,16 @@ const Home: VFC = () => {
                 各メディアでの発信・配信など「楽しそう」と感じたことには、「とりあえずやってみる」ことを心がけています。それぞれの挑戦しているメディアをご紹介します。
               </p>
               <div className="section-btn">
-                <Link href="/challenge">
+                <Link href="/media">
                   <a className="link">
-                    <span className="txt">Challenge</span>
+                    <span className="txt">Media</span>
                     <div className="deco"></div>
                   </a>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="challenge__bg01 rellax" data-rellax-speed="-1">
+          <div className="media__bg01 rellax" data-rellax-speed="-1">
             <Image
               src="/common/bg_lights04.png"
               alt="Lights"
@@ -359,7 +359,7 @@ const Home: VFC = () => {
               height={150}
             />
           </div>
-          <div className="challenge__bg02 rellax" data-rellax-speed="-1.5">
+          <div className="media__bg02 rellax" data-rellax-speed="-1.5">
             <Image
               src="/common/bg_lights05.png"
               alt="Lights"
