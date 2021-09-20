@@ -56,6 +56,22 @@ html {
         background-size: calc(100vw / 3) calc(100vh / 5);
       }
     }
+    p {
+      font-size: 1.5rem;
+      line-height: 2.6;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+      @include mixin.mq-down(lt) {
+        line-height: 2;
+      }
+      @include mixin.mq-down(tb) {
+        line-height: 2.6;
+      }
+      @include mixin.mq-down(sp) {
+        line-height: 2.2;
+        font-size: 1.4rem;
+      }
+    }
     #container {
       overflow-x: hidden;
     }
