@@ -15,7 +15,7 @@ const Media: VFC = () => {
         <div className="mv">
           <div className="mv__wrap">
             <h2 className="mv__ttl">Media</h2>
-            <p className="mv__txt">メディアについて</p>
+            <span className="mv__txt">メディアについて</span>
           </div>
           <div className="mv__bg01 rellax" data-rellax-speed="-2.75">
             <Image

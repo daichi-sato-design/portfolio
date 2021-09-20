@@ -99,7 +99,7 @@ const Header: VFC = () => {
               <span></span>
               <span></span>
             </div>
-            <p className="txt">Menu{toggle}</p>
+            <span className="txt">Menu{toggle}</span>
           </div>
         </nav>
       </header>

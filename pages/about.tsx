@@ -2,7 +2,6 @@ import { VFC, useEffect } from 'react'
 import Rellax from 'rellax'
 import Image from 'next/image'
 import { Layout } from '../components/Layout'
-import { UcMemo } from '../components/Uc'
 
 const About: VFC = () => {
   useEffect(() => {
@@ -15,7 +14,7 @@ const About: VFC = () => {
         <div className="mv">
           <div className="mv__wrap">
             <h2 className="mv__ttl">About</h2>
-            <p className="mv__txt">私について</p>
+            <span className="mv__txt">私について</span>
           </div>
           <div className="mv__bg01 rellax" data-rellax-speed="-2.75">
             <Image
@@ -34,7 +33,48 @@ const About: VFC = () => {
             />
           </div>
         </div>
-        <UcMemo />
+        {/* INTRO */}
+        <div className="intro">
+          <div className="intro__wrap">
+            <div className="intro__body">
+              <p className="txt">
+                「自分のアイデアを形にできる」プログラミングの世界に高校ではじめて触れ、
+                <br />
+                卒業後には、専門学校で「ユーザーの体験を設計する」デザインについて学んできました。
+                <br />
+                プログラミングとデザインの知識を活かし「面白く便利なもの」を作れればと思います。
+              </p>
+            </div>
+            <div className="intro__contents">
+              <div className="intro__contents__visual">
+                <Image
+                  src="/about/intro_img.svg"
+                  alt="人物イメージ"
+                  width={380}
+                  height={374}
+                />
+              </div>
+              <ul className="intro__contents__list">
+                <li className="intro__contents__list__item">
+                  <h3 className="ttl">Name</h3>
+                  <p className="body">佐藤 大地</p>
+                </li>
+                <li className="intro__contents__list__item">
+                  <h3 className="ttl">Birthday</h3>
+                  <p className="body">1998.11.11</p>
+                </li>
+                <li className="intro__contents__list__item">
+                  <h3 className="ttl">Hoby</h3>
+                  <p className="body">Game</p>
+                </li>
+                <li className="intro__contents__list__item">
+                  <h3 className="ttl">Language</h3>
+                  <p className="body">Japanese</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </main>
     </Layout>
   )
