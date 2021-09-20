@@ -23,9 +23,9 @@ const Home: VFC = () => {
                   height={122}
                 />
               </h2>
-              <p className="catch__txt">
+              <span className="catch__txt">
                 「クリエイター / ユーザー」両方楽しむ。
-              </p>
+              </span>
             </div>
           </div>
           <div className="mv__bg01 rellax" data-rellax-speed="-2.75">

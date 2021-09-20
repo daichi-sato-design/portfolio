@@ -15,7 +15,7 @@ const Contact: VFC = () => {
         <div className="mv">
           <div className="mv__wrap">
             <h2 className="mv__ttl">Contact</h2>
-            <p className="mv__txt">お問い合わせ</p>
+            <span className="mv__txt">お問い合わせ</span>
           </div>
           <div className="mv__bg01 rellax" data-rellax-speed="-2.75">
             <Image
