@@ -11,7 +11,7 @@ const Media: VFC = () => {
   }, [])
   return (
     <Layout title="DaichiSato Portfolio | Media">
-      <main className="l-page Media">
+      <main className="l-page media">
         <div className="mv">
           <div className="mv__wrap">
             <h2 className="mv__ttl">Media</h2>
@@ -32,6 +32,18 @@ const Media: VFC = () => {
               width={270}
               height={185}
             />
+          </div>
+        </div>
+        {/* INTRO */}
+        <div className="intro">
+          <div className="intro__wrap">
+            <div className="intro__body">
+              <p className="txt">
+                日々の出来事や考えの発信や、好きなゲームに関しては時間ができた時にライブ配信もしています。
+                <br />
+                「面白そう」や「楽しそう」という気持ちを大事に発信を続けていきます。
+              </p>
+            </div>
           </div>
         </div>
         <UcMemo />
