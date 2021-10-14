@@ -17,6 +17,25 @@
   @include mixin.mq-down(sp) {
     padding: 20px;
   }
+  .header-logo {
+    @include mixin.mq-down(tb) {
+      max-width: 300px;
+    }
+    @include mixin.mq-down(sp) {
+      width: 75%;
+    }
+    .link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: opacity 200ms mixin.$bezier-easeOutSine;
+      @include mixin.mq-up(tb) {
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
   .nav {
     display: flex;
     align-items: center;
@@ -30,6 +49,14 @@
         font-weight: 500;
         &:not(:first-child) {
           margin-left: 20px;
+        }
+        .link {
+          transition: opacity 200ms mixin.$bezier-easeOutSine;
+          @include mixin.mq-up(tb) {
+            &:hover {
+              opacity: 0.6;
+            }
+          }
         }
       }
     }
@@ -53,6 +80,12 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          @include mixin.mq-up(tb) {
+            transition: opacity 200ms mixin.$bezier-easeOutSine;
+            &:hover {
+              opacity: 0.6;
+            }
+          }
         }
       }
     }
@@ -201,6 +234,12 @@
             font-size: 7rem;
             font-weight: 900;
             letter-spacing: 0.04em;
+            transition: letter-spacing 200ms mixin.$bezier-easeOutSine;
+            @include mixin.mq-up(tb) {
+              &:hover {
+                letter-spacing: 0.1em;
+              }
+            }
             @include mixin.mq-down(lt) {
               font-size: 7vw;
             }
@@ -211,18 +250,5 @@
         }
       }
     }
-  }
-}
-.header-logo {
-  @include mixin.mq-down(tb) {
-    max-width: 300px;
-  }
-  @include mixin.mq-down(sp) {
-    width: 75%;
-  }
-  .link {
-    display: block;
-    width: 100%;
-    height: 100%;
   }
 }

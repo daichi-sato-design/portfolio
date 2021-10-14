@@ -81,6 +81,9 @@
     @include mixin.mq-up(tb) {
       &:hover {
         background: #473480;
+        .txt {
+          letter-spacing: 0.16em;
+        }
       }
     }
     .txt {
@@ -95,6 +98,7 @@
       line-height: 1;
       white-space: nowrap;
       text-transform: uppercase;
+      transition: letter-spacing 200ms mixin.$bezier-easeOutSine;
       &:before {
         content: '';
         position: absolute;
