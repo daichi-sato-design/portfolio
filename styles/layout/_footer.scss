@@ -36,6 +36,14 @@
       }
       .logo {
         width: 100%;
+        .link {
+          transition: opacity 200ms mixin.$bezier-easeOutSine;
+          @include mixin.mq-up(tb) {
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
       }
       .copy {
         margin-top: 10px;
@@ -91,6 +99,14 @@
               margin-top: 5px;
             }
           }
+          .link {
+            transition: opacity 200ms mixin.$bezier-easeOutSine;
+            @include mixin.mq-up(tb) {
+              &:hover {
+                opacity: 0.6;
+              }
+            }
+          }
         }
       }
       &__sns {
@@ -124,6 +140,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: opacity 200ms mixin.$bezier-easeOutSine;
+            @include mixin.mq-up(tb) {
+              &:hover {
+                opacity: 0.6;
+              }
+            }
           }
         }
       }
