@@ -166,6 +166,17 @@
     @include mixin.mq-down(sp) {
       padding: 20px;
     }
+    .header-logo {
+      .link {
+        display: block;
+        transition: opacity 200ms mixin.$bezier-easeOutSine;
+        @include mixin.mq-up(tb) {
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
     .toggle-btn {
       width: 36px;
       height: 36px;
