@@ -172,7 +172,7 @@
         transition: opacity 200ms mixin.$bezier-easeOutSine;
         @include mixin.mq-up(tb) {
           &:hover {
-            opacity: 0.7;
+            opacity: 0.6;
           }
         }
       }
