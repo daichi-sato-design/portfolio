@@ -1,5 +1,5 @@
-@use '/styles/base/mixin' as mixin;
-
+@use '/styles/base/mixins';
+@use '/styles/base/variables';
 .header {
   position: absolute;
   z-index: 100;
@@ -11,25 +11,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include mixin.mq-down(tb) {
+  @include mixins.mq-down(tb) {
     padding: 20px 30px;
   }
-  @include mixin.mq-down(sp) {
+  @include mixins.mq-down(sp) {
     padding: 20px;
   }
-  .header-logo {
-    @include mixin.mq-down(tb) {
+  &-logo {
+    @include mixins.mq-down(tb) {
       max-width: 300px;
     }
-    @include mixin.mq-down(sp) {
+    @include mixins.mq-down(sp) {
       width: 75%;
     }
     .link {
       display: block;
       width: 100%;
       height: 100%;
-      transition: opacity 200ms mixin.$bezier-easeOutSine;
-      @include mixin.mq-up(tb) {
+      transition: opacity 200ms variables.$bezier-easeOutSine;
+      @include mixins.mq-up(tb) {
         &:hover {
           opacity: 0.6;
         }
@@ -51,8 +51,8 @@
           margin-left: 20px;
         }
         .link {
-          transition: opacity 200ms mixin.$bezier-easeOutSine;
-          @include mixin.mq-up(tb) {
+          transition: opacity 200ms variables.$bezier-easeOutSine;
+          @include mixins.mq-up(tb) {
             &:hover {
               opacity: 0.6;
             }
@@ -80,8 +80,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          @include mixin.mq-up(tb) {
-            transition: opacity 200ms mixin.$bezier-easeOutSine;
+          @include mixins.mq-up(tb) {
+            transition: opacity 200ms variables.$bezier-easeOutSine;
             &:hover {
               opacity: 0.6;
             }
@@ -141,11 +141,11 @@
   width: 100%;
   height: 100vh;
   min-height: 600px;
-  background: mixin.$primary-color;
+  background: variables.$primary-color;
   overflow-y: auto;
-  transition: opacity 400ms mixin.$bezier-easeOutSine,
-    visibility 400ms mixin.$bezier-easeOutSine;
-  @include mixin.mq-down(tb) {
+  transition: opacity 400ms variables.$bezier-easeOutSine,
+    visibility 400ms variables.$bezier-easeOutSine;
+  @include mixins.mq-down(tb) {
     height: auto;
     min-height: inherit;
     display: block;
@@ -160,22 +160,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include mixin.mq-down(tb) {
+    @include mixins.mq-down(tb) {
       padding: 20px 30px;
     }
-    @include mixin.mq-down(sp) {
+    @include mixins.mq-down(sp) {
       padding: 20px;
-    }
-    .header-logo {
-      .link {
-        display: block;
-        transition: opacity 200ms mixin.$bezier-easeOutSine;
-        @include mixin.mq-up(tb) {
-          &:hover {
-            opacity: 0.6;
-          }
-        }
-      }
     }
     .toggle-btn {
       width: 36px;
@@ -187,11 +176,11 @@
       border-radius: 50%;
       background: #fff;
       cursor: pointer;
-      @include mixin.mq-down(sp) {
+      @include mixins.mq-down(sp) {
         margin-left: 30px;
       }
       svg {
-        color: mixin.$primary-color;
+        color: variables.$primary-color;
         width: 20px;
       }
     }
@@ -205,26 +194,26 @@
     min-height: calc(100vh - 96px);
     margin: 0 auto;
     padding: 50px;
-    @include mixin.mq-down(tb) {
+    @include mixins.mq-down(tb) {
       flex-direction: column-reverse;
       align-items: flex-start;
       justify-content: flex-start;
       padding: 50px 80px;
       min-height: inherit;
     }
-    @include mixin.mq-down(sp) {
+    @include mixins.mq-down(sp) {
       padding: 50px 20px;
     }
     .visual {
       max-width: 384px;
       width: 38.4%;
-      @include mixin.mq-down(tb) {
+      @include mixins.mq-down(tb) {
         max-width: inherit;
         width: 50%;
         margin-top: 30px;
         margin-left: auto;
       }
-      @include mixin.mq-down(sp) {
+      @include mixins.mq-down(sp) {
         width: 60%;
       }
     }
@@ -232,7 +221,7 @@
       display: flex;
       align-items: center;
       width: 50%;
-      @include mixin.mq-down(sp) {
+      @include mixins.mq-down(sp) {
         width: 100%;
       }
       &__pages {
@@ -245,16 +234,16 @@
             font-size: 7rem;
             font-weight: 900;
             letter-spacing: 0.04em;
-            transition: letter-spacing 200ms mixin.$bezier-easeOutSine;
-            @include mixin.mq-up(tb) {
+            transition: letter-spacing 200ms variables.$bezier-easeOutSine;
+            @include mixins.mq-up(tb) {
               &:hover {
                 letter-spacing: 0.1em;
               }
             }
-            @include mixin.mq-down(lt) {
+            @include mixins.mq-down(lt) {
               font-size: 7vw;
             }
-            @include mixin.mq-down(sp) {
+            @include mixins.mq-down(sp) {
               font-size: 8vw;
             }
           }

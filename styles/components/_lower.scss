@@ -1,0 +1,113 @@
+@use '/styles/base/mixins';
+@use '/styles/base/variables';
+// l-page
+.l-page {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  .mv {
+    position: relative;
+    &__wrap {
+      max-width: 1100px;
+      padding: 200px 50px 100px;
+      margin: 0 auto;
+      text-align: center;
+      @include mixins.mq-down(tb) {
+        padding: 170px 80px 0;
+      }
+      @include mixins.mq-down(sp) {
+        padding: 150px 20px 0;
+      }
+    }
+    &__ttl {
+      font-size: 6.4rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      @include mixins.mq-down(tb) {
+        font-size: 10vw;
+      }
+      @include mixins.mq-down(sp) {
+        font-size: 10vw;
+      }
+    }
+    &__txt {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      @include mixins.mq-down(tb) {
+        font-size: 4vw;
+      }
+      @include mixins.mq-down(sp) {
+        margin-top: 6px;
+      }
+    }
+    &__bg01 {
+      position: absolute;
+      z-index: -1;
+      top: -10%;
+      left: -320px;
+      @include mixins.mq-down(lt) {
+        width: 100%;
+      }
+      @include mixins.mq-down(tb) {
+        width: 80%;
+        max-width: inherit;
+        top: -40px;
+        left: -40%;
+      }
+      @include mixins.mq-down(sp) {
+        width: 80%;
+        top: 10%;
+        left: -40%;
+      }
+    }
+    &__bg02 {
+      position: absolute;
+      z-index: -1;
+      top: 55%;
+      right: 80px;
+      width: 270px;
+      @include mixins.mq-down(lt) {
+        width: 240px;
+        right: 40px;
+      }
+      @include mixins.mq-down(tb) {
+        width: 30%;
+        top: 70%;
+      }
+      @include mixins.mq-down(sp) {
+        width: 35%;
+        right: 20px;
+        top: 85%;
+      }
+    }
+  }
+  .intro {
+    &__wrap {
+      width: 100%;
+      max-width: 1100px;
+      padding: 0 50px;
+      margin: 0 auto;
+      @include mixins.mq-down(tb) {
+        padding: 0 80px;
+      }
+      @include mixins.mq-down(sp) {
+        padding: 0 20px;
+      }
+    }
+    &__body {
+      font-size: 1.5rem;
+      text-align: center;
+      @include mixins.mq-down(tb) {
+        text-align: left;
+        margin-top: 80px;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@use '/styles/base/mixins';
+@use '/styles/base/variables';
+
+// 各セクションのタグ
+.section-tag {
+  display: flex;
+  align-items: center;
+  &__num {
+    font-size: 2.6rem;
+    font-weight: 900;
+    margin-right: 20px;
+    @include mixins.mq-down(sp) {
+      font-size: 1.6rem;
+      margin-right: 15px;
+    }
+  }
+  &__ttl {
+    position: relative;
+    z-index: 1;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding-left: 60px;
+    text-transform: uppercase;
+    @include mixins.mq-down(sp) {
+      font-size: 1.3rem;
+      padding-left: 35px;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background: #fff;
+      width: 40px;
+      height: 1px;
+      @include mixins.mq-down(sp) {
+        width: 20px;
+      }
+    }
+  }
+}
+
+// 各セクションのコンテンツ
+.section-detail {
+  &__ttl {
+    margin-top: 40px;
+    font-size: 3.2rem;
+    line-height: 1.75;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    @include mixins.mq-down(lt) {
+      font-size: 3vw;
+    }
+    @include mixins.mq-down(tb) {
+      font-size: 4.2vw;
+      margin-top: 20px;
+    }
+    @include mixins.mq-down(sp) {
+      font-size: 5.8vw;
+    }
+  }
+  &__body {
+    margin-top: 20px;
+  }
+}

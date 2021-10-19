@@ -1,0 +1,27 @@
+// VARIABLES
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+$default-font: 'Noto Sans JP', sans-serif;
+$primary-color: #614d9d;
+
+// MEDIA-QUERY
+$breakpoint-up: (
+  'sp': 'screen and (min-width: 481px)',
+  'tb': 'screen and (min-width: 769px)',
+  'lt': 'screen and (min-width: 1081px)',
+  'dt': 'screen and (min-width: 1201px)',
+) !default;
+$breakpoint-down: (
+  'sp': 'screen and (max-width: 480px)',
+  'tb': 'screen and (max-width: 768px)',
+  'lt': 'screen and (max-width: 1080px)',
+  'dt': 'screen and (max-width: 1200px)',
+) !default;
+
+// CUBIC-BEZIER
+$bezier-easeOutSine: cubic-bezier(0.61, 1, 0.88, 1);
+$bezier-easeOutCubic: cubic-bezier(0.33, 1, 0.68, 1);
+$bezier-easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+//BOUND
+$bezier-easeInBack: cubic-bezier(0.36, 0, 0.66, -0.56);
+$bezier-easeOutBack: cubic-bezier(0.34, 1.56, 0.64, 1);
