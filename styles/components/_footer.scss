@@ -1,18 +1,18 @@
-@use '/styles/base/mixin' as mixin;
-
+@use '/styles/base/mixins';
+@use '/styles/base/variables';
 .footer {
   padding: 160px 40px 50px;
   background: linear-gradient(
     to bottom,
-    rgba(mixin.$primary-color, 0) 0%,
-    rgba(mixin.$primary-color, 0.8) 25%,
-    rgba(mixin.$primary-color, 1) 40%,
-    rgba(mixin.$primary-color, 1) 100%
+    rgba(variables.$primary-color, 0) 0%,
+    rgba(variables.$primary-color, 0.8) 25%,
+    rgba(variables.$primary-color, 1) 40%,
+    rgba(variables.$primary-color, 1) 100%
   );
-  @include mixin.mq-down(tb) {
+  @include mixins.mq-down(tb) {
     padding: 120px 30px 50px;
   }
-  @include mixin.mq-down(sp) {
+  @include mixins.mq-down(sp) {
     padding: 80px 20px 30px;
   }
   &__wrap {
@@ -22,23 +22,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include mixin.mq-down(tb) {
+    @include mixins.mq-down(tb) {
       flex-direction: column-reverse;
     }
     .info {
       display: flex;
       flex-direction: column;
-      @include mixin.mq-down(tb) {
+      @include mixins.mq-down(tb) {
         margin-top: 30px;
       }
-      @include mixin.mq-down(sp) {
+      @include mixins.mq-down(sp) {
         padding: 0 20px;
       }
       .logo {
         width: 100%;
         .link {
-          transition: opacity 200ms mixin.$bezier-easeOutSine;
-          @include mixin.mq-up(tb) {
+          transition: opacity 200ms variables.$bezier-easeOutSine;
+          @include mixins.mq-up(tb) {
             &:hover {
               opacity: 0.6;
             }
@@ -50,10 +50,10 @@
         font-size: 1.2rem;
         letter-spacing: 0.06em;
         color: rgba(#fff, 0.8);
-        @include mixin.mq-down(tb) {
+        @include mixins.mq-down(tb) {
           text-align: center;
         }
-        @include mixin.mq-down(sp) {
+        @include mixins.mq-down(sp) {
           font-size: 1rem;
         }
       }
@@ -61,17 +61,17 @@
     .nav {
       display: flex;
       align-items: center;
-      @include mixin.mq-down(lt) {
+      @include mixins.mq-down(lt) {
         flex-direction: column;
         align-items: flex-end;
       }
-      @include mixin.mq-down(tb) {
+      @include mixins.mq-down(tb) {
         width: 100%;
         align-items: center;
       }
       &__pages {
         display: flex;
-        @include mixin.mq-down(sp) {
+        @include mixins.mq-down(sp) {
           flex-wrap: wrap;
           width: 100%;
         }
@@ -80,11 +80,11 @@
           font-weight: 500;
           &:not(:first-child) {
             margin-left: 20px;
-            @include mixin.mq-down(sp) {
+            @include mixins.mq-down(sp) {
               margin-left: 0;
             }
           }
-          @include mixin.mq-down(sp) {
+          @include mixins.mq-down(sp) {
             width: 50%;
             padding: 8px 0;
             text-align: center;
@@ -100,8 +100,8 @@
             }
           }
           .link {
-            transition: opacity 200ms mixin.$bezier-easeOutSine;
-            @include mixin.mq-up(tb) {
+            transition: opacity 200ms variables.$bezier-easeOutSine;
+            @include mixins.mq-up(tb) {
               &:hover {
                 opacity: 0.6;
               }
@@ -112,14 +112,14 @@
       &__sns {
         display: flex;
         margin-left: 28px;
-        @include mixin.mq-down(lt) {
+        @include mixins.mq-down(lt) {
           margin-top: 20px;
           margin-left: 0;
         }
-        @include mixin.mq-down(tb) {
+        @include mixins.mq-down(tb) {
           margin-top: 30px;
         }
-        @include mixin.mq-down(sp) {
+        @include mixins.mq-down(sp) {
           margin-top: 40px;
         }
         &__item {
@@ -130,7 +130,7 @@
           &:not(:first-child) {
             margin-left: 14px;
           }
-          @include mixin.mq-down(tb) {
+          @include mixins.mq-down(tb) {
             width: 40px;
             height: 40px;
           }
@@ -140,8 +140,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: opacity 200ms mixin.$bezier-easeOutSine;
-            @include mixin.mq-up(tb) {
+            transition: opacity 200ms variables.$bezier-easeOutSine;
+            @include mixins.mq-up(tb) {
               &:hover {
                 opacity: 0.6;
               }
@@ -161,18 +161,18 @@
       height: 60px;
       border-radius: 50%;
       border: 1px solid #fff;
-      background: mixin.$primary-color;
+      background: variables.$primary-color;
       display: flex;
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      transition: background 200ms mixin.$bezier-easeOutSine;
-      @include mixin.mq-up(tb) {
+      transition: background 200ms variables.$bezier-easeOutSine;
+      @include mixins.mq-up(tb) {
         &:hover {
           background: #473480;
         }
       }
-      @include mixin.mq-down(sp) {
+      @include mixins.mq-down(sp) {
         width: 50px;
         height: 50px;
       }

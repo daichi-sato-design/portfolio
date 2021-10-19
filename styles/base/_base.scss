@@ -1,10 +1,11 @@
-@use '/styles/base/mixin' as mixin;
+@use '/styles/base/variables';
+@use '/styles/base/mixins';
 
 html {
   font-size: 62.5%;
-  font-family: mixin.$default-font;
+  font-family: variables.$default-font;
   font-weight: 400;
-  background: mixin.$primary-color;
+  background: variables.$primary-color;
   color: #fff;
   body {
     position: relative;
@@ -61,13 +62,13 @@ html {
       line-height: 2.6;
       letter-spacing: 0.08em;
       font-weight: 500;
-      @include mixin.mq-down(lt) {
+      @include mixins.mq-down(lt) {
         line-height: 2;
       }
-      @include mixin.mq-down(tb) {
+      @include mixins.mq-down(tb) {
         line-height: 2.6;
       }
-      @include mixin.mq-down(sp) {
+      @include mixins.mq-down(sp) {
         line-height: 2.2;
         font-size: 1.4rem;
       }

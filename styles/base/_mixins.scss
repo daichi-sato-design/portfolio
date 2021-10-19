@@ -1,0 +1,28 @@
+@use './variables';
+
+@mixin mq-up($breakpoint: tb) {
+  @media #{map-get(variables.$breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+@mixin mq-down($breakpoint: tb) {
+  @media #{map-get(variables.$breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}
+
+// KEYFREAMS/ANIMATION
+@mixin keyfreames($animation-name: animation) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+@mixin animation($animation-name) {
+  -webkit-animation: $animation-name;
+  animation: $animation-name;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
