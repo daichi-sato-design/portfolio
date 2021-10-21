@@ -1,14 +1,18 @@
 import { useState, useCallback, FormEvent, ChangeEvent } from 'react'
+import { EditContact } from '../types/types'
 
 export const useContactForm = () => {
-  const [contact, setContact] = useState({
+  const initializeForm: EditContact = {
     name: '',
-    kana: '',
     email: '',
     subject: 'お問い合わせ',
+    honeypot: '',
     message: '',
+    replyTo: '@',
     accessKey: process.env.NEXT_PUBLIC_STATICFORMS_TOKEN,
-  })
+  }
+
+  const [contact, setContact] = useState<EditContact>(initializeForm)
 
   const handleChange = useCallback(async (e: ChangeEvent<HTMLInputElement>) => {
     setContact({ ...contact, [e.target.name]: e.target.value })
@@ -17,6 +21,10 @@ export const useContactForm = () => {
   const handleSubmit = useCallback(
     async (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault()
+
+      if (!contact.name || !contact.email || !contact.email) {
+        return false
+      }
 
       try {
         const res = await fetch('https://api.staticforms.xyz/submit', {
@@ -33,9 +41,14 @@ export const useContactForm = () => {
     [contact]
   )
 
+  const resetContact = useCallback(() => {
+    setContact(initializeForm)
+  }, [])
+
   return {
     contact,
     handleChange,
     handleSubmit,
+    resetContact,
   }
 }

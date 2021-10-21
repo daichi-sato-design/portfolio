@@ -17,6 +17,7 @@ const Home: VFC = () => {
             <div className="catch">
               <h2 className="catch__ttl">
                 <Image
+                  loading="eager"
                   src="/common/mv_ttl.svg"
                   alt="PARME.online"
                   width={1000}
@@ -30,6 +31,7 @@ const Home: VFC = () => {
           </div>
           <div className="mv__bg01 rellax" data-rellax-speed="-2.75">
             <Image
+              loading="eager"
               src="/common/bg_planet01.png"
               alt="Planet"
               width={690}
@@ -38,6 +40,7 @@ const Home: VFC = () => {
           </div>
           <div className="mv__bg02 rellax" data-rellax-speed="-3.6">
             <Image
+              loading="eager"
               src="/common/bg_dotted01.svg"
               alt="Dotted"
               width={130}
@@ -46,6 +49,7 @@ const Home: VFC = () => {
           </div>
           <div className="mv__bg03 rellax" data-rellax-speed="-1.25">
             <Image
+              loading="eager"
               src="/common/bg_lights01.png"
               alt="Lights"
               width={270}
@@ -89,6 +93,7 @@ const Home: VFC = () => {
           </div>
           <div className="about__bg01 rellax" data-rellax-speed="-1.25">
             <Image
+              loading="lazy"
               src="/common/bg_dotted02.svg"
               alt="Dotted"
               width={176}
@@ -97,6 +102,7 @@ const Home: VFC = () => {
           </div>
           <div className="about__bg02 rellax" data-rellax-speed="-1.6">
             <Image
+              loading="lazy"
               src="/common/bg_dotted01.svg"
               alt="Dotted"
               width={130}
@@ -105,6 +111,7 @@ const Home: VFC = () => {
           </div>
           <div className="about__bg03 rellax" data-rellax-speed="-2.25">
             <Image
+              loading="lazy"
               src="/common/bg_lights02.png"
               alt="Lights"
               width={170}
@@ -117,6 +124,7 @@ const Home: VFC = () => {
           <div className="works__wrap">
             <div className="visual">
               <Image
+                loading="lazy"
                 src="/works/index_img.svg"
                 alt="Web design"
                 width={458}
@@ -146,6 +154,7 @@ const Home: VFC = () => {
           </div>
           <div className="works__bg01 rellax" data-rellax-speed="-1.75">
             <Image
+              loading="lazy"
               src="/common/bg_lights03.png"
               alt="Lights"
               width={150}
@@ -154,6 +163,7 @@ const Home: VFC = () => {
           </div>
           <div className="works__bg02 rellax" data-rellax-speed="-2.5">
             <Image
+              loading="lazy"
               src="/common/bg_planet02.png"
               alt="Planet"
               width={420}
@@ -189,6 +199,7 @@ const Home: VFC = () => {
             <div className="visual">
               <div className="visual__item">
                 <Image
+                  loading="lazy"
                   src="/skills/index01.png"
                   alt="JaveScript"
                   width={120}
@@ -197,6 +208,7 @@ const Home: VFC = () => {
               </div>
               <div className="visual__item">
                 <Image
+                  loading="lazy"
                   src="/skills/index02.png"
                   alt="TypeScript"
                   width={120}
@@ -205,6 +217,7 @@ const Home: VFC = () => {
               </div>
               <div className="visual__item">
                 <Image
+                  loading="lazy"
                   src="/skills/index03.png"
                   alt="React"
                   width={120}
@@ -213,6 +226,7 @@ const Home: VFC = () => {
               </div>
               <div className="visual__item">
                 <Image
+                  loading="lazy"
                   src="/skills/index04.png"
                   alt="Next.js"
                   width={120}
@@ -221,6 +235,7 @@ const Home: VFC = () => {
               </div>
               <div className="visual__item">
                 <Image
+                  loading="lazy"
                   src="/skills/index05.png"
                   alt="Dart"
                   width={120}
@@ -229,6 +244,7 @@ const Home: VFC = () => {
               </div>
               <div className="visual__item">
                 <Image
+                  loading="lazy"
                   src="/skills/index06.png"
                   alt="Flutter"
                   width={120}
@@ -237,6 +253,7 @@ const Home: VFC = () => {
               </div>
               <div className="visual__item">
                 <Image
+                  loading="lazy"
                   src="/skills/index07.png"
                   alt="Golang"
                   width={120}
@@ -245,6 +262,7 @@ const Home: VFC = () => {
               </div>
               <div className="visual__item">
                 <Image
+                  loading="lazy"
                   src="/skills/index08.png"
                   alt="PostgreSQL"
                   width={120}
@@ -253,6 +271,7 @@ const Home: VFC = () => {
               </div>
               <div className="visual__item">
                 <Image
+                  loading="lazy"
                   src="/skills/index09.png"
                   alt="GraphQL"
                   width={120}
@@ -263,6 +282,7 @@ const Home: VFC = () => {
           </div>
           <div className="skills__bg01 rellax" data-rellax-speed="-2">
             <Image
+              loading="lazy"
               src="/common/bg_dotted04.svg"
               alt="Dotted"
               width={106}
@@ -271,6 +291,7 @@ const Home: VFC = () => {
           </div>
           <div className="skills__bg02 rellax" data-rellax-speed="-1.5">
             <Image
+              loading="lazy"
               src="/common/bg_dotted03.svg"
               alt="Dotted"
               width={280}
@@ -289,6 +310,7 @@ const Home: VFC = () => {
                 className="visual__item"
               >
                 <Image
+                  loading="lazy"
                   src="/media/index01.png"
                   alt="Twitch"
                   width={200}
@@ -302,6 +324,7 @@ const Home: VFC = () => {
                 className="visual__item"
               >
                 <Image
+                  loading="lazy"
                   src="/media/index02.png"
                   alt="Twitter"
                   width={200}
@@ -315,6 +338,7 @@ const Home: VFC = () => {
                 className="visual__item"
               >
                 <Image
+                  loading="lazy"
                   src="/media/index03.png"
                   alt="Instagram"
                   width={200}
@@ -328,6 +352,7 @@ const Home: VFC = () => {
                 className="visual__item"
               >
                 <Image
+                  loading="lazy"
                   src="/media/index04.png"
                   alt="Facebook"
                   width={200}
@@ -358,6 +383,7 @@ const Home: VFC = () => {
           </div>
           <div className="media__bg01 rellax" data-rellax-speed="-1">
             <Image
+              loading="lazy"
               src="/common/bg_lights04.png"
               alt="Lights"
               width={150}
@@ -366,6 +392,7 @@ const Home: VFC = () => {
           </div>
           <div className="media__bg02 rellax" data-rellax-speed="-1.5">
             <Image
+              loading="lazy"
               src="/common/bg_lights05.png"
               alt="Lights"
               width={180}
@@ -396,6 +423,7 @@ const Home: VFC = () => {
             </div>
             <div className="visual">
               <Image
+                loading="lazy"
                 src="/contact/index_img.jpg"
                 alt="Profile"
                 width={440}
