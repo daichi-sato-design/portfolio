@@ -16,9 +16,6 @@
     @include mixins.mq-up(tb) {
       &:hover {
         background: #473480;
-        .txt {
-          letter-spacing: 0.16em;
-        }
       }
     }
     .txt {

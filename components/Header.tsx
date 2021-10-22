@@ -109,6 +109,7 @@ const Header: VFC = () => {
             <Link href="/">
               <a className="link" onClick={() => setToggle(!toggle)}>
                 <Image
+                  loading="lazy"
                   src="/common/logo.svg"
                   alt="DaichiSato Portfolio"
                   width={350}
@@ -134,7 +135,13 @@ const Header: VFC = () => {
         </div>
         <div className="d-nav__wrap">
           <div className="visual">
-            <Image src="/common/d_img.svg" alt="Web" width={384} height={500} />
+            <Image
+              loading="lazy"
+              src="/common/d_img.svg"
+              alt="Web"
+              width={384}
+              height={500}
+            />
           </div>
           <div className="nav">
             <ul className="nav__pages">
