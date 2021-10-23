@@ -2,7 +2,6 @@ import { VFC, useEffect } from 'react'
 import Rellax from 'rellax'
 import Image from 'next/image'
 import { Layout } from '../components/Layout'
-import { UcMemo } from '../components/Uc'
 
 const Works: VFC = () => {
   useEffect(() => {
@@ -11,7 +10,7 @@ const Works: VFC = () => {
   }, [])
   return (
     <Layout title="DaichiSato Portfolio | Works">
-      <main className="l-page works">
+      <main className="l-page works_l">
         <div className="mv">
           <div className="mv__wrap">
             <h2 className="mv__ttl">Works</h2>
@@ -34,7 +33,43 @@ const Works: VFC = () => {
             />
           </div>
         </div>
-        <UcMemo />
+        {/* Contents */}
+        <div className="contents">
+          <ul className="contents__list">
+            <li className="contents__list__item">
+              <div className="visual">
+                <Image
+                  src="/works/works01_01.jpg"
+                  alt="Works"
+                  width={1100}
+                  height={500}
+                />
+              </div>
+              <div className="detail">
+                <h2 className="detail__ttl">
+                  Ptybo.online｜今すぐ遊べるプレイヤーを探すゲーマーのパーティー募集サービス
+                </h2>
+                <p className="detail__tag">Webサービス</p>
+              </div>
+            </li>
+            <li className="contents__list__item">
+              <div className="visual">
+                <Image
+                  src="/works/works02_01.jpg"
+                  alt="Works"
+                  width={1100}
+                  height={500}
+                />
+              </div>
+              <div className="detail">
+                <h2 className="detail__ttl">
+                  Flagup｜SNSをもっと効率的かつ専門的に。
+                </h2>
+                <p className="detail__tag">モバイルアプリ</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </main>
     </Layout>
   )
