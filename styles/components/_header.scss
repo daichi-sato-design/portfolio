@@ -198,7 +198,7 @@
       flex-direction: column-reverse;
       align-items: flex-start;
       justify-content: flex-start;
-      padding: 50px 80px;
+      padding: 50px 40px;
       min-height: inherit;
     }
     @include mixins.mq-down(sp) {

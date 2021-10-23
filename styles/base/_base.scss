@@ -65,9 +65,6 @@ html {
       @include mixins.mq-down(lt) {
         line-height: 2;
       }
-      @include mixins.mq-down(tb) {
-        line-height: 2.6;
-      }
       @include mixins.mq-down(sp) {
         line-height: 2.2;
         font-size: 1.4rem;
