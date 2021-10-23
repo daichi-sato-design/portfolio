@@ -18,21 +18,30 @@
       &__item {
         &:not(:first-child) {
           margin-top: 100px;
+          @include mixins.mq-down(tb) {
+            margin-top: 60px;
+          }
+          @include mixins.mq-down(sp) {
+            margin-top: 40px;
+          }
         }
         .visual {
           width: 100%;
         }
         .detail {
           margin-top: 20px;
+          @include mixins.mq-down(sp) {
+            margin-top: 12px;
+          }
           &__ttl {
             font-size: 1.8rem;
             font-weight: 600;
             line-height: 1.6;
             @include mixins.mq-down(tb) {
-              font-size: 3vw;
+              font-size: 2.3vw;
             }
             @include mixins.mq-down(sp) {
-              font-size: 4.2vw;
+              font-size: 4vw;
             }
           }
           &__tag {
@@ -41,9 +50,10 @@
             color: rgba(#fff, 0.8);
 
             @include mixins.mq-down(tb) {
-              font-size: 3vw;
+              font-size: 1.8vw;
             }
             @include mixins.mq-down(sp) {
+              font-size: 3vw;
             }
           }
         }
