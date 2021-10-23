@@ -1,7 +1,7 @@
 @use '/styles/base/mixins';
 @use '/styles/base/variables';
 .footer {
-  padding: 160px 40px 50px;
+  padding: 160px 50px 50px;
   background: linear-gradient(
     to bottom,
     rgba(variables.$primary-color, 0) 0%,
@@ -10,7 +10,7 @@
     rgba(variables.$primary-color, 1) 100%
   );
   @include mixins.mq-down(tb) {
-    padding: 120px 30px 50px;
+    padding: 120px 40px 50px;
   }
   @include mixins.mq-down(sp) {
     padding: 80px 20px 30px;
