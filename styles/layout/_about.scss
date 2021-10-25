@@ -2,98 +2,86 @@
 @use '/styles/base/variables';
 
 .about {
-  .intro {
-    margin-top: 50px;
+  // CONTENTS
+  .contents {
+    margin-top: 100px;
+    padding: 0 50px;
+    @include mixins.mq-down(tb) {
+      margin-top: 40px;
+      padding: 0 40px;
+    }
+    @include mixins.mq-down(sp) {
+      padding: 0 20px;
+    }
     &__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       width: 100%;
       max-width: 1100px;
-      padding: 0 50px;
       margin: 0 auto;
       @include mixins.mq-down(tb) {
-        padding: 0 40px;
+        display: block;
+      }
+    }
+    &__visual {
+      width: 38%;
+      @include mixins.mq-down(tb) {
+        width: 70%;
+        margin-left: auto;
       }
       @include mixins.mq-down(sp) {
-        padding: 0 20px;
+        width: 75%;
       }
     }
-    &__body {
-      font-size: 1.5rem;
-      text-align: center;
+    &__list {
+      width: 56%;
+      padding: 5%;
+      border-radius: 10px;
+      background: rgba(#000, 0.5);
       @include mixins.mq-down(tb) {
-        text-align: left;
-        br {
-          display: none;
-        }
-      }
-    }
-    &__contents {
-      margin-top: 100px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      @include mixins.mq-down(tb) {
-        display: block;
+        width: 100%;
         margin-top: 40px;
       }
-      &__visual {
-        width: 38%;
-        @include mixins.mq-down(tb) {
-          width: 70%;
-          margin-left: auto;
-        }
-        @include mixins.mq-down(sp) {
-          width: 75%;
-        }
-      }
-      &__list {
-        width: 56%;
-        padding: 5%;
+      &__item {
+        display: flex;
+        align-items: center;
         border-radius: 10px;
-        background: rgba(#000, 0.5);
-        @include mixins.mq-down(tb) {
-          width: 100%;
-          margin-top: 40px;
+        background: #fff;
+        color: variables.$primary-color;
+        &:not(:first-child) {
+          margin-top: 15px;
+          @include mixins.mq-down(sp) {
+            margin-top: 10px;
+          }
         }
-        &__item {
-          display: flex;
-          align-items: center;
-          border-radius: 10px;
-          background: #fff;
-          color: variables.$primary-color;
-          &:not(:first-child) {
-            margin-top: 15px;
-            @include mixins.mq-down(sp) {
-              margin-top: 10px;
-            }
+        .ttl {
+          width: 35%;
+          padding: 20px;
+          font-size: 1.6rem;
+          font-weight: 900;
+          text-transform: uppercase;
+          @include mixins.mq-down(tb) {
+            width: 40%;
           }
-          .ttl {
-            width: 35%;
-            padding: 20px;
-            font-size: 1.6rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            @include mixins.mq-down(tb) {
-              width: 40%;
-            }
-            @include mixins.mq-down(sp) {
-              font-size: 1.3rem;
-              padding: 18px;
-            }
+          @include mixins.mq-down(sp) {
+            font-size: 1.3rem;
+            padding: 18px;
           }
-          .body {
-            width: 65%;
-            padding: 20px 30px;
-            font-size: 2.4rem;
-            font-weight: 600;
-            line-height: 1;
-            letter-spacing: 0.02em;
-            @include mixins.mq-down(tb) {
-              width: 60%;
-            }
-            @include mixins.mq-down(sp) {
-              font-size: 1.8rem;
-              padding: 18px 20px;
-            }
+        }
+        .body {
+          width: 65%;
+          padding: 20px 30px;
+          font-size: 2.4rem;
+          font-weight: 600;
+          line-height: 1;
+          letter-spacing: 0.02em;
+          @include mixins.mq-down(tb) {
+            width: 60%;
+          }
+          @include mixins.mq-down(sp) {
+            font-size: 1.8rem;
+            padding: 18px 20px;
           }
         }
       }

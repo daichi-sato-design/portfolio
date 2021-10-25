@@ -11,11 +11,11 @@ const initialState: uiState = {
   editedContact: {
     name: '',
     email: '',
-    subject: '',
+    subject: 'お問い合わせ',
     honeypot: '',
     message: '',
-    replyTo: '',
-    accessKey: '',
+    replyTo: '@',
+    accessKey: process.env.NEXT_PUBLIC_STATICFORMS_TOKEN,
   },
 }
 
@@ -41,7 +41,5 @@ export const { setEditedContact, resetEditedContact } = uiSlice.actions
 // ComponentからReduxの中のStateを取得するための関数を作成
 // selectContact uiSliceの中にあるeditedContactのStateにアクセスし、データを返す関数
 export const selectContact = (state: RootState) => state.ui.editedContact
-// selectNews uiSliceの中にあるeditedNewsのStateにアクセスし、データを返す関数
-export const selectNews = (state: RootState) => state.ui.editedNews
 
 export default uiSlice.reducer

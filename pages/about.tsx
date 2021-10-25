@@ -45,34 +45,37 @@ const About: VFC = () => {
                 プログラミングとデザインの知識を活かし「面白く便利なもの」を作れればと思います。
               </p>
             </div>
-            <div className="intro__contents">
-              <div className="intro__contents__visual">
-                <Image
-                  src="/about/intro_img.svg"
-                  alt="人物イメージ"
-                  width={380}
-                  height={374}
-                />
-              </div>
-              <ul className="intro__contents__list">
-                <li className="intro__contents__list__item">
-                  <h3 className="ttl">Name</h3>
-                  <p className="body">佐藤 大地</p>
-                </li>
-                <li className="intro__contents__list__item">
-                  <h3 className="ttl">Birthday</h3>
-                  <p className="body">1998.11.11</p>
-                </li>
-                <li className="intro__contents__list__item">
-                  <h3 className="ttl">Hoby</h3>
-                  <p className="body">Game</p>
-                </li>
-                <li className="intro__contents__list__item">
-                  <h3 className="ttl">Language</h3>
-                  <p className="body">Japanese</p>
-                </li>
-              </ul>
+          </div>
+        </div>
+        {/* CONTENTS */}
+        <div className="contents">
+          <div className="contents__wrap">
+            <div className="contents__visual">
+              <Image
+                src="/about/intro_img.svg"
+                alt="人物イメージ"
+                width={380}
+                height={374}
+              />
             </div>
+            <ul className="contents__list">
+              <li className="contents__list__item">
+                <h3 className="ttl">Name</h3>
+                <p className="body">佐藤 大地</p>
+              </li>
+              <li className="contents__list__item">
+                <h3 className="ttl">Birthday</h3>
+                <p className="body">1998.11.11</p>
+              </li>
+              <li className="contents__list__item">
+                <h3 className="ttl">Hoby</h3>
+                <p className="body">Game</p>
+              </li>
+              <li className="contents__list__item">
+                <h3 className="ttl">Language</h3>
+                <p className="body">Japanese</p>
+              </li>
+            </ul>
           </div>
         </div>
       </main>

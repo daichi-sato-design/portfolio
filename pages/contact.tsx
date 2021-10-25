@@ -34,6 +34,38 @@ const Contact: VFC = () => {
             />
           </div>
         </div>
+        {/* INTRO */}
+        <div className="intro">
+          <div className="intro__wrap">
+            <div className="intro__body">
+              <p className="txt">
+                本サイト・サービス・メディアなどに関するご意見やお問い合わせなどに対応いたします。
+                <br />
+                お問い合わせに関するレスポンスが遅い場合、Twitterなど他メディアでのDMもご検討ください。
+                <br />
+                お問い合わせに早急に対応できない場合もあります。
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* FORM */}
+        {/* <div className="contents">
+          <form>
+            <div>
+              <label>氏名*</label>
+              <input name="name" type="text" />
+            </div>
+            <div>
+              <label>メールアドレス*</label>
+              <input name="email" type="text" />
+            </div>
+            <div>
+              <label>お問い合わせ内容*</label>
+              <input name="message" type="text" />
+            </div>
+            <button type="submit">確認する</button>
+          </form>
+        </div> */}
         <UcMemo />
       </main>
     </Layout>
