@@ -10,41 +10,52 @@ export const useContactForm = () => {
   const dispatch = useDispatch()
   const editedContact = useSelector(selectContact)
 
-  const handleChange = useCallback(async (e: ChangeEvent<HTMLInputElement>) => {
-    dispatch(
-      setEditedContact({ ...editedContact, [e.target.name]: e.target.value })
-    )
-  }, [])
+  const handleInputChange = useCallback(
+    async (e: ChangeEvent<HTMLInputElement>) => {
+      dispatch(
+        setEditedContact({ ...editedContact, [e.target.name]: e.target.value })
+      )
+    },
+    [editedContact]
+  )
+  const handleTextAreaChange = useCallback(
+    async (e: ChangeEvent<HTMLTextAreaElement>) => {
+      dispatch(
+        setEditedContact({ ...editedContact, [e.target.name]: e.target.value })
+      )
+    },
+    [editedContact]
+  )
 
-  const handleSubmit = useCallback(async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+  const handleSubmit = useCallback(
+    async (e: FormEvent<HTMLFormElement>) => {
+      e.preventDefault()
 
-    if (!editedContact.name || !editedContact.email || !editedContact.email) {
-      return false
-    }
+      if (!editedContact.name || !editedContact.email || !editedContact.email) {
+        return false
+      }
 
-    try {
-      const res = await fetch('https://api.staticforms.xyz/submit', {
-        method: 'POST',
-        body: JSON.stringify(editedContact),
-        headers: { 'Content-Type': 'application/json' },
-      })
-      dispatch(resetEditedContact())
+      try {
+        const res = await fetch('https://api.staticforms.xyz/submit', {
+          method: 'POST',
+          body: JSON.stringify(editedContact),
+          headers: { 'Content-Type': 'application/json' },
+        })
+        dispatch(resetEditedContact())
 
-      const json = await res.json()
-      console.log(json)
-    } catch (e) {
-      console.log(e.message)
-    }
-  }, [])
-
-  const resetContact = useCallback(() => {
-    dispatch(resetEditedContact())
-  }, [])
+        const json = await res.json()
+        console.log(json)
+      } catch (e) {
+        console.log(e.message)
+      }
+    },
+    [editedContact]
+  )
 
   return {
-    handleChange,
+    editedContact,
+    handleInputChange,
+    handleTextAreaChange,
     handleSubmit,
-    resetContact,
   }
 }
