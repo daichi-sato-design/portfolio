@@ -1,14 +1,22 @@
-import { VFC, useEffect } from 'react'
+import { VFC, useEffect, useState } from 'react'
 import Rellax from 'rellax'
 import Image from 'next/image'
 import { Layout } from '../components/Layout'
-import { UcMemo } from '../components/Uc'
+import { useContactForm } from '../hooks/useContactForm'
 
 const Contact: VFC = () => {
   useEffect(() => {
     // Rellax JS Setting
     var rellax = new Rellax('.rellax')
   }, [])
+
+  const [isConfirm, setIsConfirm] = useState(false)
+  const {
+    editedContact,
+    handleInputChange,
+    handleTextAreaChange,
+    handleSubmit,
+  } = useContactForm()
   return (
     <Layout title="DaichiSato Portfolio | Contact">
       <main className="l-page contact">
@@ -49,24 +57,50 @@ const Contact: VFC = () => {
           </div>
         </div>
         {/* FORM */}
-        {/* <div className="contents">
-          <form>
-            <div>
-              <label>氏名*</label>
-              <input name="name" type="text" />
-            </div>
-            <div>
-              <label>メールアドレス*</label>
-              <input name="email" type="text" />
-            </div>
-            <div>
-              <label>お問い合わせ内容*</label>
-              <input name="message" type="text" />
-            </div>
-            <button type="submit">確認する</button>
-          </form>
-        </div> */}
-        <UcMemo />
+        <div className="contents">
+          <div className="contents__wrap">
+            <form className="form" onSubmit={handleSubmit}>
+              <div className="form__block">
+                <label>氏名*</label>
+                <input
+                  name="name"
+                  type="text"
+                  value={editedContact.name}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="form__block">
+                <label>メールアドレス*</label>
+                <input
+                  name="email"
+                  type="text"
+                  value={editedContact.email}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="form__block">
+                <label>お問い合わせ内容*</label>
+                <textarea
+                  name="message"
+                  rows={5}
+                  value={editedContact.message}
+                  onChange={handleTextAreaChange}
+                />
+              </div>
+              <button
+                className="submit-btn"
+                type="submit"
+                disabled={
+                  !editedContact.name ||
+                  !editedContact.email ||
+                  !editedContact.message
+                }
+              >
+                送信する
+              </button>
+            </form>
+          </div>
+        </div>
       </main>
     </Layout>
   )
