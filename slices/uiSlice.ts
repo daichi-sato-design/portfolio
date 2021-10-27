@@ -11,11 +11,7 @@ const initialState: uiState = {
   editedContact: {
     name: '',
     email: '',
-    subject: 'お問い合わせ',
-    honeypot: '',
     message: '',
-    replyTo: '@',
-    accessKey: process.env.NEXT_PUBLIC_STATICFORMS_TOKEN,
   },
 }
 

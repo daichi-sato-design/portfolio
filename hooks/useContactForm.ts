@@ -38,15 +38,23 @@ export const useContactForm = () => {
       try {
         const res = await fetch('https://api.staticforms.xyz/submit', {
           method: 'POST',
-          body: JSON.stringify(editedContact),
+          body: JSON.stringify({
+            ...editedContact,
+            subject: 'お問い合わせ',
+            honeypot: '',
+            replyTo: '@',
+            accessKey: process.env.NEXT_PUBLIC_STATICFORMS_TOKEN,
+          }),
           headers: { 'Content-Type': 'application/json' },
         })
-        dispatch(resetEditedContact())
 
         const json = await res.json()
-        console.log(json)
+        if (json.success) {
+          dispatch(resetEditedContact())
+          alert('メールの送信完了しました。ありがとうございます。')
+        }
       } catch (e) {
-        console.log(e.message)
+        alert(e.message)
       }
     },
     [editedContact]
