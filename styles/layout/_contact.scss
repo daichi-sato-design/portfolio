@@ -50,22 +50,22 @@
           font-size: 1.5rem;
           font-weight: 500;
           @include mixins.mq-down(tb) {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
           }
         }
         input,
         textarea {
           width: 100%;
-          padding: 15px 20px;
+          padding: 12px 20px;
           background: #fff;
           border-radius: 5px;
-          font-size: 1.5rem;
-          letter-spacing: 0.05em;
+          font-size: 1.6rem;
+          letter-spacing: 0.025em;
           line-height: 1.6;
           color: #555;
           @include mixins.mq-down(tb) {
-            margin-top: 12px;
-            padding: 12px 15px;
+            margin-top: 10px;
+            padding: 10px;
           }
         }
       }
@@ -97,8 +97,9 @@
           }
         }
         @include mixins.mq-down(tb) {
-          margin-top: 30px;
-          height: 54px;
+          margin-top: 20px;
+          height: 50px;
+          font-size: 1.4rem;
         }
       }
     }
