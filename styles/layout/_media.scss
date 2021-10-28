@@ -1,0 +1,103 @@
+@use '/styles/base/mixins';
+@use '/styles/base/variables';
+
+.media {
+  .contents {
+    margin-top: 100px;
+    padding: 0 50px;
+    @include mixins.mq-down(tb) {
+      margin-top: 50px;
+      padding: 0 40px;
+    }
+    @include mixins.mq-down(sp) {
+      padding: 0 20px;
+    }
+    &__list {
+      width: 100%;
+      max-width: 910px;
+      margin: 0 auto;
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        &:nth-child(odd) {
+          @include mixins.mq-down(tb) {
+            flex-direction: column;
+          }
+          .visual {
+            @include mixins.mq-up(tb) {
+              margin-right: 60px;
+            }
+          }
+        }
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+          @include mixins.mq-down(tb) {
+            flex-direction: column;
+          }
+          .visual {
+            @include mixins.mq-up(tb) {
+              margin-left: 60px;
+            }
+          }
+        }
+        &:not(:first-child) {
+          margin-top: 100px;
+          @include mixins.mq-down(tb) {
+            margin-top: 60px;
+          }
+          @include mixins.mq-down(sp) {
+            margin-top: 50px;
+          }
+        }
+
+        .visual {
+          width: 360px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5%;
+          @include mixins.mq-down(tb) {
+            width: 100%;
+            padding: 10%;
+          }
+        }
+        .detail {
+          width: 100%;
+          max-width: 490px;
+          @include mixins.mq-down(tb) {
+            max-width: inherit;
+            margin-top: 40px;
+          }
+          @include mixins.mq-down(sp) {
+            margin-top: 20px;
+          }
+          &__ttl {
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 1.6;
+            @include mixins.mq-down(tb) {
+              font-size: 4.8vw;
+            }
+            @include mixins.mq-down(sp) {
+              font-size: 7.2vw;
+            }
+          }
+          &__body {
+            margin-top: 15px;
+            @include mixins.mq-down(sp) {
+              margin-top: 10px;
+            }
+          }
+          .section-btn {
+            cursor: pointer;
+            margin-top: 30px;
+            @include mixins.mq-down(sp) {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
