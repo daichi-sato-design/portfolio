@@ -2,7 +2,6 @@ import { VFC, useEffect } from 'react'
 import Rellax from 'rellax'
 import Image from 'next/image'
 import { Layout } from '../components/Layout'
-import { UcMemo } from '../components/Uc'
 
 const Skills: VFC = () => {
   useEffect(() => {
@@ -34,7 +33,126 @@ const Skills: VFC = () => {
             />
           </div>
         </div>
-        <UcMemo />
+        {/* INTRO */}
+        <div className="intro">
+          <div className="intro__wrap">
+            <div className="intro__body">
+              <p className="txt">
+                フロントエンド・バックエンド・モバイルアプリなど制作目標に応じて幅広く学習してきました。
+                <br />
+                これまで学んできたスキルをカテゴリーごとにご紹介いたします。
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* CONTENTS */}
+        <div className="contents">
+          <div className="contents__wrap">
+            <ul className="contents__list">
+              <li className="contents__list__block">
+                <h2 className="skill-ttl">フロントエンド</h2>
+                <ul className="skill-list">
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://www.twitch.tv/parme1"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/index01.png"
+                        alt="JaveScript"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://www.twitch.tv/parme1"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/index02.png"
+                        alt="TypeScript"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://www.twitch.tv/parme1"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/index03.png"
+                        alt="React"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://www.twitch.tv/parme1"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/index04.png"
+                        alt="Next.js"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://www.twitch.tv/parme1"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/sass.png"
+                        alt="Sass"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://www.twitch.tv/parme1"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/tailwindcss.png"
+                        alt="Tailwind CSS"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </main>
     </Layout>
   )

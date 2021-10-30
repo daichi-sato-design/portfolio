@@ -200,7 +200,7 @@ const Home: VFC = () => {
               <div className="visual__item">
                 <Image
                   loading="lazy"
-                  src="/skills/index01.png"
+                  src="/skills/javascript.png"
                   alt="JaveScript"
                   width={120}
                   height={120}
@@ -209,7 +209,7 @@ const Home: VFC = () => {
               <div className="visual__item">
                 <Image
                   loading="lazy"
-                  src="/skills/index02.png"
+                  src="/skills/typescript.png"
                   alt="TypeScript"
                   width={120}
                   height={120}
@@ -218,7 +218,7 @@ const Home: VFC = () => {
               <div className="visual__item">
                 <Image
                   loading="lazy"
-                  src="/skills/index03.png"
+                  src="/skills/react.png"
                   alt="React"
                   width={120}
                   height={120}
@@ -227,7 +227,7 @@ const Home: VFC = () => {
               <div className="visual__item">
                 <Image
                   loading="lazy"
-                  src="/skills/index04.png"
+                  src="/skills/nextjs.png"
                   alt="Next.js"
                   width={120}
                   height={120}
@@ -236,7 +236,7 @@ const Home: VFC = () => {
               <div className="visual__item">
                 <Image
                   loading="lazy"
-                  src="/skills/index05.png"
+                  src="/skills/dart.png"
                   alt="Dart"
                   width={120}
                   height={120}
@@ -245,7 +245,7 @@ const Home: VFC = () => {
               <div className="visual__item">
                 <Image
                   loading="lazy"
-                  src="/skills/index06.png"
+                  src="/skills/flutter.png"
                   alt="Flutter"
                   width={120}
                   height={120}
@@ -254,7 +254,7 @@ const Home: VFC = () => {
               <div className="visual__item">
                 <Image
                   loading="lazy"
-                  src="/skills/index07.png"
+                  src="/skills/golang.png"
                   alt="Golang"
                   width={120}
                   height={120}
@@ -263,7 +263,7 @@ const Home: VFC = () => {
               <div className="visual__item">
                 <Image
                   loading="lazy"
-                  src="/skills/index08.png"
+                  src="/skills/postgresql.png"
                   alt="PostgreSQL"
                   width={120}
                   height={120}
@@ -272,7 +272,7 @@ const Home: VFC = () => {
               <div className="visual__item">
                 <Image
                   loading="lazy"
-                  src="/skills/index09.png"
+                  src="/skills/graphql.png"
                   alt="GraphQL"
                   width={120}
                   height={120}
