@@ -1,0 +1,55 @@
+@use '/styles/base/mixins';
+@use '/styles/base/variables';
+
+.skills {
+  .contents {
+    margin-top: 100px;
+    padding: 0 50px;
+    @include mixins.mq-down(tb) {
+      margin-top: 40px;
+      padding: 0 40px;
+    }
+    @include mixins.mq-down(sp) {
+      padding: 0 20px;
+    }
+    &__list {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      &__block {
+        width: 100%;
+        .skill-ttl {
+          display: block;
+          font-size: 3rem;
+          font-weight: 600;
+          line-height: 1.6;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #fff;
+          @include mixins.mq-down(tb) {
+            font-size: 4.8vw;
+          }
+          @include mixins.mq-down(sp) {
+            font-size: 7.2vw;
+          }
+        }
+        .skill-list {
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          &__item {
+            width: 18%;
+            margin-top: 3%;
+            &:not(:nth-child(5n + 1)) {
+              margin-left: 2.5%;
+            }
+            .link {
+              padding: 12%;
+              display: block;
+              background: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
