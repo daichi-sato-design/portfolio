@@ -1,6 +1,7 @@
 import { VFC, useEffect } from 'react'
 import Rellax from 'rellax'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Layout } from '../components/Layout'
 
 const Skills: VFC = () => {
@@ -55,13 +56,13 @@ const Skills: VFC = () => {
                   <li className="skill-list__item">
                     <a
                       className="link"
-                      href="https://www.twitch.tv/parme1"
+                      href="https://developer.mozilla.org/ja/docs/Web/JavaScript"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       <Image
                         loading="lazy"
-                        src="/skills/index01.png"
+                        src="/skills/javascript.png"
                         alt="JaveScript"
                         width={135}
                         height={135}
@@ -71,13 +72,13 @@ const Skills: VFC = () => {
                   <li className="skill-list__item">
                     <a
                       className="link"
-                      href="https://www.twitch.tv/parme1"
+                      href="https://www.typescriptlang.org/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       <Image
                         loading="lazy"
-                        src="/skills/index02.png"
+                        src="/skills/typescript.png"
                         alt="TypeScript"
                         width={135}
                         height={135}
@@ -87,13 +88,13 @@ const Skills: VFC = () => {
                   <li className="skill-list__item">
                     <a
                       className="link"
-                      href="https://www.twitch.tv/parme1"
+                      href="https://ja.reactjs.org/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       <Image
                         loading="lazy"
-                        src="/skills/index03.png"
+                        src="/skills/react.png"
                         alt="React"
                         width={135}
                         height={135}
@@ -103,13 +104,13 @@ const Skills: VFC = () => {
                   <li className="skill-list__item">
                     <a
                       className="link"
-                      href="https://www.twitch.tv/parme1"
+                      href="https://nextjs.org/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       <Image
                         loading="lazy"
-                        src="/skills/index04.png"
+                        src="/skills/nextjs.png"
                         alt="Next.js"
                         width={135}
                         height={135}
@@ -119,7 +120,7 @@ const Skills: VFC = () => {
                   <li className="skill-list__item">
                     <a
                       className="link"
-                      href="https://www.twitch.tv/parme1"
+                      href="https://sass-lang.com/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
@@ -135,7 +136,7 @@ const Skills: VFC = () => {
                   <li className="skill-list__item">
                     <a
                       className="link"
-                      href="https://www.twitch.tv/parme1"
+                      href="https://tailwindcss.com/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
@@ -150,7 +151,201 @@ const Skills: VFC = () => {
                   </li>
                 </ul>
               </li>
+              <li className="contents__list__block">
+                <h2 className="skill-ttl">バックエンド</h2>
+                <ul className="skill-list">
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://golang.org/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/golang.png"
+                        alt="Golang"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://nodejs.org/ja/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/nodejs.png"
+                        alt="nodejs"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="contents__list__block">
+                <h2 className="skill-ttl">モバイルアプリ</h2>
+                <ul className="skill-list">
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://dart.dev/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/dart.png"
+                        alt="Dart"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://flutter.dev/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/flutter.png"
+                        alt="Flutter"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="contents__list__block">
+                <h2 className="skill-ttl">データベース / その他</h2>
+                <ul className="skill-list">
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://www.postgresql.org/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/postgresql.png"
+                        alt="PostgreSQL"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://www.mongodb.com/atlas"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/mongodb.png"
+                        alt="MongoDB"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://firebase.google.com/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/firebase.png"
+                        alt="Firebase"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://hasura.io/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/hasura.png"
+                        alt="Hasura"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://graphql.org/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/graphql.png"
+                        alt="GraqhQL"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://jwt.io/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/jwt.png"
+                        alt="jwt"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </li>
             </ul>
+          </div>
+        </div>
+        {/* MESSAGE */}
+        <div className="message">
+          <div className="message__wrap">
+            <div className="detail">
+              <h2 className="detail__ttl">スキルを身に着け、制作へ。</h2>
+              <p className="detail__body">
+                アイデアが浮かんだとき、スキルがあればそれをかたちにできます。もちろんスキルが足りないときもありますが、足りないスキルをその都度学ぶことで自分の可能性の幅が広がると考えます。
+              </p>
+            </div>
+            <div className="section-btn">
+              <Link href="/works">
+                <a className="link -bg_transparent">
+                  <span className="txt">Works</span>
+                  <div className="deco"></div>
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
       </main>

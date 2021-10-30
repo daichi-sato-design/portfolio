@@ -460,6 +460,12 @@
             height: 14px;
             background: url('../../public/common/i_extarnal-link.svg') no-repeat
               center / cover;
+            @include mixins.mq-down(sp) {
+              top: 5px;
+              right: 5px;
+              width: 12px;
+              height: 12px;
+            }
           }
           img {
             transition: transform 200ms variables.$bezier-easeOutSine;

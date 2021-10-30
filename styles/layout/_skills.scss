@@ -15,9 +15,17 @@
     &__list {
       max-width: 1000px;
       margin: 0 auto;
-      display: flex;
       &__block {
         width: 100%;
+        &:not(:first-child) {
+          margin-top: 80px;
+          @include mixins.mq-down(tb) {
+            margin-top: 40px;
+          }
+          @include mixins.mq-down(sp) {
+            margin-top: 30px;
+          }
+        }
         .skill-ttl {
           display: block;
           font-size: 3rem;
@@ -26,10 +34,11 @@
           padding-bottom: 20px;
           border-bottom: 1px solid #fff;
           @include mixins.mq-down(tb) {
-            font-size: 4.8vw;
+            font-size: 4vw;
+            padding-bottom: 10px;
           }
           @include mixins.mq-down(sp) {
-            font-size: 7.2vw;
+            font-size: 6vw;
           }
         }
         .skill-list {
@@ -39,15 +48,118 @@
           &__item {
             width: 18%;
             margin-top: 3%;
+            @include mixins.mq-down(tb) {
+              width: 31%;
+              margin-top: 4%;
+            }
             &:not(:nth-child(5n + 1)) {
-              margin-left: 2.5%;
+              @include mixins.mq-up(tb) {
+                margin-left: 2.5%;
+              }
+            }
+            &:not(:nth-child(3n + 1)) {
+              @include mixins.mq-down(tb) {
+                margin-left: 3.5%;
+              }
             }
             .link {
+              position: relative;
               padding: 12%;
               display: block;
               background: #fff;
+              @include mixins.mq-up(tb) {
+                &:hover {
+                  img {
+                    transform: scale(1.115);
+                  }
+                }
+              }
+              &:before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 14px;
+                height: 14px;
+                background: url('../../public/common/i_extarnal-link.svg')
+                  no-repeat center / cover;
+                @include mixins.mq-down(sp) {
+                  top: 5px;
+                  right: 5px;
+                  width: 12px;
+                  height: 12px;
+                }
+              }
+              div {
+                overflow: visible !important;
+                img {
+                  transition: transform 200ms variables.$bezier-easeOutSine;
+                }
+              }
             }
           }
+        }
+      }
+    }
+  }
+  .message {
+    margin-top: 120px;
+    padding: 0 50px;
+    @include mixins.mq-down(tb) {
+      margin-top: 80px;
+      padding: 0 40px;
+    }
+    @include mixins.mq-down(sp) {
+      margin-top: 50px;
+      padding: 0 20px;
+    }
+    &__wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 80px 100px;
+      border-radius: 10px;
+      background: rgba(#000, 0.4);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      @include mixins.mq-down(tb) {
+        padding: 50px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      @include mixins.mq-down(sp) {
+        padding: 30px 20px;
+      }
+      .detail {
+        width: 61.25%;
+        @include mixins.mq-down(tb) {
+          width: 100%;
+        }
+        &__ttl {
+          display: block;
+          font-size: 3rem;
+          font-weight: 600;
+          line-height: 1.6;
+          @include mixins.mq-down(tb) {
+            font-size: 3.6vw;
+          }
+          @include mixins.mq-down(sp) {
+            font-size: 5.8vw;
+          }
+        }
+        &__body {
+          margin-top: 20px;
+          @include mixins.mq-down(sp) {
+            margin-top: 10px;
+          }
+        }
+      }
+      .section-btn {
+        @include mixins.mq-down(tb) {
+          margin-top: 40px;
+        }
+        @include mixins.mq-down(sp) {
+          margin-top: 30px;
         }
       }
     }
