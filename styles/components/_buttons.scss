@@ -13,6 +13,9 @@
     border-radius: 50px;
     background: variables.$primary-color;
     transition: background 200ms variables.$bezier-easeOutSine;
+    &.-bg_transparent {
+      background: transparent;
+    }
     @include mixins.mq-up(tb) {
       &:hover {
         background: #473480;
