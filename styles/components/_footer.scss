@@ -169,7 +169,7 @@
       transition: background 200ms variables.$bezier-easeOutSine;
       @include mixins.mq-up(tb) {
         &:hover {
-          background: #473480;
+          background: darken(variables.$primary-color, 10);
         }
       }
       @include mixins.mq-down(sp) {
