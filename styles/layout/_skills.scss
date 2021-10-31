@@ -63,9 +63,11 @@
               }
             }
             .link {
+              display: flex;
+              justify-content: center;
+              align-items: center;
               position: relative;
-              padding: 12%;
-              display: block;
+              padding: 15%;
               background: #fff;
               @include mixins.mq-up(tb) {
                 &:hover {
@@ -73,6 +75,9 @@
                     transform: scale(1.115);
                   }
                 }
+              }
+              @include mixins.mq-down(sp) {
+                padding: 12%;
               }
               &:before {
                 content: '';
