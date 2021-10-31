@@ -233,11 +233,10 @@
             text-transform: uppercase;
             font-size: 7rem;
             font-weight: 900;
-            letter-spacing: 0.04em;
-            transition: letter-spacing 200ms variables.$bezier-easeOutSine;
             @include mixins.mq-up(tb) {
+              transition: opacity 200ms variables.$bezier-easeOutSine;
               &:hover {
-                letter-spacing: 0.1em;
+                opacity: 0.6;
               }
             }
             @include mixins.mq-down(lt) {

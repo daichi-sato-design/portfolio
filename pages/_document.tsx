@@ -10,7 +10,7 @@ export default class Document extends NextDocument {
           <link
             rel="icon"
             type="image/png"
-            href="/android-chrome-192x192.png"
+            href="/android-chrome-192×192.png"
           />
         </Head>
         <body>
