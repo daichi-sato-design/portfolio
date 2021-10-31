@@ -34,26 +34,32 @@
             margin-top: 12px;
           }
           &__ttl {
-            font-size: 2rem;
+            font-size: 2.4rem;
             font-weight: 600;
             line-height: 1.6;
             @include mixins.mq-down(tb) {
-              font-size: 2.3vw;
+              font-size: 2.6vw;
             }
             @include mixins.mq-down(sp) {
               font-size: 4vw;
             }
           }
           &__tag {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 2px 10px;
+            border-radius: 3px;
+            background: rgba(#000, 0.4);
             font-size: 1.4rem;
-            font-weight: 500;
-            color: rgba(#fff, 0.8);
-
+            font-weight: 600;
+            line-height: 1.8;
+            color: #fff;
             @include mixins.mq-down(tb) {
               font-size: 1.8vw;
             }
             @include mixins.mq-down(sp) {
               font-size: 3vw;
+              margin-top: 5px;
             }
           }
         }

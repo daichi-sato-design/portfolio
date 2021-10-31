@@ -39,10 +39,10 @@ const Works: VFC = () => {
             <li className="contents__list__item">
               <div className="visual">
                 <Image
-                  src="/works/works01_01.jpg"
+                  src="/works/ptybo_main.jpg"
                   alt="Works"
                   width={1100}
-                  height={500}
+                  height={560}
                 />
               </div>
               <div className="detail">
@@ -55,10 +55,10 @@ const Works: VFC = () => {
             <li className="contents__list__item">
               <div className="visual">
                 <Image
-                  src="/works/works02_01.jpg"
+                  src="/works/flagup_main.jpg"
                   alt="Works"
                   width={1100}
-                  height={500}
+                  height={560}
                 />
               </div>
               <div className="detail">
