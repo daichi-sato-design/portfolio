@@ -104,6 +104,22 @@ const Skills: VFC = () => {
                   <li className="skill-list__item">
                     <a
                       className="link"
+                      href="https://redux.js.org/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/redux.png"
+                        alt="Redux"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
                       href="https://nextjs.org/"
                       rel="noopener noreferrer"
                       target="_blank"
@@ -335,7 +351,7 @@ const Skills: VFC = () => {
             <div className="detail">
               <h2 className="detail__ttl">スキルを身に着け、制作へ。</h2>
               <p className="detail__body">
-                アイデアが浮かんだとき、スキルがあればそれをかたちにできます。もちろんスキルが足りないときもありますが、足りないスキルをその都度学ぶことで自分の可能性の幅が広がると考えます。
+                アイデアが浮かんだ時にスキルがあればそのアイデアをかたちにできます。もちろんスキルが足りないときもありますが、足りないスキルをその都度学ぶことで自分の可能性が広がると考えています。
               </p>
             </div>
             <div className="section-btn">
