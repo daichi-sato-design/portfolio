@@ -1,4 +1,4 @@
-import { useCallback, FormEvent, ChangeEvent } from 'react'
+import { useCallback, FormEvent, ChangeEvent, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {
   setEditedContact,
@@ -10,29 +10,54 @@ export const useContactForm = () => {
   const dispatch = useDispatch()
   const editedContact = useSelector(selectContact)
 
+  const [isErrorEmail, setIsErrorEmail] = useState(false)
+  const re =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   const handleInputChange = useCallback(
     async (e: ChangeEvent<HTMLInputElement>) => {
-      dispatch(
-        setEditedContact({ ...editedContact, [e.target.name]: e.target.value })
+      await dispatch(
+        setEditedContact({
+          ...editedContact,
+          [e.target.name]: e.target.value,
+        })
       )
+      if (e.target.name === 'email') {
+        if (re.test(String(e.target.value).toLowerCase())) {
+          setIsErrorEmail(false)
+        } else {
+          setIsErrorEmail(true)
+        }
+      }
     },
     [editedContact]
   )
   const handleTextAreaChange = useCallback(
     async (e: ChangeEvent<HTMLTextAreaElement>) => {
-      dispatch(
-        setEditedContact({ ...editedContact, [e.target.name]: e.target.value })
+      await dispatch(
+        setEditedContact({
+          ...editedContact,
+          [e.target.name]: e.target.value,
+        })
       )
     },
     [editedContact]
   )
+  const validateEmail = useCallback(() => {
+    return re.test(String(editedContact.email).toLowerCase())
+  }, [editedContact])
 
   const handleSubmit = useCallback(
     async (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault()
 
       if (!editedContact.name || !editedContact.email || !editedContact.email) {
-        return false
+        return
+      }
+
+      if (validateEmail) {
+        alert('無効なメールアドレスが入力されています。')
+        setIsErrorEmail(true)
+        return
       }
 
       try {
@@ -65,5 +90,6 @@ export const useContactForm = () => {
     handleInputChange,
     handleTextAreaChange,
     handleSubmit,
+    isErrorEmail,
   }
 }
