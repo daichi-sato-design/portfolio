@@ -61,9 +61,8 @@ export const useContactForm = () => {
       return
     }
 
-    if (validateEmail) {
+    if (!validateEmail) {
       alert('無効なメールアドレスが入力されています。')
-      setIsErrorEmail(true)
       return
     }
     try {
@@ -87,6 +86,7 @@ export const useContactForm = () => {
     } catch (e) {
       alert(e.message)
     }
+    router.push('/contact')
   }, [editedContact])
 
   return {
