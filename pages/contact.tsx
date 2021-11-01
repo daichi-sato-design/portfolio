@@ -1,4 +1,4 @@
-import { VFC, useEffect, useState } from 'react'
+import { VFC, useEffect } from 'react'
 import Rellax from 'rellax'
 import Image from 'next/image'
 import { Layout } from '../components/Layout'
@@ -10,12 +10,12 @@ const Contact: VFC = () => {
     var rellax = new Rellax('.rellax')
   }, [])
 
-  const [isConfirm, setIsConfirm] = useState(false)
   const {
     editedContact,
     handleInputChange,
     handleTextAreaChange,
     handleSubmit,
+    isErrorEmail,
   } = useContactForm()
   return (
     <Layout title="DaichiSato Portfolio | Contact">
@@ -62,30 +62,40 @@ const Contact: VFC = () => {
             <form className="form" onSubmit={handleSubmit}>
               <div className="form__block">
                 <label>氏名*</label>
-                <input
-                  name="name"
-                  type="text"
-                  value={editedContact.name}
-                  onChange={handleInputChange}
-                />
+                <div className="form__block__input">
+                  <input
+                    name="name"
+                    type="text"
+                    value={editedContact.name}
+                    onChange={handleInputChange}
+                  />
+                </div>
               </div>
               <div className="form__block">
                 <label>メールアドレス*</label>
-                <input
-                  name="email"
-                  type="text"
-                  value={editedContact.email}
-                  onChange={handleInputChange}
-                />
+                <div className="form__block__input">
+                  <input
+                    name="email"
+                    type="text"
+                    className={isErrorEmail ? 'validated' : null}
+                    value={editedContact.email}
+                    onChange={handleInputChange}
+                  />
+                  {isErrorEmail ? (
+                    <p className="err-msg">無効なメールアドレスです</p>
+                  ) : null}
+                </div>
               </div>
               <div className="form__block">
                 <label>お問い合わせ内容*</label>
-                <textarea
-                  name="message"
-                  rows={5}
-                  value={editedContact.message}
-                  onChange={handleTextAreaChange}
-                />
+                <div className="form__block__input">
+                  <textarea
+                    name="message"
+                    rows={5}
+                    value={editedContact.message}
+                    onChange={handleTextAreaChange}
+                  />
+                </div>
               </div>
               <button
                 className="submit-btn"
@@ -93,7 +103,8 @@ const Contact: VFC = () => {
                 disabled={
                   !editedContact.name ||
                   !editedContact.email ||
-                  !editedContact.message
+                  !editedContact.message ||
+                  isErrorEmail
                 }
               >
                 送信する
