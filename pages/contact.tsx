@@ -107,7 +107,7 @@ const Contact: VFC = () => {
                   isErrorEmail
                 }
               >
-                送信する
+                確認する
               </button>
             </form>
           </div>

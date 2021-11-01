@@ -24,6 +24,66 @@
       }
     }
     .form {
+      &__block {
+        &:not(:first-child) {
+          margin-top: 30px;
+          @include mixins.mq-down(tb) {
+            margin-top: 20px;
+          }
+        }
+        label {
+          margin-top: 16px;
+          @include mixins.mq-down(tb) {
+            margin-top: 0;
+          }
+        }
+        &__input {
+          width: 100%;
+          input,
+          textarea {
+            width: 100%;
+            padding: 12px 20px;
+            background: #fff;
+            border-radius: 5px;
+            font-size: 1.6rem;
+            line-height: 1.6;
+            letter-spacing: 0;
+            color: #000;
+            @include mixins.mq-down(tb) {
+              margin-top: 10px;
+              padding: 10px;
+            }
+          }
+          .err-msg {
+            color: #ef0606;
+            letter-spacing: 0.02em;
+            font-size: 1.4rem;
+            @include mixins.mq-down(tb) {
+              margin-top: 5px;
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+    .form-confirm {
+      &__block {
+        &:not(:first-child) {
+          margin-top: 30px;
+          @include mixins.mq-down(tb) {
+            margin-top: 10px;
+          }
+        }
+        &__input {
+          @include mixins.mq-down(tb) {
+            border-top: 1px solid #fff;
+            padding-top: 3px;
+          }
+        }
+      }
+    }
+    .form,
+    .form-confirm {
       width: 100%;
       padding: 120px 110px;
       border-radius: 10px;
@@ -40,45 +100,20 @@
         @include mixins.mq-down(tb) {
           flex-direction: column;
         }
-        &:not(:first-child) {
-          margin-top: 20px;
-        }
         label {
           width: 220px;
           flex-shrink: 0;
           font-size: 1.5rem;
           font-weight: 500;
-          margin-top: 16px;
+          line-height: 2;
           @include mixins.mq-down(tb) {
             font-size: 1.3rem;
-            margin-top: 0;
           }
         }
         &__input {
           width: 100%;
-          input,
-          textarea {
-            width: 100%;
-            padding: 12px 20px;
-            background: #fff;
-            border-radius: 5px;
-            font-size: 1.6rem;
-            letter-spacing: 0.025em;
-            line-height: 1.6;
-            color: #555;
-            @include mixins.mq-down(tb) {
-              margin-top: 10px;
-              padding: 10px;
-            }
-          }
-          .err-msg {
-            color: #f00;
-            font-size: 1.4rem;
-            @include mixins.mq-down(tb) {
-              margin-top: 5px;
-              font-size: 1.3rem;
-            }
-          }
+          line-height: 2;
+          letter-spacing: 0;
         }
       }
       .submit-btn {
@@ -110,6 +145,31 @@
         }
         @include mixins.mq-down(tb) {
           margin-top: 20px;
+          height: 50px;
+          font-size: 1.4rem;
+        }
+      }
+      .edit-btn {
+        margin: 20px auto 0;
+        width: 100%;
+        max-width: 540px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fff;
+        font-size: 1.5rem;
+        letter-spacing: 0.06em;
+        font-weight: 500;
+        border-radius: 5px;
+        transition: background 200ms variables.$bezier-easeOutSine;
+        @include mixins.mq-up(tb) {
+          &:hover {
+            background: darken(variables.$primary-color, 10);
+          }
+        }
+        @include mixins.mq-down(tb) {
+          margin-top: 10px;
           height: 50px;
           font-size: 1.4rem;
         }

@@ -1,4 +1,5 @@
 import { useCallback, FormEvent, ChangeEvent, useState } from 'react'
+import { useRouter } from 'next/router'
 import { useDispatch, useSelector } from 'react-redux'
 import {
   setEditedContact,
@@ -9,6 +10,7 @@ import {
 export const useContactForm = () => {
   const dispatch = useDispatch()
   const editedContact = useSelector(selectContact)
+  const router = useRouter()
 
   const [isErrorEmail, setIsErrorEmail] = useState(false)
   const re =
@@ -49,41 +51,43 @@ export const useContactForm = () => {
   const handleSubmit = useCallback(
     async (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault()
-
-      if (!editedContact.name || !editedContact.email || !editedContact.email) {
-        return
-      }
-
-      if (validateEmail) {
-        alert('無効なメールアドレスが入力されています。')
-        setIsErrorEmail(true)
-        return
-      }
-
-      try {
-        const res = await fetch('https://api.staticforms.xyz/submit', {
-          method: 'POST',
-          body: JSON.stringify({
-            ...editedContact,
-            subject: 'お問い合わせ',
-            honeypot: '',
-            replyTo: '@',
-            accessKey: process.env.NEXT_PUBLIC_STATICFORMS_TOKEN,
-          }),
-          headers: { 'Content-Type': 'application/json' },
-        })
-
-        const json = await res.json()
-        if (json.success) {
-          dispatch(resetEditedContact())
-          alert('メールの送信完了しました。ありがとうございます。')
-        }
-      } catch (e) {
-        alert(e.message)
-      }
+      router.push('/contact-confirm')
     },
     [editedContact]
   )
+
+  const handleSendContact = useCallback(async () => {
+    if (!editedContact.name || !editedContact.email || !editedContact.email) {
+      return
+    }
+
+    if (validateEmail) {
+      alert('無効なメールアドレスが入力されています。')
+      setIsErrorEmail(true)
+      return
+    }
+    try {
+      const res = await fetch('https://api.staticforms.xyz/submit', {
+        method: 'POST',
+        body: JSON.stringify({
+          ...editedContact,
+          subject: 'お問い合わせ',
+          honeypot: '',
+          replyTo: '@',
+          accessKey: process.env.NEXT_PUBLIC_STATICFORMS_TOKEN,
+        }),
+        headers: { 'Content-Type': 'application/json' },
+      })
+
+      const json = await res.json()
+      if (json.success) {
+        dispatch(resetEditedContact())
+        alert('メールの送信完了しました。ありがとうございます。')
+      }
+    } catch (e) {
+      alert(e.message)
+    }
+  }, [editedContact])
 
   return {
     editedContact,
@@ -91,5 +95,6 @@ export const useContactForm = () => {
     handleTextAreaChange,
     handleSubmit,
     isErrorEmail,
+    handleSendContact,
   }
 }
