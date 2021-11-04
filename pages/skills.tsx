@@ -136,6 +136,22 @@ const Skills: VFC = () => {
                   <li className="skill-list__item">
                     <a
                       className="link"
+                      href="https://webpack.js.org/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/webpack.png"
+                        alt="Sass"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
                       href="https://sass-lang.com/"
                       rel="noopener noreferrer"
                       target="_blank"
