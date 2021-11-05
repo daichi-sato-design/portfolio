@@ -133,7 +133,7 @@ const Skills: VFC = () => {
                       />
                     </a>
                   </li>
-                  <li className="skill-list__item">
+                  {/* <li className="skill-list__item">
                     <a
                       className="link"
                       href="https://webpack.js.org/"
@@ -148,7 +148,7 @@ const Skills: VFC = () => {
                         height={135}
                       />
                     </a>
-                  </li>
+                  </li> */}
                   <li className="skill-list__item">
                     <a
                       className="link"
