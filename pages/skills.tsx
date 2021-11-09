@@ -295,22 +295,6 @@ const Skills: VFC = () => {
                   <li className="skill-list__item">
                     <a
                       className="link"
-                      href="https://firebase.google.com/"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <Image
-                        loading="lazy"
-                        src="/skills/firebase.png"
-                        alt="Firebase"
-                        width={135}
-                        height={135}
-                      />
-                    </a>
-                  </li>
-                  <li className="skill-list__item">
-                    <a
-                      className="link"
                       href="https://cloud.google.com/"
                       rel="noopener noreferrer"
                       target="_blank"
@@ -324,6 +308,23 @@ const Skills: VFC = () => {
                       />
                     </a>
                   </li>
+                  <li className="skill-list__item">
+                    <a
+                      className="link"
+                      href="https://firebase.google.com/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Image
+                        loading="lazy"
+                        src="/skills/firebase.png"
+                        alt="Firebase"
+                        width={135}
+                        height={135}
+                      />
+                    </a>
+                  </li>
+
                   <li className="skill-list__item">
                     <a
                       className="link"
