@@ -53,34 +53,6 @@ const Media: VFC = () => {
                 <div className="visual">
                   <Image
                     loading="lazy"
-                    src="/media/index01.png"
-                    alt="Twitch"
-                    width={200}
-                    height={140}
-                  />
-                </div>
-                <div className="detail">
-                  <h2 className="detail__ttl">Twitch</h2>
-                  <p className="detail__body">
-                    元はゲーム配信を見る立場のみでしたが、自分もやってみようと思いはじめました。配信頻度は多くはありませんが好きなゲーム（主にFPSなど）を楽しくプレイしていきます。
-                  </p>
-                  <div className="section-btn">
-                    <a
-                      href="https://www.twitch.tv/parme1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="link"
-                    >
-                      <span className="txt">Follow</span>
-                      <div className="deco"></div>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li className="contents__list__item">
-                <div className="visual">
-                  <Image
-                    loading="lazy"
                     src="/media/index02.png"
                     alt="Twitter"
                     width={200}
@@ -152,6 +124,34 @@ const Media: VFC = () => {
                   <div className="section-btn">
                     <a
                       href="https://www.facebook.com/people/%E4%BD%90%E8%97%A4%E5%A4%A7%E5%9C%B0/100016189206932/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link"
+                    >
+                      <span className="txt">Follow</span>
+                      <div className="deco"></div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li className="contents__list__item">
+                <div className="visual">
+                  <Image
+                    loading="lazy"
+                    src="/media/index01.png"
+                    alt="Twitch"
+                    width={200}
+                    height={140}
+                  />
+                </div>
+                <div className="detail">
+                  <h2 className="detail__ttl">Twitch</h2>
+                  <p className="detail__body">
+                    元はゲーム配信を見る立場のみでしたが、自分もやってみようと思いはじめました。配信頻度は多くはありませんが好きなゲーム（主にFPSなど）を楽しくプレイしていきます。
+                  </p>
+                  <div className="section-btn">
+                    <a
+                      href="https://www.twitch.tv/parme1"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="link"
