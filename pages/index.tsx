@@ -304,20 +304,6 @@ const Home: VFC = () => {
           <div className="media__wrap">
             <div className="visual">
               <a
-                href="https://www.twitch.tv/parme1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="visual__item"
-              >
-                <Image
-                  loading="lazy"
-                  src="/media/index01.png"
-                  alt="Twitch"
-                  width={200}
-                  height={140}
-                />
-              </a>
-              <a
                 href="https://twitter.com/_daichisato"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -355,6 +341,20 @@ const Home: VFC = () => {
                   loading="lazy"
                   src="/media/index04.png"
                   alt="Facebook"
+                  width={200}
+                  height={140}
+                />
+              </a>
+              <a
+                href="https://www.twitch.tv/parme1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="visual__item"
+              >
+                <Image
+                  loading="lazy"
+                  src="/media/index01.png"
+                  alt="Twitch"
                   width={200}
                   height={140}
                 />
