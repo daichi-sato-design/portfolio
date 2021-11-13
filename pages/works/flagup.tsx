@@ -13,8 +13,7 @@ const Flagup: VFC = () => {
       <main className="l-page works_d">
         <div className="mv">
           <div className="mv__wrap">
-            <h2 className="mv__ttl">Works</h2>
-            <span className="mv__txt">制作について</span>
+            <h2 className="mv__ttl">Flagup</h2>
           </div>
           <div className="mv__bg01 rellax" data-rellax-speed="-2.75">
             <Image
