@@ -14,6 +14,7 @@ const Flagup: VFC = () => {
         <div className="mv">
           <div className="mv__wrap">
             <h2 className="mv__ttl">Flagup</h2>
+            <p className="mv__category">モバイルアプリ</p>
           </div>
           <div className="mv__bg01 rellax" data-rellax-speed="-2.75">
             <Image
