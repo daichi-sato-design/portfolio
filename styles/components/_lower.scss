@@ -86,6 +86,24 @@
       }
     }
   }
+  &.works_d {
+    .mv {
+      &__wrap {
+        text-align: left;
+      }
+      &__ttl {
+        font-size: 6.4rem;
+        font-weight: 900;
+        text-transform: initial;
+        @include mixins.mq-down(tb) {
+          font-size: 8.2vw;
+        }
+        @include mixins.mq-down(sp) {
+          font-size: 11vw;
+        }
+      }
+    }
+  }
   // INTRO
   .intro {
     margin-top: 50px;
