@@ -1,6 +1,7 @@
 import { VFC, useEffect } from 'react'
 import Rellax from 'rellax'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Layout } from '../components/Layout'
 
 const Works: VFC = () => {
@@ -37,36 +38,44 @@ const Works: VFC = () => {
         <div className="contents">
           <ul className="contents__list">
             <li className="contents__list__item">
-              <div className="visual">
-                <Image
-                  src="/works/ptybo_main.jpg"
-                  alt="Works"
-                  width={1100}
-                  height={560}
-                />
-              </div>
-              <div className="detail">
-                <h2 className="detail__ttl">
-                  Ptybo.online｜今すぐ遊べるプレイヤーを探すゲーマーのパーティー募集サービス
-                </h2>
-                <p className="detail__tag">Webサービス</p>
-              </div>
+              <Link href="/works/ptybo">
+                <a className="link">
+                  <div className="visual">
+                    <Image
+                      src="/works/ptybo_main.jpg"
+                      alt="Works"
+                      width={1100}
+                      height={560}
+                    />
+                  </div>
+                  <div className="detail">
+                    <h2 className="detail__ttl">
+                      Ptybo｜今すぐ遊べるプレイヤーを探すゲーマーのパーティー募集サービス
+                    </h2>
+                    <p className="detail__tag">Webサービス</p>
+                  </div>
+                </a>
+              </Link>
             </li>
             <li className="contents__list__item">
-              <div className="visual">
-                <Image
-                  src="/works/flagup_main.jpg"
-                  alt="Works"
-                  width={1100}
-                  height={560}
-                />
-              </div>
-              <div className="detail">
-                <h2 className="detail__ttl">
-                  Flagup｜SNSをもっと効率的かつ専門的に。
-                </h2>
-                <p className="detail__tag">モバイルアプリ</p>
-              </div>
+              <Link href="/works/flagup">
+                <a className="link">
+                  <div className="visual">
+                    <Image
+                      src="/works/flagup_main.jpg"
+                      alt="Works"
+                      width={1100}
+                      height={560}
+                    />
+                  </div>
+                  <div className="detail">
+                    <h2 className="detail__ttl">
+                      Flagup｜SNSをもっと効率的かつ専門的に。
+                    </h2>
+                    <p className="detail__tag">モバイルアプリ</p>
+                  </div>
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

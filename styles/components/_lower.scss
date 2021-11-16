@@ -90,6 +90,13 @@
     .mv {
       &__wrap {
         text-align: left;
+        padding: 150px 50px 100px;
+        @include mixins.mq-down(tb) {
+          padding: 120px 40px 60px;
+        }
+        @include mixins.mq-down(sp) {
+          padding: 100px 20px 40px;
+        }
       }
       &__ttl {
         font-size: 6.4rem;
