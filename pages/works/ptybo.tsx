@@ -3,7 +3,7 @@ import Rellax from 'rellax'
 import Image from 'next/image'
 import { Layout } from '../../components/Layout'
 
-const Flagup: VFC = () => {
+const Patybo: VFC = () => {
   useEffect(() => {
     // Rellax JS Setting
     var rellax = new Rellax('.rellax')
@@ -13,8 +13,8 @@ const Flagup: VFC = () => {
       <main className="l-page works_d">
         <div className="mv">
           <div className="mv__wrap">
-            <h2 className="mv__ttl">Flagup</h2>
-            <p className="mv__category">モバイルアプリ</p>
+            <h2 className="mv__ttl">Ptybo</h2>
+            <p className="mv__category">Webサービス</p>
           </div>
           <div className="mv__bg01 rellax" data-rellax-speed="-2.75">
             <Image
@@ -36,8 +36,8 @@ const Flagup: VFC = () => {
         <div className="visual">
           <div className="visual__wrap">
             <Image
-              src="/works/flagup_main.jpg"
-              alt="flagup"
+              src="/works/ptybo_main.jpg"
+              alt="ptybo"
               width={1100}
               height={560}
             />
@@ -48,4 +48,4 @@ const Flagup: VFC = () => {
   )
 }
 
-export default Flagup
+export default Patybo
