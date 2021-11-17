@@ -43,6 +43,21 @@ const Patybo: VFC = () => {
             />
           </div>
         </div>
+        <div className="info px-50">
+          <div className="info__wrap">
+            <div className="section-btn">
+              <a
+                href="https://ptybo.online"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+              >
+                <span className="txt">View more</span>
+                <div className="deco"></div>
+              </a>
+            </div>
+          </div>
+        </div>
       </main>
     </Layout>
   )
