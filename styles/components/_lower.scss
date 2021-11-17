@@ -137,4 +137,29 @@
       }
     }
   }
+  .info {
+    margin-top: 50px;
+    padding: 0 50px;
+    @include mixins.mq-down(tb) {
+      padding: 0 40px;
+    }
+    @include mixins.mq-down(sp) {
+      padding: 0 20px;
+    }
+    &__wrap {
+      width: 100%;
+      max-width: 1100px;
+      margin: 80px auto 0;
+      @include mixins.mq-down(tb) {
+        margin: 50px auto 0;
+      }
+      @include mixins.mq-down(sp) {
+        margin: 30px auto 0;
+      }
+      .section-btn {
+        width: 130px;
+        height: 54px;
+      }
+    }
+  }
 }
