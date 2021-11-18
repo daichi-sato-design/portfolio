@@ -3,7 +3,7 @@ import Rellax from 'rellax'
 import Image from 'next/image'
 import { Layout } from '../../components/Layout'
 
-const Patybo: VFC = () => {
+const Ptybo: VFC = () => {
   useEffect(() => {
     // Rellax JS Setting
     var rellax = new Rellax('.rellax')
@@ -63,4 +63,4 @@ const Patybo: VFC = () => {
   )
 }
 
-export default Patybo
+export default Ptybo
