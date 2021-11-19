@@ -346,7 +346,7 @@ const Home: VFC = () => {
                 />
               </a>
               <a
-                href="https://www.twitch.tv/parme1"
+                href="https://www.twitch.tv/pqrm3"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="visual__item"
