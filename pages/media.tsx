@@ -151,7 +151,7 @@ const Media: VFC = () => {
                   </p>
                   <div className="section-btn">
                     <a
-                      href="https://www.twitch.tv/parme1"
+                      href="https://www.twitch.tv/pqrm3"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="link"
