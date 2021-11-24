@@ -57,7 +57,7 @@ const Home: VFC = () => {
             />
           </div>
         </div>
-        {/* ABOUT */}
+        {/*  ABOUT */}
         <section className="about">
           <div className="about__wrap">
             <div className="section-tag">
