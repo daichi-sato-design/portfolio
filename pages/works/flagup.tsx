@@ -5,7 +5,7 @@ import { Layout } from '../../components/Layout'
 
 const Flagup: VFC = () => {
   useEffect(() => {
-    // Rellax JS  Setting
+    // Rellax JS Setting
     var rellax = new Rellax('.rellax')
   }, [])
   return (
