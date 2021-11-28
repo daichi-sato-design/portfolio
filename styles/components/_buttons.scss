@@ -68,3 +68,28 @@
     }
   }
 }
+
+// 各セクションの丸ボタン
+.stopping-btn {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  height: 100%;
+  padding: 18px 24px 18px 30px;
+  border: 1px solid #70688a;
+  border-radius: 50px;
+  background: darken(variables.$primary-color, 10);
+  .txt {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    white-space: nowrap;
+    text-transform: uppercase;
+    transition: letter-spacing 200ms variables.$bezier-easeOutSine;
+  }
+}

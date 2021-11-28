@@ -82,18 +82,219 @@
 }
 
 .works_d {
-  .visual {
-    padding: 0 50px;
+  .mv {
+    &__visual {
+      padding: 150px 50px 0;
+      @include mixins.mq-down(tb) {
+        padding: 120px 40px 0;
+      }
+      @include mixins.mq-down(sp) {
+        padding: 100px 20px 0;
+      }
+      &__wrap {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .contents {
+    margin-top: 50px;
     @include mixins.mq-down(tb) {
-      padding: 0 40px;
+      margin-top: 30px;
     }
-    @include mixins.mq-down(sp) {
-      padding: 0 20px;
-    }
-    &__wrap {
+    &__rows {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
       width: 100%;
       max-width: 1100px;
       margin: 0 auto;
+      @include mixins.mq-down(tb) {
+        display: block;
+      }
+      .detail {
+        width: 62.7%;
+        @include mixins.mq-down(tb) {
+          width: 100%;
+        }
+        &__hd {
+          margin-bottom: 32px;
+          &__ttl {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            .ttl {
+              font-size: 4rem;
+              font-weight: 900;
+              letter-spacing: 0.05em;
+              @include mixins.mq-down(tb) {
+                font-size: 3.6rem;
+              }
+              @include mixins.mq-down(sp) {
+                font-size: 3.2rem;
+              }
+            }
+            .category {
+              margin-top: 10px;
+              padding: 8px 12px;
+              background: rgba(#000, 0.5);
+              border-radius: 3px;
+              font-size: 1.4rem;
+              font-weight: 600;
+              @include mixins.mq-down(tb) {
+                font-size: 1.3rem;
+              }
+            }
+          }
+          &__concept {
+            margin-top: 15px;
+            line-height: 2;
+          }
+        }
+        &__block {
+          &__item {
+            border-top: 1px solid #fff;
+            &:not(:first-child) {
+              margin-top: 40px;
+              @include mixins.mq-down(tb) {
+                margin-top: 30px;
+              }
+            }
+            padding-top: 32px;
+            .ttl {
+              font-size: 2.4rem;
+              font-weight: 600;
+              @include mixins.mq-down(tb) {
+                font-size: 2.1rem;
+              }
+            }
+            .body {
+              margin-top: 12px;
+            }
+            .skill-list {
+              display: flex;
+              justify-content: flex-start;
+              flex-wrap: wrap;
+              margin-top: 30px;
+              @include mixins.mq-down(tb) {
+                margin-top: 20px;
+              }
+              &__item {
+                width: 18%;
+                @include mixins.mq-down(sp) {
+                  width: 31%;
+                }
+                &:not(:nth-child(-n + 5)) {
+                  @include mixins.mq-up(sp) {
+                    margin-top: 3%;
+                  }
+                }
+                &:not(:nth-child(-n + 3)) {
+                  @include mixins.mq-down(sp) {
+                    margin-top: 4%;
+                  }
+                }
+                &:not(:nth-child(5n + 1)) {
+                  @include mixins.mq-up(sp) {
+                    margin-left: 2.5%;
+                  }
+                }
+                &:not(:nth-child(3n + 1)) {
+                  @include mixins.mq-down(sp) {
+                    margin-left: 3.5%;
+                  }
+                }
+                .link {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  position: relative;
+                  padding: 15%;
+                  background: #fff;
+                  @include mixins.mq-up(tb) {
+                    &:hover {
+                      img {
+                        transform: scale(1.115);
+                      }
+                    }
+                  }
+                  @include mixins.mq-down(sp) {
+                    padding: 12%;
+                  }
+                  &:before {
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    width: 14px;
+                    height: 14px;
+                    background: url('../../public/common/i_extarnal-link.svg')
+                      no-repeat center / cover;
+                    @include mixins.mq-down(sp) {
+                      top: 5px;
+                      right: 5px;
+                      width: 12px;
+                      height: 12px;
+                    }
+                  }
+                  div {
+                    overflow: visible !important;
+                    img {
+                      transition: transform 200ms variables.$bezier-easeOutSine;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .info {
+        width: 350px;
+        flex-shrink: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-radius: 10px;
+        background: rgba(#000, 0.5);
+        margin-left: 40px;
+        @include mixins.mq-down(tb) {
+          margin-left: 0;
+          margin-top: 40px;
+          width: 100%;
+          padding-top: 30px;
+        }
+        &__block {
+          &__item {
+            display: flex;
+            align-items: center;
+            padding: 10px 5px;
+            border-bottom: 1px solid #fff;
+            .ttl {
+              width: 60px;
+              font-size: 1.5rem;
+              font-weight: 600;
+              color: rgba(#fff, 0.5);
+            }
+            .body {
+              line-height: 1.6;
+            }
+          }
+        }
+        .section-btn,
+        .stopping-btn {
+          margin-top: 30px;
+          width: 100%;
+          @include mixins.mq-down(tb) {
+            width: 100%;
+            max-width: 240px;
+          }
+          .link {
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }
