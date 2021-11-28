@@ -45,7 +45,7 @@ const Ptybo: VFC = () => {
               <div className="detail__hd">
                 <div className="detail__hd__ttl">
                   <h2 className="ttl">Ptybo</h2>
-                  <span className="category">マッチングサービス</span>
+                  <span className="category">Webサービス</span>
                 </div>
                 <p className="detail__hd__concept">
                   今すぐ遊べるプレイヤーを探すゲーマーのパーティー募集サービス
@@ -235,7 +235,7 @@ const Ptybo: VFC = () => {
                 </li>
                 <li className="info__block__item">
                   <h3 className="ttl">仕様</h3>
-                  <p className="body">WEBサービス</p>
+                  <p className="body">マッチングサービス</p>
                 </li>
               </ul>
               <div className="section-btn">

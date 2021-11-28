@@ -45,7 +45,7 @@ const Flagup: VFC = () => {
               <div className="detail__hd">
                 <div className="detail__hd__ttl">
                   <h2 className="ttl">Flagup</h2>
-                  <span className="category">SNS</span>
+                  <span className="category">モバイルアプリ</span>
                 </div>
                 <p className="detail__hd__concept">
                   情報収集をもっと効率的かつ専門的に。
@@ -139,7 +139,7 @@ const Flagup: VFC = () => {
                 </li>
                 <li className="info__block__item">
                   <h3 className="ttl">仕様</h3>
-                  <p className="body">モバイルアプリ</p>
+                  <p className="body">SNS</p>
                 </li>
               </ul>
               <div className="stopping-btn">
