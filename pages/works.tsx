@@ -70,7 +70,7 @@ const Works: VFC = () => {
                   </div>
                   <div className="detail">
                     <h2 className="detail__ttl">
-                      Flagup｜SNSをもっと効率的かつ専門的に。
+                      Flagup｜情報収集をもっと効率的かつ専門的に。
                     </h2>
                     <p className="detail__tag">モバイルアプリ</p>
                   </div>
