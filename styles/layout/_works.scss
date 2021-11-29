@@ -151,6 +151,9 @@
           &__concept {
             margin-top: 15px;
             line-height: 2;
+            @include mixins.mq-down(tb) {
+              line-height: 1.8;
+            }
           }
         }
         &__block {
