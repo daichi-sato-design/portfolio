@@ -52,14 +52,14 @@ const Ptybo: VFC = () => {
                 </p>
               </div>
               <ul className="detail__block">
-                {/* <li className="detail__block__item">
+                <li className="detail__block__item">
                   <h3 className="ttl">サービス紹介</h3>
                   <div className="body">
                     <p className="body__txt">
-                      本サイト・サービス・メディアなどに関するご意見やお問い合わせなどに対応いたします。お問い合わせに関するレスポンスが遅い場合、Twitterなど他メディアでのDMもご検討ください。お問い合わせに早急に対応できない場合もあります。
+                      ゲームを誰かと遊びたいが「友人との都合がつかない」や「そのゲームをプレイしている友人がいない」といったユーザー同士をリアルタイムでマッチングするサービスです。マッチング後にサービス内で登録したDiscodeのIDを共有します。
                     </p>
                   </div>
-                </li> */}
+                </li>
                 {/* <li className="detail__block__item">
                   <h3 className="ttl">制作の目的</h3>
                   <div className="body">

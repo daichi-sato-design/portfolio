@@ -175,6 +175,9 @@
             }
             .body {
               margin-top: 12px;
+              &__txt {
+                line-height: 2.4;
+              }
             }
             .skill-list {
               display: flex;
