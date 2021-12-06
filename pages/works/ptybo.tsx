@@ -56,26 +56,26 @@ const Ptybo: VFC = () => {
                   <h3 className="ttl">サービス紹介</h3>
                   <div className="body">
                     <p className="body__txt">
-                      ゲームを誰かと遊びたいが「友人との都合がつかない」や「そのゲームをプレイしている友人がいない」といったユーザー同士をリアルタイムでマッチングするサービスです。マッチング後にサービス内で登録したDiscodeのIDを共有します。
+                      ゲームで誰かと遊びたいユーザー同士をリアルタイムでマッチングするサービスです。マッチング後にサービス内で登録したDiscodeのIDを共有し各ユーザーでボイスチャットを繋いで遊ぶきっかけを作ります。
                     </p>
                   </div>
                 </li>
-                {/* <li className="detail__block__item">
+                <li className="detail__block__item">
                   <h3 className="ttl">制作の目的</h3>
                   <div className="body">
                     <p className="body__txt">
-                      本サイト・サービス・メディアなどに関するご意見やお問い合わせなどに対応いたします。お問い合わせに関するレスポンスが遅い場合、Twitterなど他メディアでのDMもご検討ください。お問い合わせに早急に対応できない場合もあります。
+                      現状のゲームフレンドを探すサービスは掲示板形式が多く、フレンドの募集を開始してからいつ返信がくるのか待ち続けるストレスがありました。そこをリアルタイムのマッチングできるサービスを目指し開発しました。
                     </p>
                   </div>
-                </li> */}
-                {/* <li className="detail__block__item">
+                </li>
+                <li className="detail__block__item">
                   <h3 className="ttl">工夫やこだわり</h3>
                   <div className="body">
                     <p className="body__txt">
-                      本サイト・サービス・メディアなどに関するご意見やお問い合わせなどに対応いたします。お問い合わせに関するレスポンスが遅い場合、Twitterなど他メディアでのDMもご検討ください。お問い合わせに早急に対応できない場合もあります。
+                      リアルタイムに特化するため募集中のカードにカウントダウンを表示しました。また、ユーザーはすぐマッチングすることを目的に当サービスを利用すると考えるため、募集をかけるフォームはチェックリストやセレクトボックスを多くし簡単にし、申し込む手続きも確認を認証する手軽さに設計しました。
                     </p>
                   </div>
-                </li> */}
+                </li>
                 <li className="detail__block__item">
                   <h3 className="ttl">使用した技術</h3>
                   <ul className="skill-list">
