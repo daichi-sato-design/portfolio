@@ -237,6 +237,14 @@ const Ptybo: VFC = () => {
                   <h3 className="ttl">仕様</h3>
                   <p className="body">マッチングサービス</p>
                 </li>
+                <li className="info__block__item">
+                  <h3 className="ttl">制作人数</h3>
+                  <p className="body">2人</p>
+                </li>
+                <li className="info__block__item">
+                  <h3 className="ttl">担当</h3>
+                  <p className="body">デザイン・プログラム</p>
+                </li>
               </ul>
               <div className="section-btn">
                 <a

@@ -141,6 +141,14 @@ const Flagup: VFC = () => {
                   <h3 className="ttl">仕様</h3>
                   <p className="body">SNS</p>
                 </li>
+                <li className="info__block__item">
+                  <h3 className="ttl">制作人数</h3>
+                  <p className="body">1人</p>
+                </li>
+                <li className="info__block__item">
+                  <h3 className="ttl">担当</h3>
+                  <p className="body">企画・デザイン・プログラム</p>
+                </li>
               </ul>
               <div className="stopping-btn">
                 <span className="txt">配信を停止しています</span>
