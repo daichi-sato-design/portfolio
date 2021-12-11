@@ -142,7 +142,7 @@ const Flagup: VFC = () => {
                   <p className="body">SNS</p>
                 </li>
                 <li className="info__block__item">
-                  <h3 className="ttl">制作人数</h3>
+                  <h3 className="ttl">制作</h3>
                   <p className="body">1人</p>
                 </li>
                 <li className="info__block__item">
