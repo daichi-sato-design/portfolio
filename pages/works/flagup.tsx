@@ -56,23 +56,23 @@ const Flagup: VFC = () => {
                   <h3 className="ttl">サービス紹介</h3>
                   <div className="body">
                     <p className="body__txt">
-                      本サイト・サービス・メディアなどに関するご意見やお問い合わせなどに対応いたします。お問い合わせに関するレスポンスが遅い場合、Twitterなど他メディアでのDMもご検討ください。お問い合わせに早急に対応できない場合もあります。
+                      ゲームで誰かと遊びたいユーザー同士をリアルタイムでマッチングするサービスです。マッチング後にサービス内で登録したDiscodeのIDを共有し各ユーザーがボイスチャットを繋いで遊ぶきっかけを作ります。
                     </p>
                   </div>
-                </li> */}
-                {/* <li className="detail__block__item">
+                </li>
+                <li className="detail__block__item">
                   <h3 className="ttl">制作の目的</h3>
                   <div className="body">
                     <p className="body__txt">
-                      本サイト・サービス・メディアなどに関するご意見やお問い合わせなどに対応いたします。お問い合わせに関するレスポンスが遅い場合、Twitterなど他メディアでのDMもご検討ください。お問い合わせに早急に対応できない場合もあります。
+                      現状のゲームフレンドを探すサービスは掲示板形式が多く、フレンドの募集を開始してからいつ返信がくるのか待ち続けるストレスがありました。そのストレスを解消するためリアルタイムに特化し「今すぐ」マッチングできるサービスを目指し開発しました。
                     </p>
                   </div>
-                </li> */}
-                {/* <li className="detail__block__item">
+                </li>
+                <li className="detail__block__item">
                   <h3 className="ttl">工夫やこだわり</h3>
                   <div className="body">
                     <p className="body__txt">
-                      本サイト・サービス・メディアなどに関するご意見やお問い合わせなどに対応いたします。お問い合わせに関するレスポンスが遅い場合、Twitterなど他メディアでのDMもご検討ください。お問い合わせに早急に対応できない場合もあります。
+                      リアルタイムに特化するため募集は「3分・5分・10分」に制限し、募集中のカードにカウントダウンを表示しました。また、ユーザーはマッチングまでの早さを目的に当サービスを利用すると考えたため、募集をかけるフォームはチェックリストやセレクトボックスを多用し簡単に募集ができるようにし、募集に申し込む手続きも確認画面を承認するだけの手軽さに設計しました。
                     </p>
                   </div>
                 </li> */}
@@ -147,7 +147,11 @@ const Flagup: VFC = () => {
                 </li>
                 <li className="info__block__item">
                   <h3 className="ttl">担当</h3>
-                  <p className="body">企画・デザイン・プログラム</p>
+                  <ul className="body-list">
+                    <li className="body-list__txt">企画</li>
+                    <li className="body-list__txt">デザイン</li>
+                    <li className="body-list__txt">プログラム</li>
+                  </ul>
                 </li>
               </ul>
               <div className="stopping-btn">
