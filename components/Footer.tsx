@@ -55,7 +55,7 @@ const Footer: VFC = () => {
           <ul className="nav__sns">
             <li className="nav__sns__item">
               <a
-                href="https://twitter.com/_daichisato"
+                href="https://twitter.com/_daichisato/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link"
@@ -70,7 +70,7 @@ const Footer: VFC = () => {
             </li>
             <li className="nav__sns__item">
               <a
-                href="https://www.instagram.com/_daichisato"
+                href="https://www.instagram.com/_daichisato/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link"
@@ -85,7 +85,7 @@ const Footer: VFC = () => {
             </li>
             <li className="nav__sns__item">
               <a
-                href="https://github.com/daichi-sato-design"
+                href="https://github.com/daichi-sato-design/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link"
