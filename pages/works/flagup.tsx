@@ -52,15 +52,15 @@ const Flagup: VFC = () => {
                 </p>
               </div>
               <ul className="detail__block">
-                {/* <li className="detail__block__item">
+                <li className="detail__block__item">
                   <h3 className="ttl">サービス紹介</h3>
                   <div className="body">
                     <p className="body__txt">
-                      ゲームで誰かと遊びたいユーザー同士をリアルタイムでマッチングするサービスです。マッチング後にサービス内で登録したDiscodeのIDを共有し各ユーザーがボイスチャットを繋いで遊ぶきっかけを作ります。
+                      SNSのさまざまな発信が一つのアカウントから投稿され読み直すとき、気になる情報が興味のない投稿によって隠され見つけられない状態を解決するためにテーマ別に投稿し、一つのアカウントでさまざまなテーマの投稿がしやすくなるSNSです。
                     </p>
                   </div>
                 </li>
-                <li className="detail__block__item">
+                {/* <li className="detail__block__item">
                   <h3 className="ttl">制作の目的</h3>
                   <div className="body">
                     <p className="body__txt">
