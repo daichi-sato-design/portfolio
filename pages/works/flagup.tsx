@@ -150,7 +150,7 @@ const Flagup: VFC = () => {
                   <ul className="body-list">
                     <li className="body-list__txt">企画</li>
                     <li className="body-list__txt">デザイン</li>
-                    <li className="body-list__txt">プログラム</li>
+                    <li className="body-list__txt">フロントエンド</li>
                   </ul>
                 </li>
               </ul>
